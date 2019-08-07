@@ -1,0 +1,1 @@
+<view class="content"><view class="item_content"><text class="item_content_title">{{title}}</text><text class="item_content_desc">description</text><image class="item_content_image" src="/static/logo.png" mode="center"></image></view></view>

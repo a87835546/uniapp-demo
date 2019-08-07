@@ -1,0 +1,1 @@
+<view class="test"><input class="{{['vue-ref',(isShow)?'color':'']}}" type="text" value="" placeholder="vue 组件 测试 focus" data-ref="abc"/></view>
