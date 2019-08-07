@@ -50,22 +50,19 @@
 	.item {
 		display: flex;
 		flex-direction: column;
-		height: 80rpx;
 		line-height:  80rpx;
 		width: 100vw;
 		font-size: 12px;
-		align-items: center;
 	}
 	.item_contair {
+		flex: 0 0 auto;
 		display: flex;
 		flex-direction: row;
-
+		align-items: center;
 	}
 	.item_icon {
 		flex: 0 ;
-		padding-left: 10px;
-		width: 30rpx;
-		
+		padding-left: 10rpx;
 	}
 	.item_content {
 		flex: 1;
@@ -76,13 +73,12 @@
 	.item_icon_right{
 		flex: 0;
 		padding-right: 10px;
-		width: 30rpx;
 	}
 	.item_row {
 		flex: 0 0 auto;
 		height: 1rpx;
 		background-color: #4CD964;
-		width: 100vw - 10rpx;
+		/* width: 100vw; */
 		margin: 0 10rpx;
 	}
 </style>
