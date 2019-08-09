@@ -1,17 +1,13 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*每个页面公共css */
+scroll-view {
+	height: 300rpx;
+	width: 100vw;
+	background-clip: red;
+}
+.item {
+	height: 200rpx;
+}
+button {
+	width: 60vw;
+}
 
