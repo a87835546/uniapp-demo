@@ -134,26 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _uniList = function _uniList() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list */ "node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-list/uni-list */ 35));};var _uniListItem = function _uniListItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item */ "node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-list-item/uni-list-item */ 42));};var _uniBadge = function _uniBadge() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge */ "node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-badge/uni-badge */ 49));};var _uniCollapseItem = function _uniCollapseItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ 56));};var _uniCollapse = function _uniCollapse() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ 63));};var item = function item() {return __webpack_require__.e(/*! import() | pages/index/home-item */ "pages/index/home-item").then(__webpack_require__.bind(null, /*! ./home-item.vue */ 70));};var test = function test() {return __webpack_require__.e(/*! import() | pages/index/test */ "pages/index/test").then(__webpack_require__.bind(null, /*! ./test.vue */ 77));};var collapseItem = function collapseItem() {return __webpack_require__.e(/*! import() | pages/index/collapse-item */ "pages/index/collapse-item").then(__webpack_require__.bind(null, /*! ./collapse-item.vue */ 84));};var _default =
+var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _uniList = function _uniList() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list */ "node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-list/uni-list */ 35));};var _uniListItem = function _uniListItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item */ "node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-list-item/uni-list-item */ 42));};var _uniBadge = function _uniBadge() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge */ "node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-badge/uni-badge */ 49));};var _uniCollapseItem = function _uniCollapseItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ 56));};var _uniCollapse = function _uniCollapse() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ 63));};var item = function item() {return __webpack_require__.e(/*! import() | pages/index/home-item */ "pages/index/home-item").then(__webpack_require__.bind(null, /*! ./home-item.vue */ 70));};var test = function test() {return __webpack_require__.e(/*! import() | pages/index/test */ "pages/index/test").then(__webpack_require__.bind(null, /*! ./test.vue */ 77));};var _default =
 
 {
   data: function data() {
@@ -161,15 +142,18 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
       title: 'Hello',
       dataList: [
       {
-        title: "下拉刷新 和上来加载更多" },
+        title: "下拉刷新 和上来加载更多",
+        url: '' },
 
 
       {
-        title: '1' },
+        title: '折叠效果',
+        url: './collapse/collapse' },
 
 
       {
-        title: '2' },
+        title: '滑动视图的使用',
+        url: './scrollView/scrollView' },
 
 
       {
@@ -213,14 +197,13 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
     uniBadge: _uniBadge,
     uniListItem: _uniListItem,
     uniList: _uniList,
-    test: test,
-    collapseItem: collapseItem },
+    test: test },
 
   methods: {
-    clickItem: function clickItem(index) {
-      console.log('111');
+    clickItem: function clickItem(url) {
+      console.log(url);
       uni.navigateTo({
-        url: '../mine/message/msg' });
+        url: url });
 
     },
     test: function test() {
@@ -230,13 +213,6 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
       }).catch(function (e) {
         console.log(e);
       });
-    },
-    change: function change() {
-      console.log('change');
-    },
-    // 接受子组件传递来的值
-    reciveData: function reciveData(index) {
-      console.log(index);
     } },
 
   onPullDownRefresh: function onPullDownRefresh() {

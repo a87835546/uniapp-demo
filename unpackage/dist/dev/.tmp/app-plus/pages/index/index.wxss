@@ -53,4 +53,7 @@ uni-collapse-item {
 	height: 100%;
 	width: 100vw;
 }
+uni-list-item {
+	width: 100vw;
+}
 

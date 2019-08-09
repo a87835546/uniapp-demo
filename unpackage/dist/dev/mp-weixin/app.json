@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
-    "pages/mine/message/msg"
+    "pages/mine/message/msg",
+    "pages/index/collapse/collapse",
+    "pages/index/scrollView/scrollView"
   ],
   "subPackages": [],
   "window": {
@@ -31,6 +33,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap37.json"
+  "usingComponents": {}
 }

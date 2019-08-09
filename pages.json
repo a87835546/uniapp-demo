@@ -21,6 +21,22 @@
 				"navigationBarTitleText": "消息",
 				"enablePullDownRefresh":true
 			}
+		},
+		{
+			
+			"path": "pages/index/collapse/collapse",
+			"style": {
+				"navigationBarTitleText": "折叠控件的使用",
+				"enablePullDownRefresh":false
+			}
+		},
+		{
+			
+			"path": "pages/index/scrollView/scrollView",
+			"style": {
+				"navigationBarTitleText": "滑动视图的使用",
+				"enablePullDownRefresh":false
+			}
 		}
 	],
 	"globalStyle": {

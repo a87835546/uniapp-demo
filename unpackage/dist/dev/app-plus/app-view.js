@@ -1279,20 +1279,31 @@ Z(z[4])
 Z([[4],[[5],[[4],[[5],[[5],[1,'^collapseItemClick']],[[4],[[5],[[4],[[5],[1,'reciveData']]]]]]]]])
 Z([[7],[3,'dataList']])
 Z([[2,'+'],[[2,'+'],[1,'11'],[1,',']],[1,'10']])
-Z([3,'index'])
-Z([3,'newitem'])
-Z(z[63])
-Z(z[65])
-Z(z[4])
-Z([3,'content_item'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'clickItem']],[[4],[[5],[[7],[3,'index']]]]]]]]]]]])
 Z(z[1])
-Z([3,'home'])
-Z([[7],[3,'index']])
-Z([[2,'+'],[1,'12-'],[[7],[3,'index']]])
+Z([3,'12'])
+Z(z[14])
+Z(z[1])
+Z([3,'123'])
+Z([3,'折叠效果'])
+Z([[2,'+'],[[2,'+'],[1,'13'],[1,',']],[1,'12']])
+Z(z[1])
+Z([3,'index'])
+Z([[2,'+'],[[2,'+'],[1,'14'],[1,',']],[1,'12']])
+Z(z[1])
+Z(z[73])
+Z([[2,'+'],[[2,'+'],[1,'15'],[1,',']],[1,'12']])
+Z(z[1])
+Z(z[73])
+Z([[2,'+'],[[2,'+'],[1,'16'],[1,',']],[1,'12']])
+Z(z[1])
+Z(z[73])
+Z([[2,'+'],[[2,'+'],[1,'17'],[1,',']],[1,'12']])
+Z(z[1])
+Z(z[73])
+Z([[2,'+'],[[2,'+'],[1,'18'],[1,',']],[1,'12']])
 Z([3,'test'])
 Z(z[1])
-Z([3,'13'])
+Z([3,'19'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
 }
 function gz$gwx_10(){
@@ -1626,22 +1637,25 @@ var aXC=_mz(z,'collapse-item',['bind:__l',60,'bind:collapseItemClick',1,'data-ev
 _(lWC,aXC)
 _(cGC,lWC)
 _(oBC,cGC)
-var tYC=_v()
+var tYC=_mz(z,'uni-list',['bind:__l',65,'vueId',1,'vueSlots',2],[],e,s,gg)
+var eZC=_mz(z,'uni-list-item',['bind:__l',68,'note',1,'title',2,'vueId',3],[],e,s,gg)
+_(tYC,eZC)
+var b1C=_mz(z,'uni-list-item',['note',-1,'bind:__l',72,'title',1,'vueId',2],[],e,s,gg)
+_(tYC,b1C)
+var o2C=_mz(z,'uni-list-item',['note',-1,'bind:__l',75,'title',1,'vueId',2],[],e,s,gg)
+_(tYC,o2C)
+var x3C=_mz(z,'uni-list-item',['note',-1,'bind:__l',78,'title',1,'vueId',2],[],e,s,gg)
+_(tYC,x3C)
+var o4C=_mz(z,'uni-list-item',['note',-1,'bind:__l',81,'title',1,'vueId',2],[],e,s,gg)
+_(tYC,o4C)
+var f5C=_mz(z,'uni-list-item',['note',-1,'bind:__l',84,'title',1,'vueId',2],[],e,s,gg)
+_(tYC,f5C)
 _(oBC,tYC)
-var eZC=function(o2C,b1C,x3C,gg){
-var f5C=_mz(z,'view',['bindtap',69,'class',1,'data-event-opts',2],[],o2C,b1C,gg)
-var c6C=_mz(z,'item',['bind:__l',72,'class',1,'title',2,'vueId',3],[],o2C,b1C,gg)
-_(f5C,c6C)
-_(x3C,f5C)
-return x3C
-}
-tYC.wxXCkey=4
-_2z(z,67,eZC,e,s,gg,tYC,'newitem','index','index')
-var h7C=_n('view')
-_rz(z,h7C,'class',76,e,s,gg)
-var o8C=_mz(z,'test',['bind:__l',77,'vueId',1],[],e,s,gg)
-_(h7C,o8C)
-_(oBC,h7C)
+var c6C=_n('view')
+_rz(z,c6C,'class',87,e,s,gg)
+var h7C=_mz(z,'test',['bind:__l',88,'vueId',1],[],e,s,gg)
+_(c6C,h7C)
+_(oBC,c6C)
 _(r,oBC)
 return r
 }
@@ -1649,56 +1663,56 @@ e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var o0C=_n('view')
-_rz(z,o0C,'class',0,e,s,gg)
-var lAD=_mz(z,'input',['class',1,'data-ref',1,'placeholder',2,'type',3,'value',4],[],e,s,gg)
-_(o0C,lAD)
-_(r,o0C)
+var c9C=_n('view')
+_rz(z,c9C,'class',0,e,s,gg)
+var o0C=_mz(z,'input',['class',1,'data-ref',1,'placeholder',2,'type',3,'value',4],[],e,s,gg)
+_(c9C,o0C)
+_(r,c9C)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var tCD=_n('view')
-_rz(z,tCD,'class',0,e,s,gg)
-var eDD=_oz(z,1,e,s,gg)
-_(tCD,eDD)
-var bED=_mz(z,'button',['bindtap',2,'data-event-opts',1,'type',2],[],e,s,gg)
-var oFD=_oz(z,5,e,s,gg)
-_(bED,oFD)
-_(tCD,bED)
-_(r,tCD)
+var aBD=_n('view')
+_rz(z,aBD,'class',0,e,s,gg)
+var tCD=_oz(z,1,e,s,gg)
+_(aBD,tCD)
+var eDD=_mz(z,'button',['bindtap',2,'data-event-opts',1,'type',2],[],e,s,gg)
+var bED=_oz(z,5,e,s,gg)
+_(eDD,bED)
+_(aBD,eDD)
+_(r,aBD)
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
 d_[x[11]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var oHD=_n('view')
-_rz(z,oHD,'class',0,e,s,gg)
-var fID=_v()
-_(oHD,fID)
-var cJD=function(oLD,hKD,cMD,gg){
-var lOD=_n('view')
-_rz(z,lOD,'class',5,oLD,hKD,gg)
-var aPD=_mz(z,'view',['bindtap',6,'class',1,'data-event-opts',2],[],oLD,hKD,gg)
-var tQD=_mz(z,'image',['class',9,'mode',1,'src',2],[],oLD,hKD,gg)
-_(aPD,tQD)
-var eRD=_n('text')
-_rz(z,eRD,'class',12,oLD,hKD,gg)
-var bSD=_oz(z,13,oLD,hKD,gg)
-_(eRD,bSD)
-_(aPD,eRD)
-var oTD=_mz(z,'image',['class',14,'mode',1,'src',2],[],oLD,hKD,gg)
-_(aPD,oTD)
+var xGD=_n('view')
+_rz(z,xGD,'class',0,e,s,gg)
+var oHD=_v()
+_(xGD,oHD)
+var fID=function(hKD,cJD,oLD,gg){
+var oND=_n('view')
+_rz(z,oND,'class',5,hKD,cJD,gg)
+var lOD=_mz(z,'view',['bindtap',6,'class',1,'data-event-opts',2],[],hKD,cJD,gg)
+var aPD=_mz(z,'image',['class',9,'mode',1,'src',2],[],hKD,cJD,gg)
 _(lOD,aPD)
-_(cMD,lOD)
-return cMD
+var tQD=_n('text')
+_rz(z,tQD,'class',12,hKD,cJD,gg)
+var eRD=_oz(z,13,hKD,cJD,gg)
+_(tQD,eRD)
+_(lOD,tQD)
+var bSD=_mz(z,'image',['class',14,'mode',1,'src',2],[],hKD,cJD,gg)
+_(lOD,bSD)
+_(oND,lOD)
+_(oLD,oND)
+return oLD
 }
-fID.wxXCkey=2
-_2z(z,3,cJD,e,s,gg,fID,'item','index','index')
-_(r,oHD)
+oHD.wxXCkey=2
+_2z(z,3,fID,e,s,gg,oHD,'item','index','index')
+_(r,xGD)
 return r
 }
 e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
@@ -1844,13 +1858,13 @@ __wxAppCode__['node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item.wxm
 __wxAppCode__['node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list.wxss']=setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"uni-list { background-color: #ffffff; position: relative; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }\n.",[1],"uni-list:after { position: absolute; z-index: 10; right: 0; bottom: 0; left: 0; height: 1px; content: \x27\x27; -webkit-transform: scaleY(0.5); -ms-transform: scaleY(0.5); transform: scaleY(0.5); background-color: #c8c7cc; }\n.",[1],"uni-list:before { position: absolute; z-index: 10; right: 0; top: 0; left: 0; height: 1px; content: \x27\x27; -webkit-transform: scaleY(0.5); -ms-transform: scaleY(0.5); transform: scaleY(0.5); background-color: #c8c7cc; }\n",],undefined,{path:"./node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list.wxss"});    
 __wxAppCode__['node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list.wxml']=$gwx('./node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list.wxml');
 
-__wxAppCode__['pages/index/collapse-item.wxss']=setCssToHead([".",[1],"content { color: red; }\n.",[1],"item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; line-height: ",[0,80],"; width: 100vw; font-size: 12px; }\n.",[1],"item_contair { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"item_icon { -webkit-box-flex: 0 ; -webkit-flex: 0 ; -ms-flex: 0 ; flex: 0 ; padding-left: ",[0,10],"; }\n.",[1],"item_content { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; padding-left: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 12; }\n.",[1],"item_icon_right{ -webkit-box-flex: 0; -webkit-flex: 0; -ms-flex: 0; flex: 0; padding-right: 10px; }\n.",[1],"item_row { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; height: ",[0,1],"; background-color: #4CD964; margin: 0 ",[0,10],"; }\n",],undefined,{path:"./pages/index/collapse-item.wxss"});    
+__wxAppCode__['pages/index/collapse-item.wxss']=setCssToHead([".",[1],"content { color: red; }\n.",[1],"item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; line-height: ",[0,80],"; width: 100vw; font-size: 12px; }\n.",[1],"item_contair { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"item_icon { -webkit-box-flex: 0 ; -webkit-flex: 0 ; -ms-flex: 0 ; flex: 0 ; padding-left: ",[0,10],"; }\n.",[1],"item_content { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; padding-left: ",[0,10],"; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 12; }\n.",[1],"item_icon_right{ -webkit-box-flex: 0; -webkit-flex: 0; -ms-flex: 0; flex: 0; padding-right: ",[0,10],"; }\n.",[1],"item_row { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; height: ",[0,1],"; background-color: #4CD964; margin: 0 ",[0,10],"; }\n",],undefined,{path:"./pages/index/collapse-item.wxss"});    
 __wxAppCode__['pages/index/collapse-item.wxml']=$gwx('./pages/index/collapse-item.wxml');
 
 __wxAppCode__['pages/index/home-item.wxss']=setCssToHead([".",[1],"content { width: 100vw; }\n.",[1],"item_content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100vw; padding: 0 ",[0,10]," 0 ",[0,10],"; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; overflow: hidden; }\n.",[1],"item_content_title { }\n.",[1],"item_content_desc { }\n.",[1],"item_content_image { width: 30px; height: 30px; }\n",],undefined,{path:"./pages/index/home-item.wxss"});    
 __wxAppCode__['pages/index/home-item.wxml']=$gwx('./pages/index/home-item.wxml');
 
-__wxAppCode__['pages/index/index.wxss']=setCssToHead([".",[1],"content { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"logo { height: ",[0,200],"; width: ",[0,200],"; margin-top: ",[0,200],"; margin-left: auto; margin-right: auto; margin-bottom: ",[0,50],"; }\n.",[1],"text-area { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"title { font-size: ",[0,36],"; color: #8f8f94; }\n.",[1],"content_item { width: 100vw; }\n.",[1],"home { border-bottom: ",[0,1]," solid #C0C0C0; }\n.",[1],"collapse { width: 100vw; }\nwx-uni-collapse-item { height: 100%; width: 100vw; }\n",],undefined,{path:"./pages/index/index.wxss"});    
+__wxAppCode__['pages/index/index.wxss']=setCssToHead([".",[1],"content { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"logo { height: ",[0,200],"; width: ",[0,200],"; margin-top: ",[0,200],"; margin-left: auto; margin-right: auto; margin-bottom: ",[0,50],"; }\n.",[1],"text-area { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"title { font-size: ",[0,36],"; color: #8f8f94; }\n.",[1],"content_item { width: 100vw; }\n.",[1],"home { border-bottom: ",[0,1]," solid #C0C0C0; }\n.",[1],"collapse { width: 100vw; }\nwx-uni-collapse-item { height: 100%; width: 100vw; }\nwx-uni-list-item { width: 100vw; }\n",],undefined,{path:"./pages/index/index.wxss"});    
 __wxAppCode__['pages/index/index.wxml']=$gwx('./pages/index/index.wxml');
 
 __wxAppCode__['pages/index/test.wxss']=setCssToHead([".",[1],"color { background-color: red; }\n",],undefined,{path:"./pages/index/test.wxss"});    

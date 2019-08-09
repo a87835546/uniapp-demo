@@ -66,19 +66,18 @@
 	}
 	.item_content {
 		flex: 1;
-		padding-left: 10px;
+		padding-left: 10rpx;
 		box-sizing: border-box;
 		font-size: 12;
 	}
 	.item_icon_right{
 		flex: 0;
-		padding-right: 10px;
+		padding-right: 10rpx;
 	}
 	.item_row {
 		flex: 0 0 auto;
 		height: 1rpx;
 		background-color: #4CD964;
-		/* width: 100vw; */
 		margin: 0 10rpx;
 	}
 </style>
