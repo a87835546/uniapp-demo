@@ -4,13 +4,13 @@
     "iPhone",
     "iPad"
   ],
-  "id": "",
+  "id": "__UNI__B538E80",
   "name": "uni-demo",
   "version": {
     "name": "1.0.0",
     "code": "100"
   },
-  "description": "",
+  "description": "demo",
   "launch_path": "__uniapptabbar.html",
   "developer": {
     "name": "",

@@ -26,7 +26,7 @@
 				title: 'Hello',
 				dataList:[
 					{
-						title:"下拉刷新 和上来加载更多",
+						title:"下拉刷新和上来加载更多",
 						url:''
 					}
 					,
@@ -41,19 +41,22 @@
 					}
 					,
 					{
-						title:'3'
+						title:'左右滑动的banner使用',
+						url:'./swiper/swiper'
 					}
 					,
 					{
-						title:''
+						title:'常用的多媒体应用',
+						url:'./media/media'
 					}
 					,
 					{
-						title:''
+						title:'地图的使用',
+						url:'./map/map'
 					}
 					,
 					{
-						title:''
+						title:'123'
 					}
 					,
 					{
@@ -73,14 +76,18 @@
 			this.$on('collapse-item-click',function(valuue){
 				console.log(valuue);
 			})
+			uni.setTabBarBadge({
+				index:0,
+				text:'100'
+			})
 		},
 		components:{
 			item,
 			uniCollapse,
 			uniCollapseItem,
 			uniBadge,
-			uniListItem,
-			uniList,
+			// uniListItem,
+			// uniList,
 			test,
 		},
 		methods: {
@@ -152,5 +159,8 @@
 	}
 	uni-list-item {
 		width: 100vw;
+	}
+	.uni-tabbar__badge {
+		background-color: #007AFF;
 	}
 </style>

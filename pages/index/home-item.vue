@@ -4,8 +4,8 @@
 			<view class="item_content_top">
 				<uni-icon type="contact" class = "item_content_top_left" size="25"></uni-icon>
 				<view class="item_content_contair">
-					<text class="item_content_title">{{title}}</text>
-					<text class="item_content_desc">{{model.title}}</text>
+					<text class="item_content_title">主标题:{{model.title}}</text>
+					<text class="item_content_desc">副标题:{{title}}</text>
 				</view>
 				<uni-icon type="arrowright" class = "item_content_top_right" size="20"></uni-icon>
 			</view>
@@ -75,7 +75,7 @@
 	.item_content_bottom {
 		flex: 0 0 auto;
 		height: 1rpx;
-		background-color: red;
+		background-color: #F1F1F1;
 		margin: 0 10rpx;
 		
 	}
@@ -88,9 +88,16 @@
 	.item_content_contair {
 		flex: 1;
 		margin: 0 10rpx;
+		
 	}
 	.item_content_title {
 		display: block;
+		color: black;
+		font-size: 14px;
+	}
+	.item_content_desc {
+		color: #C0C0C0;
+		font-size: 12px;
 	}
 	
 </style>

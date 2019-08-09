@@ -6,9 +6,6 @@
     "uni-collapse": "/node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse",
     "uni-collapse-item": "/node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item",
     "uni-badge": "/node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge",
-    "uni-list-item": "/node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item",
-    "uni-list": "/node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list",
-    "test": "/pages/index/test",
-    "collapse-item": "/pages/index/collapse-item"
+    "test": "/pages/index/test"
   }
 }

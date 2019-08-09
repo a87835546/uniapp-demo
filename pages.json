@@ -37,6 +37,29 @@
 				"navigationBarTitleText": "滑动视图的使用",
 				"enablePullDownRefresh":false
 			}
+		},
+		{
+			
+			"path": "pages/index/swiper/swiper",
+			"style": {
+				"navigationBarTitleText": "swiper-view 制作banner效果",
+				"enablePullDownRefresh":false
+			}
+		},
+		{
+			
+			"path": "pages/index/media/media",
+			"style": {
+				"navigationBarTitleText": "常用的多媒体应用",
+				"enablePullDownRefresh":false
+			}
+		},
+		{
+			"path": "pages/index/map/map",
+			"style": {
+				"navigationBarTitleText": "地图",
+				"enablePullDownRefresh":false
+			}
 		}
 	],
 	"globalStyle": {

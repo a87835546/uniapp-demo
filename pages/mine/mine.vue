@@ -90,8 +90,6 @@
 		width: 30rpx;
 		height: 30rpx;
 		padding: 0 10rpx 0 10rpx;
-		
 	}
-	
-	
+
 </style>

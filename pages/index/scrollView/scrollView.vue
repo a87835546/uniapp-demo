@@ -27,30 +27,26 @@
 			},
 			scroll(e){
 				//e.target.scrollTop 获取内容 距离定点的距离 不去修改top值，返回顶部会只生效一次。
-				console.log(e.target.scrollTop);
+				// console.log(e.target.scrollTop);
 				this.top = e.target.scrollTop
 			}
 		},
 		onLoad:function(){
-			console.log(this);
-			function fun (){
-				let r = Math.random()*255
-				let g = Math.random()*255
-				let b = Math.random()*255
-				console.log(r)
-			}
-			fun()
 		},
 		onReady:function(e){
-			console.log(this);
 			function fun (){
+				for (let box of document.querySelectorAll('.item')) {
+					box.style.backgroundColor = getColor()
+				}
+			}
+			fun()
+			
+			function getColor(){
 				let r = Math.random()*255
 				let g = Math.random()*255
 				let b = Math.random()*255
-				document.querySelector('.item').style.backgroundColor = "red"
-				console.log(r)
+				return `rgba(${r},${b},${b},1)`;
 			}
-			fun()
 		}
 	}
 </script>

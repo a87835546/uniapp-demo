@@ -4,7 +4,10 @@
     "pages/mine/mine",
     "pages/mine/message/msg",
     "pages/index/collapse/collapse",
-    "pages/index/scrollView/scrollView"
+    "pages/index/scrollView/scrollView",
+    "pages/index/swiper/swiper",
+    "pages/index/media/media",
+    "pages/index/map/map"
   ],
   "subPackages": [],
   "window": {
