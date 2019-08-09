@@ -1,17 +1,9 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*每个页面公共css */
+map {
+	width: 750rpx;
+	height: 750rpx;
+}
+button {
+	z-index: 9999;
+}
 

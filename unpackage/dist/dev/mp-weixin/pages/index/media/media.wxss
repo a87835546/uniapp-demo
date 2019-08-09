@@ -1,17 +1,6 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*每个页面公共css */
+camera {
+	width: 100vw;
+	height: 300px;
+}
 
