@@ -7,7 +7,9 @@
     "pages/index/scrollView/scrollView",
     "pages/index/swiper/swiper",
     "pages/index/media/media",
-    "pages/index/map/map"
+    "pages/index/map/map",
+    "pages/index/webview/webview",
+    "pages/index/refresh/refresh"
   ],
   "window": {
     "navigationBarTextStyle": "black",

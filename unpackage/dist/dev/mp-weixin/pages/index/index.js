@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _uniBadge = function _uniBadge() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge */ "node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-badge/uni-badge */ 71));};var _uniCollapseItem = function _uniCollapseItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ 78));};var _uniCollapse = function _uniCollapse() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ 85));};var item = function item() {return __webpack_require__.e(/*! import() | pages/index/home-item */ "pages/index/home-item").then(__webpack_require__.bind(null, /*! ./home-item.vue */ 92));};var test = function test() {return __webpack_require__.e(/*! import() | pages/index/test */ "pages/index/test").then(__webpack_require__.bind(null, /*! ./test.vue */ 99));};var _default =
+var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _uniBadge = function _uniBadge() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge */ "node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-badge/uni-badge */ 87));};var _uniCollapseItem = function _uniCollapseItem() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item */ 94));};var _uniCollapse = function _uniCollapse() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ "node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-collapse/uni-collapse */ 101));};var item = function item() {return __webpack_require__.e(/*! import() | pages/index/home-item */ "pages/index/home-item").then(__webpack_require__.bind(null, /*! ./home-item.vue */ 108));};var test = function test() {return __webpack_require__.e(/*! import() | pages/index/test */ "pages/index/test").then(__webpack_require__.bind(null, /*! ./test.vue */ 115));};var _default =
 
 {
   data: function data() {
@@ -142,8 +142,8 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
       title: 'Hello',
       dataList: [
       {
-        title: "下拉刷新和上来加载更多",
-        url: '' },
+        title: "下拉刷新的使用（使用自定义组件）",
+        url: './refresh/refresh' },
 
 
       {
@@ -172,11 +172,13 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
 
 
       {
-        title: '123' },
+        title: 'webview使用',
+        url: './webview/webview' },
 
 
       {
-        title: '' },
+        title: '九宫格视图',
+        url: './collection-view/collection-view' },
 
 
       {
@@ -189,9 +191,11 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
   },
   onLoad: function onLoad(e) {
     console.log('111');
+    // 接受自带的空间点击事件回传
     this.$on('collapse-item-click', function (valuue) {
       console.log(valuue);
     });
+    // 设置tabbar 的脚标
     uni.setTabBarBadge({
       index: 0,
       text: '100' });
@@ -202,8 +206,6 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
     uniCollapse: _uniCollapse,
     uniCollapseItem: _uniCollapseItem,
     uniBadge: _uniBadge,
-    // uniListItem,
-    // uniList,
     test: test },
 
   methods: {

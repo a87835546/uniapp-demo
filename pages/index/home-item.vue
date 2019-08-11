@@ -10,7 +10,6 @@
 				<uni-icon type="arrowright" class = "item_content_top_right" size="20"></uni-icon>
 			</view>
 			<view class="item_content_bottom">
-				
 			</view>
 		</view>
 	</view>
@@ -50,6 +49,7 @@
 <style scoped>
 	.content {
 		width: 100vw;
+		height: 90rpx;
 	}
 	.item_content {
 		flex-direction: column;
@@ -70,6 +70,7 @@
 		display: flex;
 		flex: 1;
 		flex-direction: row;
+		align-items: center;
 	}
 
 	.item_content_bottom {

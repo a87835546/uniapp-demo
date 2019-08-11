@@ -60,6 +60,30 @@
 				"navigationBarTitleText": "地图",
 				"enablePullDownRefresh":false
 			}
+		},
+		{
+			"path": "pages/index/webview/webview",
+			"style": {
+				"navigationBarTitleText": "webview使用",
+				"enablePullDownRefresh":false
+			}
+		},
+		{
+			"path": "pages/index/refresh/refresh",
+			"style": {
+				"navigationBarTitleText": "下拉刷新的使用（使用自定义组件）",
+				"enablePullDownRefresh":false,
+				"app-plus" : {
+				"bounce" : "none" 
+				}
+			}
+		},
+		{
+			"path": "pages/index/collectionView/collectionView",
+			"style": {
+				"navigationBarTitleText": "九宫格",
+				"enablePullDownRefresh":false,
+			}
 		}
 	],
 	"globalStyle": {

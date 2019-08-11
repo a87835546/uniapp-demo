@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<swiper indicator-dots="true" indicator-active-color="red" autoplay="true" circular="true" @change="change">
-			<swiper-item>A</swiper-item>
+			<swiper-item class="uni-bg-color-grey">A</swiper-item>
 			<swiper-item>B</swiper-item>
 			<swiper-item>A</swiper-item>
 			<swiper-item>C</swiper-item>
@@ -28,5 +28,6 @@
 	
 </script>
 
-<style>
+<style lang="scss">
+	@import 'uni.scss'
 </style>
