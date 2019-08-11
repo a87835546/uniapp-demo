@@ -1,6 +1,8 @@
 <template>
 	<view class="page">
-		<!-- 系统的下拉刷新会有点显示上的bug在下拉刷新的时候可以滑动视图导致加载的动画覆盖到视图上存在显示上的问题 首页就是可以下拉刷新 -->
+		<!-- 系统的下拉刷新会有点显示上的bug在下拉刷新的时候可以滑动视图导致加载的动画覆盖到视图上存在显示上的问题 首页就是可以下拉刷新  
+			app 上有专有的下拉控件的方法，可以看collectionView 页面。 可以避免上诉的问题。但是由于在添加了pullToRefresh object 可能导致web端的刷新使用不了。
+		-->
 		<!-- 使用方法
 		1.	npm install --save mescroll-uni 
 		2. 	import MescrollUni from "mescroll-uni" 引入组件 MescrollUni;

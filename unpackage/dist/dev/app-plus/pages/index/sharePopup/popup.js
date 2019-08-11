@@ -1,0 +1,2 @@
+setCssToHead(["wx-uni-popup { background-color: #4CD964; width: 100vw; height: 100vw; }\n",],undefined,{path:"./pages/index/sharePopup/popup.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/sharePopup/popup.wxml') } }));

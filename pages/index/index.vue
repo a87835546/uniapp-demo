@@ -66,9 +66,14 @@
 					}
 					,
 					{
-						title:''
+						title:'常用的弹窗使用',
+						url:'./sharePopup/popup'
 					}
 					,
+					{
+						title:'promise 的网络请求',
+						url:'./request/request'
+					}
 					
 					],
 			}

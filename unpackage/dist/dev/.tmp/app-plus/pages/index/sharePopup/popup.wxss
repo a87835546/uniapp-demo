@@ -1,0 +1,7 @@
+
+uni-popup {
+	background-color: #4CD964;
+	width: 100vw;
+	height: 100vw;
+}
+

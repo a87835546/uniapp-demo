@@ -178,12 +178,17 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
 
       {
         title: '九宫格视图',
-        url: './collection-view/collection-view' },
+        url: './collectionView/collectionView' },
 
 
       {
-        title: '' }] };
+        title: '常用的弹窗使用',
+        url: './sharePopup/popup' },
 
+
+      {
+        title: 'promise 的网络请求',
+        url: './request/request' }] };
 
 
 
