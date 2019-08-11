@@ -7,7 +7,12 @@
     "pages/index/scrollView/scrollView",
     "pages/index/swiper/swiper",
     "pages/index/media/media",
-    "pages/index/map/map"
+    "pages/index/map/map",
+    "pages/index/webview/webview",
+    "pages/index/refresh/refresh",
+    "pages/index/collectionView/collectionView",
+    "pages/index/sharePopup/popup",
+    "pages/index/request/request"
   ],
   "subPackages": [],
   "window": {

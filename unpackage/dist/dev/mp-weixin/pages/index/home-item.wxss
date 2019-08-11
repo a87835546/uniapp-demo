@@ -1,6 +1,7 @@
 
 .content.data-v-fade15b8 {
 	width: 100vw;
+	height: 90rpx;
 }
 .item_content.data-v-fade15b8 {
 	-webkit-box-orient: vertical;
@@ -39,6 +40,10 @@
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .item_content_bottom.data-v-fade15b8 {
 	-webkit-box-flex: 0;

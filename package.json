@@ -5,6 +5,8 @@
   "dependencies": {
     "@dcloudio/uni-ui": "^1.0.0",
     "less-loader": "^5.0.0",
+    "mescroll-uni": "^1.1.5",
+    "mescroll.js": "^1.4.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {},

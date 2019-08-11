@@ -10,7 +10,7 @@
 		</view>
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
-			<test></test>
+			<!-- <test></test> -->
 		</view>
 	</view>
 </template>
@@ -26,8 +26,8 @@
 				title: 'Hello',
 				dataList:[
 					{
-						title:"下拉刷新和上来加载更多",
-						url:''
+						title:"下拉刷新的使用（使用自定义组件）",
+						url:'./refresh/refresh'
 					}
 					,
 					{
@@ -56,26 +56,35 @@
 					}
 					,
 					{
-						title:'123'
+						title:'webview使用',
+						url:'./webview/webview'
 					}
 					,
 					{
-						title:''
+						title:'九宫格视图',
+						url:'./collectionView/collectionView'
 					}
 					,
 					{
-						title:''
+						title:'常用的弹窗使用',
+						url:'./sharePopup/popup'
 					}
 					,
+					{
+						title:'promise 的网络请求',
+						url:'./request/request'
+					}
 					
 					],
 			}
 		},
 		onLoad:function(e){
 			console.log('111');
+			// 接受自带的空间点击事件回传
 			this.$on('collapse-item-click',function(valuue){
 				console.log(valuue);
 			})
+			// 设置tabbar 的脚标
 			uni.setTabBarBadge({
 				index:0,
 				text:'100'
@@ -86,8 +95,6 @@
 			uniCollapse,
 			uniCollapseItem,
 			uniBadge,
-			// uniListItem,
-			// uniList,
 			test,
 		},
 		methods: {

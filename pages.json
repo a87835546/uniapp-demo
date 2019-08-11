@@ -60,6 +60,58 @@
 				"navigationBarTitleText": "地图",
 				"enablePullDownRefresh":false
 			}
+		},
+		{
+			"path": "pages/index/webview/webview",
+			"style": {
+				"navigationBarTitleText": "webview使用",
+				"enablePullDownRefresh":false
+			}
+		},
+		{
+			"path": "pages/index/refresh/refresh",
+			"style": {
+				"navigationBarTitleText": "下拉刷新的使用（使用自定义组件）",
+				"enablePullDownRefresh":false,
+				"app-plus" : {
+				"bounce" : "none" 
+				}
+			}
+		},
+		{
+			"path": "pages/index/collectionView/collectionView",
+			"style": {
+				"navigationBarTitleText": "九宫格",
+				"enablePullDownRefresh":false,
+				"app-plus":{
+					"pullToRefresh":{
+						"support": true,
+                        "color": "#ff3333",
+                        "style": "default",
+                        "contentdown": {
+                            "caption": "下拉可刷新自定义文本"
+                        },
+                        "contentover": {
+                            "caption": "释放可刷新自定义文本"
+                        },
+                        "contentrefresh": {
+                            "caption": "正在刷新自定义文本"
+                        }
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/index/sharePopup/popup",
+			"style":{
+				"navigationBarTitleText":"常用的弹窗使用"
+			}
+		},
+		{
+			"path":"pages/index/request/request",
+			"style":{
+				"navigationBarTitleText":"promise的网络请求封装"
+			}
 		}
 	],
 	"globalStyle": {

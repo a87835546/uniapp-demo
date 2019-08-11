@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "uni-icon": "/node-modules/@dcloudio/uni-ui/lib/uni-icon/uni-icon"
+  },
+  "component": true
+}

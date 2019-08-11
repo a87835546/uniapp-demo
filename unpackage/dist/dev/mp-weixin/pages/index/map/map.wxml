@@ -1,0 +1,1 @@
+<view class="page"><map latitude="{{latitude}}" circles="{{circles}}" longitude="{{longitude}}" show-location="{{true}}" markers="{{marks}}" data-event-opts="{{[['markertap',[['click',['$event']]]],['controltap',[['clickMap',['$event']]]]]}}" bindmarkertap="__e" bindcontroltap="__e"></map></view>
