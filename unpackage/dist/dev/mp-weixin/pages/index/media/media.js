@@ -123,6 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 
 {
@@ -151,13 +152,21 @@ var _default =
     getAlbum: function getAlbum() {
       uni.chooseImage({
         complete: function complete(e) {
-          console.log(e);
+          console.log(e.tempFiles[0].path);
+
+
+
+
+
+          this.cameraSrc = e.tempFiles[0].path.blod;
+
+
+
         },
         success: function success(e) {
           console.log(typeof e.tempFilePaths);
-          console.log(JSON.stringify(e.tempFilePaths));
-
-          this.cameraSrc = JSON.stringify(e.tempFilePaths);
+          this.cameraSrc = e.tempFiles[0].path;
+          console.log(this.cameraSrc);
         },
         fail: function fail(err) {
           console.log(err);

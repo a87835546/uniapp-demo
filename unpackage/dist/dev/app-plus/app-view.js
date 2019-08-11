@@ -1496,8 +1496,6 @@ Z([[7],[3,'newitem']])
 Z([[7],[3,'index']])
 Z([[2,'+'],[1,'2-'],[[7],[3,'index']]])
 Z([3,'test'])
-Z(z[1])
-Z([3,'3'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
 function gz$gwx_16(){
@@ -1528,6 +1526,8 @@ Z([3,'primary'])
 Z([3,'调用相册'])
 Z([3,'scaleToFill'])
 Z([3,'cameraSrc'])
+Z([3,'center'])
+Z([3,'_doc/uniapp_temp_1565535185049/camera/photo_001.jpg'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
 }
 function gz$gwx_18(){
@@ -2250,8 +2250,6 @@ bCF.wxXCkey=4
 _2z(z,11,oDF,e,s,gg,bCF,'newitem','index','index')
 var cKF=_n('view')
 _rz(z,cKF,'class',21,e,s,gg)
-var oLF=_mz(z,'test',['bind:__l',22,'vueId',1],[],e,s,gg)
-_(cKF,oLF)
 _(o8E,cKF)
 _(r,o8E)
 return r
@@ -2260,28 +2258,30 @@ e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
 d_[x[15]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var aNF=_n('view')
-_rz(z,aNF,'class',0,e,s,gg)
-var tOF=_mz(z,'map',['bindcontroltap',1,'bindmarkertap',1,'circles',2,'data-event-opts',3,'latitude',4,'longitude',5,'markers',6,'showLocation',7],[],e,s,gg)
-_(aNF,tOF)
-_(r,aNF)
+var lMF=_n('view')
+_rz(z,lMF,'class',0,e,s,gg)
+var aNF=_mz(z,'map',['bindcontroltap',1,'bindmarkertap',1,'circles',2,'data-event-opts',3,'latitude',4,'longitude',5,'markers',6,'showLocation',7],[],e,s,gg)
+_(lMF,aNF)
+_(r,lMF)
 return r
 }
 e_[x[15]]={f:m15,j:[],i:[],ti:[],ic:[]}
 d_[x[16]]={}
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
-var bQF=_n('view')
-_rz(z,bQF,'class',0,e,s,gg)
-var oRF=_mz(z,'image',['mode',1,'src',1],[],e,s,gg)
-_(bQF,oRF)
-var xSF=_mz(z,'button',['bindtap',3,'data-event-opts',1,'type',2],[],e,s,gg)
-var oTF=_oz(z,6,e,s,gg)
-_(xSF,oTF)
-_(bQF,xSF)
-var fUF=_mz(z,'image',['mode',7,'src',1],[],e,s,gg)
-_(bQF,fUF)
-_(r,bQF)
+var ePF=_n('view')
+_rz(z,ePF,'class',0,e,s,gg)
+var bQF=_mz(z,'image',['mode',1,'src',1],[],e,s,gg)
+_(ePF,bQF)
+var oRF=_mz(z,'button',['bindtap',3,'data-event-opts',1,'type',2],[],e,s,gg)
+var xSF=_oz(z,6,e,s,gg)
+_(oRF,xSF)
+_(ePF,oRF)
+var oTF=_mz(z,'image',['mode',7,'src',1],[],e,s,gg)
+_(ePF,oTF)
+var fUF=_mz(z,'image',['mode',9,'src',1],[],e,s,gg)
+_(ePF,fUF)
+_(r,ePF)
 return r
 }
 e_[x[16]]={f:m16,j:[],i:[],ti:[],ic:[]}

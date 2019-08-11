@@ -13,6 +13,7 @@
 		
 		<button type="primary" @click="getAlbum">调用相册</button>
 		<image src="cameraSrc" mode="scaleToFill"></image>
+		<image src="_doc/uniapp_temp_1565535185049/camera/photo_001.jpg" mode="center"></image>
 	</view>
 </template>
 
@@ -44,13 +45,21 @@
 			getAlbum(){
 				uni.chooseImage({
 					complete:function(e){
-						console.log(e);
+						console.log(e.tempFiles[0].path);
+						// #ifdef APP-PLUS
+							this.cameraSrc =e.tempFiles[0].path;
+						
+						// #endif
+						// #ifndef APP-PLUS
+							this.cameraSrc =e.tempFiles[0].path.blod;
+						
+						// #endif
+						
 					},
 					success:function(e){
 						console.log(typeof e.tempFilePaths);
-						console.log(JSON.stringify(e.tempFilePaths));
-
-						this.cameraSrc = JSON.stringify(e.tempFilePaths);
+						this.cameraSrc =e.tempFiles[0].path;
+						console.log(this.cameraSrc);
 					},
 					fail:function(err){
 						console.log(err);

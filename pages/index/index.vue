@@ -10,7 +10,7 @@
 		</view>
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
-			<test></test>
+			<!-- <test></test> -->
 		</view>
 	</view>
 </template>
