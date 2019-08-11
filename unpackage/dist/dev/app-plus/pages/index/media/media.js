@@ -1,0 +1,2 @@
+setCssToHead(["wx-camera { width: 100vw; height: 300px; }\n",],undefined,{path:"./pages/index/media/media.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/media/media.wxml') } }));

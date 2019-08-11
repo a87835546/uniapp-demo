@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "item": "/pages/index/home-item",
+    "uni-collapse": "/node-modules/@dcloudio/uni-ui/lib/uni-collapse/uni-collapse",
+    "uni-collapse-item": "/node-modules/@dcloudio/uni-ui/lib/uni-collapse-item/uni-collapse-item",
+    "uni-badge": "/node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge",
+    "test": "/pages/index/test"
+  }
+}
