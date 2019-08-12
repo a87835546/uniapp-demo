@@ -6,7 +6,7 @@
 		</view>
 		
 		<view class="content_item" v-for="(newitem,index) in dataList" :key='index' @click="clickItem(newitem.url)">
-			<item :title="index" :model="newitem" class="home" ></item>
+			<item :title="index" :model="newitem" class="home" :showBadge="index === 1 ? true : false" ></item>
 		</view>
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
@@ -26,12 +26,12 @@
 				title: 'Hello',
 				dataList:[
 					{
-						title:"下拉刷新的使用（使用自定义组件）",
+						title:"下拉刷新的使用（自定义和系统组件）",
 						url:'./refresh/refresh'
 					}
 					,
 					{
-						title:'折叠效果',
+						title:'折叠效果 和badge使用',
 						url:'./collapse/collapse'
 					}
 					,
@@ -66,7 +66,7 @@
 					}
 					,
 					{
-						title:'常用的弹窗使用',
+						title:'常用的弹窗和分享',
 						url:'./sharePopup/popup'
 					}
 					,

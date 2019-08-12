@@ -12,8 +12,9 @@
 		<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565331684237&di=4de25ba32db03088d18736a1c36cf28c&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fa5c27d1ed21b0ef4a1b6b7eaddc451da81cb3e23.jpg" mode="aspectFit"></image>
 		
 		<button type="primary" @click="getAlbum">调用相册</button>
-		<image src="cameraSrc" mode="scaleToFill"></image>
-		<image src="_doc/uniapp_temp_1565535185049/camera/photo_001.jpg" mode="center"></image>
+		<img :src="cameraSrc" mode="center" @error="err"></img>
+		<image :src="cameraSrc" mode="center" @error="err"></image>
+
 	</view>
 </template>
 
@@ -23,7 +24,10 @@
 		data(){
 			return {
 				src:'',
-				cameraSrc:''
+				cameraSrc:{
+					type:String,
+					default:''
+				}
 			}
 		},
 		components:{
@@ -42,29 +46,27 @@
 					}
 				})
 			},
+			
 			getAlbum(){
+				console.log(this);
 				uni.chooseImage({
 					complete:function(e){
-						console.log(e.tempFiles[0].path);
-						// #ifdef APP-PLUS
-							this.cameraSrc =e.tempFiles[0].path;
-						
-						// #endif
-						// #ifndef APP-PLUS
-							this.cameraSrc =e.tempFiles[0].path.blod;
-						
-						// #endif
-						
+						console.log(this);
 					},
-					success:function(e){
-						console.log(typeof e.tempFilePaths);
-						this.cameraSrc =e.tempFiles[0].path;
-						console.log(this.cameraSrc);
+					// 常用的bug 此时赋值需要用箭头函数，如果不用箭头函数，会访问不到cameraSrc 会报undefined
+					// 需要知道this的指向问题。 上面comlete中的this，就会指向这个函数。
+					success:(e)=>{
+						this.cameraSrc =e.tempFilePaths[0];
+						console.log(this);
 					},
+					
 					fail:function(err){
 						console.log(err);
 					}
 				})
+			},
+			err(e){
+				console.log(e);
 			}
 		}
 	}
@@ -74,5 +76,8 @@
 	camera {
 		width: 100vw;
 		height: 300px;
+	}
+	image {
+		width: 100vw;
 	}
 </style>
