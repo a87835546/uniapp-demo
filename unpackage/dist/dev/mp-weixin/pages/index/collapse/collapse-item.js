@@ -142,7 +142,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   methods: {
     clickItem: function clickItem(index) {
-      alert('点击' + index);
+      // alert('点击' + index)
       this.$emit('collapse-item-click', index);
 
     } } };exports.default = _default2;

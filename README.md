@@ -6,3 +6,5 @@
 	2. 在使用uni-ui的ui控件时，要以对象的角度去看，注意它的ui组件都是封装过后的，你可能使用原有的方法会不生效.例如input标签的.focus()
 	3. uni-ui 的 uni-list/uni-list-item 列表控件是不支持v-for指令。所以在使用非固定的列表时需要使用自定义控件
 	4. scroll-view
+
+## ![](/static/1.jpeg)

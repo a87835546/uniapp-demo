@@ -7,6 +7,7 @@
 					<text class="item_content_title">主标题:{{model.title}}</text>
 					<text class="item_content_desc">副标题:{{title}}</text>
 				</view>
+				<uni-badge v-if="showBadge"  text="10" type="primary"></uni-badge>
 				<uni-icon type="arrowright" class = "item_content_top_right" size="20"></uni-icon>
 			</view>
 			<view class="item_content_bottom">
@@ -16,10 +17,11 @@
 </template>
 
 <script>
-	import {uniIcon} from '@dcloudio/uni-ui'
+	import {uniIcon,uniBadge} from '@dcloudio/uni-ui'
 	export default {
 		components:{
-			uniIcon
+			uniIcon,
+			uniBadge
 		},
 		props:{
 			title:{
@@ -33,6 +35,11 @@
 						
 					}
 				}
+			},
+			// 是否显示 badge 
+			showBadge:{
+				type:Boolean,
+				default:false
 			}
 		},
 		data(){
