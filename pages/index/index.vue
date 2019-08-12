@@ -6,7 +6,7 @@
 		</view>
 		
 		<view class="content_item" v-for="(newitem,index) in dataList" :key='index' @click="clickItem(newitem.url)">
-			<item :title="index" :model="newitem" class="home" :showBadge="index === 1 ? true : false" ></item>
+			<item :title="index" :model="newitem" class="home" ></item>
 		</view>
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
@@ -26,12 +26,12 @@
 				title: 'Hello',
 				dataList:[
 					{
-						title:"下拉刷新的使用（自定义和系统组件）",
+						title:"下拉刷新的使用（使用自定义组件）",
 						url:'./refresh/refresh'
 					}
 					,
 					{
-						title:'折叠效果 和badge使用',
+						title:'折叠效果',
 						url:'./collapse/collapse'
 					}
 					,
@@ -66,7 +66,7 @@
 					}
 					,
 					{
-						title:'常用的弹窗和分享',
+						title:'常用的弹窗使用',
 						url:'./sharePopup/popup'
 					}
 					,
@@ -87,7 +87,7 @@
 			// 设置tabbar 的脚标
 			uni.setTabBarBadge({
 				index:0,
-				text:'10'
+				text:'100'
 			})
 		},
 		components:{
@@ -123,7 +123,7 @@
 	}
 </script>
 
-<style scoped lang="less">
+<style>
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -167,8 +167,7 @@
 	uni-list-item {
 		width: 100vw;
 	}
-	.content /deep/ .uni-tabbar .uni-tabbar__reddot {
-		left: 26px;
-		background-color: aqua
+	.uni-tabbar__badge {
+		background-color: #007AFF;
 	}
 </style>

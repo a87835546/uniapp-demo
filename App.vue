@@ -14,10 +14,4 @@
 
 <style>
 	/*每个页面公共css */
-	
-	/*此时修改badge 但是只能在web端生效 */
-	uni-tabbar  .uni-tabbar__reddot {
-		left: 20px;
-		background-color: aqua
-	}
 </style>

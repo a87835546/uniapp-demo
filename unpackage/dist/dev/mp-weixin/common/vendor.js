@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
 /***/ 0:
-/*!************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js ***!
-  \************************************************************/
+/*!***********************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1496,23 +1496,6 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
-/***/ 102:
-/*!*********************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Frequest%2Frequest"} ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _request = _interopRequireDefault(__webpack_require__(/*! ./pages/index/request/request.vue */ 103));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_request.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
 /***/ 11:
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -1621,9 +1604,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 12:
-/*!*******************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/pages/utils/httpRequest.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/pages/utils/httpRequest.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1660,9 +1643,9 @@ function httpRequest(path, params, method, headers) {
 /***/ }),
 
 /***/ 13:
-/*!*********************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \*********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1676,10 +1659,10 @@ createPage(_index.default);
 
 /***/ }),
 
-/***/ 169:
-/*!**********************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/node_modules/mescroll-uni/mescroll-uni.js ***!
-  \**********************************************************************************************/
+/***/ 148:
+/*!*********************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/node_modules/mescroll-uni/mescroll-uni.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2428,10 +2411,10 @@ MeScroll.prototype.setBounce = function (isBounce) {
 
 /***/ }),
 
-/***/ 170:
-/*!*****************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/node_modules/mescroll-uni/mescroll-uni-option.js ***!
-  \*****************************************************************************************************/
+/***/ 149:
+/*!****************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/node_modules/mescroll-uni/mescroll-uni-option.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2467,6 +2450,40 @@ var GlobalOption = {
 
 
 GlobalOption;exports.default = _default;
+
+/***/ }),
+
+/***/ 177:
+/*!**********************************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2FcollectionView%2FcollectionView"} ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _collectionView = _interopRequireDefault(__webpack_require__(/*! ./pages/index/collectionView/collectionView.vue */ 178));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_collectionView.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 199:
+/*!*********************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2FsharePopup%2Fpopup"} ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _popup = _interopRequireDefault(__webpack_require__(/*! ./pages/index/sharePopup/popup.vue */ 200));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_popup.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
@@ -8420,9 +8437,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 21:
-/*!*******************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Fmine%2Fmine"} ***!
-  \*******************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Fmine%2Fmine"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8436,10 +8453,155 @@ createPage(_mine.default);
 
 /***/ }),
 
+/***/ 216:
+/*!*************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/pages/common/share.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function shareFn(shareInfo, drawList, callback) {
+  //以下为计算菜单的nview绘制布局，为固定算法，使用者无关关心
+  var screenWidth = plus.screen.resolutionWidth;
+  //以360px宽度屏幕为例，上下左右边距及2排按钮边距留25像素，图标宽度55像素，同行图标间的间距在360宽的屏幕是30px，但需要动态计算，以此原则计算4列图标分别的left位置
+  //图标下的按钮文字距离图标5像素，文字大小12像素
+  //底部取消按钮高度固定为44px
+  //TODO 未处理横屏和pad，这些情况6个图标应该一排即可
+  var marginTop = 25, //上间距
+  marginLeft = 25, //左间距
+  iconWidth = 55, //图标宽宽
+  iconHeight = 55, //图标高度
+  icontextSpace = 10, //图标与文字间距
+  textHeight = 12; //文字大小
+  var left1 = marginLeft / 360 * screenWidth;
+  var colNumber = Math.floor(screenWidth / (iconWidth + marginLeft));
+  var i = (screenWidth - (iconWidth + marginLeft) * colNumber - marginLeft) / (colNumber + 1);
+  var initMargin = marginLeft + i;
+  var itemWidth = iconWidth + initMargin;
+  var itemHeight = iconHeight + icontextSpace + textHeight + marginTop;
+  var textTop = iconHeight + icontextSpace;
+  var alphaBg = new plus.nativeObj.View("alphaBg", { //先创建遮罩层
+    top: '0px',
+    left: '0px',
+    height: '100%',
+    width: '100%',
+    backgroundColor: 'rgba(0,0,0,0.5)' });
+
+  alphaBg.addEventListener("click", function () {//处理遮罩层点击
+    alphaBg.hide();
+    shareMenu.hide();
+  });
+  var shareMenu = new plus.nativeObj.View("shareMenu", { //创建底部图标菜单
+    bottom: '0px',
+    left: '0px',
+    height: Math.ceil(drawList.length / colNumber) * itemHeight + marginTop + 44 + 1 + 'px',
+    width: '100%',
+    backgroundColor: 'rgb(255,255,255)' });
+
+  //绘制底部图标菜单的内容
+  shareMenu.draw([
+  {
+    tag: 'rect', //菜单顶部的分割灰线
+    color: '#e7e7e7',
+    position: {
+      top: '0px',
+      height: '1px' } },
+
+
+  {
+    tag: 'font',
+    id: 'sharecancel', //底部取消按钮的文字
+    text: '取消分享',
+    textStyles: {
+      size: '14px' },
+
+    position: {
+      bottom: '0px',
+      height: '44px' } },
+
+
+  {
+    tag: 'rect', //底部取消按钮的顶部边线
+    color: '#e7e7e7',
+    position: {
+      bottom: '45px',
+      height: '1px' } }]);
+
+
+
+  drawList.map(function (v, k) {
+    var time = new Date().getTime();
+    var row = Math.floor(k / colNumber);
+    var col = k % colNumber;
+    var item = [{
+      src: v.icon,
+      id: Math.random() * 1000 + time,
+      tag: "img",
+      position: {
+        top: row * itemHeight + marginTop,
+        left: col * itemWidth + initMargin,
+        width: iconWidth,
+        height: iconWidth } },
+
+    {
+      text: v.text,
+      id: Math.random() * 1000 + time,
+      tag: "font",
+      textStyles: {
+        size: textHeight },
+
+      position: {
+        top: row * itemHeight + textTop,
+        left: col * itemWidth + initMargin,
+        width: iconWidth,
+        height: iconWidth } }];
+
+
+    shareMenu.draw(item);
+  });
+  shareMenu.addEventListener("click", function (e) {//处理底部图标菜单的点击事件，根据点击位置触发不同的逻辑
+    if (e.screenY > plus.screen.resolutionHeight - 44) {//点击了底部取消按钮
+      alphaBg.hide();
+      shareMenu.hide();
+    } else if (e.clientX < 5 || e.clientX > screenWidth - 5 || e.clientY < 5) {
+      //屏幕左右边缘5像素及菜单顶部5像素不处理点击
+    } else {//点击了图标按钮
+      var x = e.clientX;
+      var y = e.clientY;
+      var colIdx = Math.floor(x / itemWidth);
+      var rowIdx = Math.floor(y / itemHeight);
+      var tapIndex = colIdx + rowIdx * colNumber;
+      callback && callback(tapIndex);
+    }
+  });
+  return { alphaBg: alphaBg, shareMenu: shareMenu };
+};var _default =
+shareFn;exports.default = _default;
+
+/***/ }),
+
+/***/ 217:
+/*!********************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Frequest%2Frequest"} ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _request = _interopRequireDefault(__webpack_require__(/*! ./pages/index/request/request.vue */ 218));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_request.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
 /***/ 29:
-/*!****************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Fmine%2Fmessage%2Fmsg"} ***!
-  \****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Fmine%2Fmessage%2Fmsg"} ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8485,9 +8647,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 35:
-/*!***********************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fcollapse%2Fcollapse"} ***!
-  \***********************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fcollapse%2Fcollapse"} ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8502,9 +8664,9 @@ createPage(_collapse.default);
 /***/ }),
 
 /***/ 4:
-/*!***************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/pages.json ***!
-  \***************************************************************/
+/*!**************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/pages.json ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8514,9 +8676,9 @@ createPage(_collapse.default);
 /***/ }),
 
 /***/ 41:
-/*!***************************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2FscrollView%2FscrollView"} ***!
-  \***************************************************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2FscrollView%2FscrollView"} ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8531,9 +8693,9 @@ createPage(_scrollView.default);
 /***/ }),
 
 /***/ 49:
-/*!*******************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fswiper%2Fswiper"} ***!
-  \*******************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fswiper%2Fswiper"} ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9499,9 +9661,9 @@ var index_esm = {
 /***/ }),
 
 /***/ 57:
-/*!*****************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fmedia%2Fmedia"} ***!
-  \*****************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fmedia%2Fmedia"} ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9516,9 +9678,9 @@ createPage(_media.default);
 /***/ }),
 
 /***/ 65:
-/*!*************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fmap%2Fmap"} ***!
-  \*************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fmap%2Fmap"} ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9533,9 +9695,9 @@ createPage(_map.default);
 /***/ }),
 
 /***/ 73:
-/*!*********************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fwebview%2Fwebview"} ***!
-  \*********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Fwebview%2Fwebview"} ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9550,9 +9712,9 @@ createPage(_webview.default);
 /***/ }),
 
 /***/ 79:
-/*!*********************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Frefresh%2Frefresh"} ***!
-  \*********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** /Users/yanchen/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2Frefresh%2Frefresh"} ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9563,168 +9725,6 @@ var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
 var _refresh = _interopRequireDefault(__webpack_require__(/*! ./pages/index/refresh/refresh.vue */ 80));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_refresh.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 87:
-/*!***********************************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2FcollectionView%2FcollectionView"} ***!
-  \***********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _collectionView = _interopRequireDefault(__webpack_require__(/*! ./pages/index/collectionView/collectionView.vue */ 88));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_collectionView.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 93:
-/*!**********************************************************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/main.js?{"page":"pages%2Findex%2FsharePopup%2Fpopup"} ***!
-  \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _popup = _interopRequireDefault(__webpack_require__(/*! ./pages/index/sharePopup/popup.vue */ 94));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_popup.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
-/***/ }),
-
-/***/ 99:
-/*!********************************************************************!*\
-  !*** /Users/yancheng/Documents/GitHub/uniapp-demo/common/share.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function shareFn(shareInfo, drawList, callback) {
-  //以下为计算菜单的nview绘制布局，为固定算法，使用者无关关心
-  var screenWidth = plus.screen.resolutionWidth;
-  //以360px宽度屏幕为例，上下左右边距及2排按钮边距留25像素，图标宽度55像素，同行图标间的间距在360宽的屏幕是30px，但需要动态计算，以此原则计算4列图标分别的left位置
-  //图标下的按钮文字距离图标5像素，文字大小12像素
-  //底部取消按钮高度固定为44px
-  //TODO 未处理横屏和pad，这些情况6个图标应该一排即可
-  var marginTop = 25, //上间距
-  marginLeft = 25, //左间距
-  iconWidth = 55, //图标宽宽
-  iconHeight = 55, //图标高度
-  icontextSpace = 10, //图标与文字间距
-  textHeight = 12; //文字大小
-  var left1 = marginLeft / 360 * screenWidth;
-  var colNumber = Math.floor(screenWidth / (iconWidth + marginLeft));
-  var i = (screenWidth - (iconWidth + marginLeft) * colNumber - marginLeft) / (colNumber + 1);
-  var initMargin = marginLeft + i;
-  var itemWidth = iconWidth + initMargin;
-  var itemHeight = iconHeight + icontextSpace + textHeight + marginTop;
-  var textTop = iconHeight + icontextSpace;
-  var alphaBg = new plus.nativeObj.View("alphaBg", { //先创建遮罩层
-    top: '0px',
-    left: '0px',
-    height: '100%',
-    width: '100%',
-    backgroundColor: 'rgba(0,0,0,0.5)' });
-
-  alphaBg.addEventListener("click", function () {//处理遮罩层点击
-    alphaBg.hide();
-    shareMenu.hide();
-  });
-  var shareMenu = new plus.nativeObj.View("shareMenu", { //创建底部图标菜单
-    bottom: '0px',
-    left: '0px',
-    height: Math.ceil(drawList.length / colNumber) * itemHeight + marginTop + 44 + 1 + 'px',
-    width: '100%',
-    backgroundColor: 'rgb(255,255,255)' });
-
-  //绘制底部图标菜单的内容
-  shareMenu.draw([
-  {
-    tag: 'rect', //菜单顶部的分割灰线
-    color: '#e7e7e7',
-    position: {
-      top: '0px',
-      height: '1px' } },
-
-
-  {
-    tag: 'font',
-    id: 'sharecancel', //底部取消按钮的文字
-    text: '取消分享',
-    textStyles: {
-      size: '14px' },
-
-    position: {
-      bottom: '0px',
-      height: '44px' } },
-
-
-  {
-    tag: 'rect', //底部取消按钮的顶部边线
-    color: '#e7e7e7',
-    position: {
-      bottom: '45px',
-      height: '1px' } }]);
-
-
-
-  drawList.map(function (v, k) {
-    var time = new Date().getTime();
-    var row = Math.floor(k / colNumber);
-    var col = k % colNumber;
-    var item = [{
-      src: v.icon,
-      id: Math.random() * 1000 + time,
-      tag: "img",
-      position: {
-        top: row * itemHeight + marginTop,
-        left: col * itemWidth + initMargin,
-        width: iconWidth,
-        height: iconWidth } },
-
-    {
-      text: v.text,
-      id: Math.random() * 1000 + time,
-      tag: "font",
-      textStyles: {
-        size: textHeight },
-
-      position: {
-        top: row * itemHeight + textTop,
-        left: col * itemWidth + initMargin,
-        width: iconWidth,
-        height: iconWidth } }];
-
-
-    shareMenu.draw(item);
-  });
-  shareMenu.addEventListener("click", function (e) {//处理底部图标菜单的点击事件，根据点击位置触发不同的逻辑
-    if (e.screenY > plus.screen.resolutionHeight - 44) {//点击了底部取消按钮
-      alphaBg.hide();
-      shareMenu.hide();
-    } else if (e.clientX < 5 || e.clientX > screenWidth - 5 || e.clientY < 5) {
-      //屏幕左右边缘5像素及菜单顶部5像素不处理点击
-    } else {//点击了图标按钮
-      var x = e.clientX;
-      var y = e.clientY;
-      var colIdx = Math.floor(x / itemWidth);
-      var rowIdx = Math.floor(y / itemHeight);
-      var tapIndex = colIdx + rowIdx * colNumber;
-      callback && callback(tapIndex);
-    }
-  });
-  return { alphaBg: alphaBg, shareMenu: shareMenu };
-};var _default =
-shareFn;exports.default = _default;
 
 /***/ })
 
