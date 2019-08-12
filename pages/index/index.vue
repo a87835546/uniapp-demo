@@ -87,7 +87,7 @@
 			// 设置tabbar 的脚标
 			uni.setTabBarBadge({
 				index:0,
-				text:'100'
+				text:'10'
 			})
 		},
 		components:{
@@ -123,7 +123,7 @@
 	}
 </script>
 
-<style>
+<style scoped lang="less">
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -167,7 +167,8 @@
 	uni-list-item {
 		width: 100vw;
 	}
-	.uni-tabbar__badge {
-		background-color: #007AFF;
+	.content /deep/ .uni-tabbar .uni-tabbar__reddot {
+		left: 26px;
+		background-color: aqua
 	}
 </style>
