@@ -1480,29 +1480,30 @@ function gz$gwx_15(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
 __WXML_GLOBAL__.ops_cached.$gwx_15=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'content'])
+Z([3,'content data-v-6ac22908'])
 Z([3,'__l'])
+Z([3,'data-v-6ac22908'])
 Z([3,'1'])
-Z(z[2])
+Z(z[3])
 Z([3,'__e'])
-Z([3,'text-area'])
+Z([3,'text-area data-v-6ac22908'])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[1,'test']]]]]]]]])
-Z([3,'title'])
+Z([3,'title data-v-6ac22908'])
 Z([a,[[7],[3,'title']]])
 Z([3,'index'])
 Z([3,'newitem'])
 Z([[7],[3,'dataList']])
-Z(z[9])
-Z(z[4])
-Z([3,'content_item'])
+Z(z[10])
+Z(z[5])
+Z([3,'content_item data-v-6ac22908'])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[[5],[1,'clickItem']],[[4],[[5],[1,'$0']]]],[[4],[[5],[[4],[[5],[[4],[[5],[[5],[[5],[[5],[1,'dataList']],[1,'']],[[7],[3,'index']]],[1,'url']]]]]]]]]]]]]]])
 Z(z[1])
-Z([3,'home'])
+Z([3,'home data-v-6ac22908'])
 Z([[7],[3,'newitem']])
 Z([[2,'?:'],[[2,'==='],[[7],[3,'index']],[1,1]],[1,true],[1,false]])
 Z([[7],[3,'index']])
 Z([[2,'+'],[1,'2-'],[[7],[3,'index']]])
-Z([3,'test'])
+Z([3,'test data-v-6ac22908'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
 function gz$gwx_16(){
@@ -2248,28 +2249,28 @@ var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
 var a0E=_n('view')
 _rz(z,a0E,'class',0,e,s,gg)
-var tAF=_mz(z,'uni-badge',['type',-1,'bind:__l',1,'text',1,'vueId',2],[],e,s,gg)
+var tAF=_mz(z,'uni-badge',['type',-1,'bind:__l',1,'class',1,'text',2,'vueId',3],[],e,s,gg)
 _(a0E,tAF)
-var eBF=_mz(z,'view',['bindtap',4,'class',1,'data-event-opts',2],[],e,s,gg)
+var eBF=_mz(z,'view',['bindtap',5,'class',1,'data-event-opts',2],[],e,s,gg)
 var bCF=_n('text')
-_rz(z,bCF,'class',7,e,s,gg)
-var oDF=_oz(z,8,e,s,gg)
+_rz(z,bCF,'class',8,e,s,gg)
+var oDF=_oz(z,9,e,s,gg)
 _(bCF,oDF)
 _(eBF,bCF)
 _(a0E,eBF)
 var xEF=_v()
 _(a0E,xEF)
 var oFF=function(cHF,fGF,hIF,gg){
-var cKF=_mz(z,'view',['bindtap',13,'class',1,'data-event-opts',2],[],cHF,fGF,gg)
-var oLF=_mz(z,'item',['bind:__l',16,'class',1,'model',2,'showBadge',3,'title',4,'vueId',5],[],cHF,fGF,gg)
+var cKF=_mz(z,'view',['bindtap',14,'class',1,'data-event-opts',2],[],cHF,fGF,gg)
+var oLF=_mz(z,'item',['bind:__l',17,'class',1,'model',2,'showBadge',3,'title',4,'vueId',5],[],cHF,fGF,gg)
 _(cKF,oLF)
 _(hIF,cKF)
 return hIF
 }
 xEF.wxXCkey=4
-_2z(z,11,oFF,e,s,gg,xEF,'newitem','index','index')
+_2z(z,12,oFF,e,s,gg,xEF,'newitem','index','index')
 var lMF=_n('view')
-_rz(z,lMF,'class',22,e,s,gg)
+_rz(z,lMF,'class',23,e,s,gg)
 _(a0E,lMF)
 _(r,a0E)
 return r
@@ -2571,7 +2572,7 @@ var setCssToHead = function(file, _xcInvalid, info) {
 var Ca = {};
 var css_id;
 var info = info || {};
-var _C= [[[2,1],],[],];
+var _C= [[[2,1],],["wx-uni-tabbar .",[1],"uni-tabbar__reddot { left: 20px; background-color: aqua }\n",],];
 function makeup(file, opt) {
 var _n = typeof(file) === "number";
 if ( _n && Ca.hasOwnProperty(file)) return "";
@@ -2682,7 +2683,7 @@ __wxAppCode__['pages/index/collectionView/collectionView.wxml']=$gwx('./pages/in
 __wxAppCode__['pages/index/home-item.wxss']=setCssToHead([".",[1],"content.",[1],"data-v-d8f8152a { width: 100vw; height: ",[0,90],"; }\n.",[1],"item_content.",[1],"data-v-d8f8152a { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100vw; padding: 0 ",[0,10]," 0 ",[0,10],"; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; overflow: hidden; }\n.",[1],"item_content_top.",[1],"data-v-d8f8152a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"item_content_bottom.",[1],"data-v-d8f8152a { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; height: ",[0,1],"; background-color: #F1F1F1; margin: 0 ",[0,10],"; }\n.",[1],"item_content_top_left.",[1],"data-v-d8f8152a { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; }\n.",[1],"item_content_top_right.",[1],"data-v-d8f8152a { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; }\n.",[1],"item_content_contair.",[1],"data-v-d8f8152a { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; margin: 0 ",[0,10],"; }\n.",[1],"item_content_title.",[1],"data-v-d8f8152a { display: block; color: black; font-size: 14px; }\n.",[1],"item_content_desc.",[1],"data-v-d8f8152a { color: #C0C0C0; font-size: 12px; }\n",],undefined,{path:"./pages/index/home-item.wxss"});    
 __wxAppCode__['pages/index/home-item.wxml']=$gwx('./pages/index/home-item.wxml');
 
-__wxAppCode__['pages/index/index.wxss']=setCssToHead([".",[1],"content { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"logo { height: ",[0,200],"; width: ",[0,200],"; margin-top: ",[0,200],"; margin-left: auto; margin-right: auto; margin-bottom: ",[0,50],"; }\n.",[1],"text-area { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"title { font-size: ",[0,36],"; color: #8f8f94; }\n.",[1],"content_item { width: 100vw; }\n.",[1],"home { border-bottom: ",[0,1]," solid #fff; }\n.",[1],"collapse { width: 100vw; }\nwx-uni-collapse-item { height: 100%; width: 100vw; }\nwx-uni-list-item { width: 100vw; }\n.",[1],"uni-tabbar__badge { background-color: #007AFF; }\n",],undefined,{path:"./pages/index/index.wxss"});    
+__wxAppCode__['pages/index/index.wxss']=setCssToHead([".",[1],"content.",[1],"data-v-6ac22908 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"logo.",[1],"data-v-6ac22908 { height: ",[0,200],"; width: ",[0,200],"; margin-top: ",[0,200],"; margin-left: auto; margin-right: auto; margin-bottom: ",[0,50],"; }\n.",[1],"text-area.",[1],"data-v-6ac22908 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"title.",[1],"data-v-6ac22908 { font-size: ",[0,36],"; color: #8f8f94; }\n.",[1],"content_item.",[1],"data-v-6ac22908 { width: 100vw; }\n.",[1],"home.",[1],"data-v-6ac22908 { border-bottom: ",[0,1]," solid #fff; }\n.",[1],"collapse.",[1],"data-v-6ac22908 { width: 100vw; }\nwx-uni-collapse-item.",[1],"data-v-6ac22908 { height: 100%; width: 100vw; }\nwx-uni-list-item.",[1],"data-v-6ac22908 { width: 100vw; }\n.",[1],"content.",[1],"data-v-6ac22908 .",[1],"uni-tabbar .",[1],"uni-tabbar__reddot { left: 26px; background-color: aqua; }\n",],undefined,{path:"./pages/index/index.wxss"});    
 __wxAppCode__['pages/index/index.wxml']=$gwx('./pages/index/index.wxml');
 
 __wxAppCode__['pages/index/map/map.wxss']=setCssToHead(["wx-map { width: ",[0,750],"; height: ",[0,750],"; }\nwx-button { z-index: 9999; }\n",],undefined,{path:"./pages/index/map/map.wxss"});    
