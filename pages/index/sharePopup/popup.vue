@@ -17,7 +17,7 @@
 
 <script>
 	import { uniPopup } from '@dcloudio/uni-ui'
-	import share from '../../common/share.js'
+	import share from '../../../common/share.js'
 	export default {
 		data() {
 			return {
@@ -87,6 +87,17 @@
 							console.log("fail:" + JSON.stringify(err));
 						}
 					};
+					uni.share({
+						provider:'weixin',
+						scene:"WXSceneSession",
+						type:0,//0 图文	 1 纯文字	2 纯图片	
+						success:(res)=>{
+							console.log("success:" + JSON.stringify(res));
+						},
+						fail:(err)=>{
+							console.log("fail:" + JSON.stringify(err));
+						}
+					})
 				});
 				this.$nextTick(()=>{
 					this.shareObj.alphaBg.show();

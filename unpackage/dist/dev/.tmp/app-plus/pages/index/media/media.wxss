@@ -3,4 +3,7 @@ camera {
 	width: 100vw;
 	height: 300px;
 }
+image {
+	width: 100vw;
+}
 
