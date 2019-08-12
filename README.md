@@ -7,4 +7,4 @@
 	3. uni-ui 的 uni-list/uni-list-item 列表控件是不支持v-for指令。所以在使用非固定的列表时需要使用自定义控件
 	4. scroll-view
 
-## ![](README_files/1.jpeg)
+## ![](/static/1.jpeg)
