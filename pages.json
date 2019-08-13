@@ -156,6 +156,12 @@
 				// 不需要导航栏
 				"navigationStyle":"custom"  
 			}
+		},
+		{
+			"path":"pages/project/checkin/checkin",
+			"style" : {
+				"navigationBarTitleText": "签到"
+			}
 		}
 	    ,{
             "path" : "pages/index/switchbar/switchBarAndList/switchBarAndList",
