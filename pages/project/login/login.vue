@@ -1,17 +1,45 @@
 <template>
     <view class="container">
 		<image class="login-img" src="../../../static/img_login_logo.png"></image>
-		<input placeholder="请输入账号" />
-		<input placeholder="请输入密码" password="true" />
-		<button @click="onLoginButtonClick()">登录</button>
+		<input v-model="account" placeholder="请输入账号" />
+		<input v-model="password" placeholder="请输入密码" password="true" />
+		<button
+		:disabled="buttonDisable"
+		@click="onLoginButtonClick()">
+		 登录
+		</button>
 	</view>
 </template>
 
 <script>
 export default {
+	data() {
+		return {
+			buttonDisable: true,
+			account: "",
+			password: ""
+		}
+	},
     methods: {
 		onLoginButtonClick() {
 			console.log("on login button click");
+			uni.showLoading({
+				title: '登录中...'
+			});
+			setTimeout(function(){
+				uni.hideLoading();
+			}, 3000)
+		},
+		checkButtonEnable() {
+			return this.$data.account.length > 4 && this.$data.password.length > 6;
+		}
+	},
+	watch: {
+		account: function(newValue) {
+			this.$data.buttonDisable = !this.checkButtonEnable();
+		},
+		password: function() {
+			this.$data.buttonDisable = !this.checkButtonEnable();
 		}
 	}
 }
