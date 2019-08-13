@@ -27,9 +27,9 @@ export default {
 	}
 	
 	.login-img {
+		width: 100px;
+		height: 100px;
 		margin-top: 20%;
-		width: 62vw;
-		height: 21vw;
 		margin-bottom: 30px;
 	}
 	
