@@ -5,7 +5,7 @@
 				<uni-icon type="contact" class = "item_content_top_left" size="25"></uni-icon>
 				<view class="item_content_contair">
 					<text class="item_content_title">主标题:{{model.title}}</text>
-					<text class="item_content_desc">副标题:{{title}}</text>
+					<text class="item_content_desc">副标题:{{model.subtitle ? model.subtitle : title}}</text>
 				</view>
 				<uni-badge v-if="showBadge"  text="10" type="primary"></uni-badge>
 				<uni-icon type="arrowright" class = "item_content_top_right" size="20"></uni-icon>
