@@ -1,5 +1,6 @@
 <template>
 	<view class="content">
+		<view>页面传参演示</view>
 		<view class="mine_item" v-for="(item,index) in dataList" :key="index">
 			<view class="mine_item_content"  @click="clickItem(index)">
 				<image class="item_image" src="../../static/logo.png" mode="center"></image>
@@ -32,7 +33,7 @@
 		},
 		methods:{
 			clickItem(index){
-				console.log(index);
+				console.log('传过去的值:', index);
 				uni.navigateTo({
 					url: '/pages/mine/message/msg?id='+index + '&title='+this.dataList[index].title,
 					success: res => {},
@@ -41,11 +42,6 @@
 
 					}
 				});
-				this.get('https://www.baidu.com').then(result=>{
-					console.log(result);
-				}).catch(e=>{
-					console.log(e);
-				})
 			}
 		},
 		onPullDownRefresh: () => {
