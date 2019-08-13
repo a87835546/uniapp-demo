@@ -28,5 +28,6 @@
 <style>
   .color {
 	  background-color: red;
+	  
   }
 </style>
