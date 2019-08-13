@@ -35,7 +35,7 @@
 		},
 		methods:{
 			clickItem(index){
-				alert('点击' + index)
+				// alert('点击' + index)
 				this.$emit('collapse-item-click',index)
 
 			}
