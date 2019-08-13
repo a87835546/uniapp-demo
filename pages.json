@@ -170,8 +170,8 @@
 			},
 			{
 				"pagePath": "pages/project/index/index",
-				"iconPath": "static/tab_mine@2x.png",
-				"selectedIconPath": "static/tab_mine_select@2x.png",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
 				"text": "项目模板"
 			}
 		]

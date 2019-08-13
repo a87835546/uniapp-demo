@@ -28,8 +28,7 @@
 </template>
 
 <script>
-	import UniGrid from "../../../components/uni-grid/uni-grid.vue"
-	import UniGridItem from "../../../components/uni-grid-item/uni-grid-item.vue"
+	import {UniGrid,UniGridItem} from '@dcloudio/uni-ui'
 	import moduleList from "./module-data.js"
 
 	export default {
