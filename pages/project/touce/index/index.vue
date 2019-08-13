@@ -1,24 +1,28 @@
 // 首页列表，主要知识点为网格布局和使用字体图标
 <template>
 	<view class="content">
-		<view class="section">
-			<view class="section-title">
+		<view class="tc-section">
+			<view class="tc-section-title">
 				<text>常用功能</text>
 			</view>
 			<UniGrid class="module-grid" :column=4 @change="onCommonModuleClick">
-				<uni-grid-item v-for="(item,index) in commonModules">
+				<uni-grid-item
+				v-for="(item,index) in commonModules"
+				:key=index>
 					<text class="iconfont" :class="item.iconName"></text>
 					<text class="text">{{item.title}}</text>
 				</uni-grid-item>
 			</UniGrid>
 		</view>
 		<view class="separator"></view>
-		<view class="section">
-			<view class="section-title">
+		<view class="tc-section">
+			<view class="tc-section-title">
 				<text>更多功能</text>
 			</view>
 			<UniGrid class="module-grid" :column=4 @change="onMoreModuleClick">
-				<uni-grid-item v-for="(item,index) in moreModules">
+				<uni-grid-item
+				 v-for="(item,index) in moreModules"
+				 :key="index">
 					<text class="iconfont" :class="item.iconName"></text>
 					<text class="text">{{item.title}}</text>
 				</uni-grid-item>
@@ -78,12 +82,16 @@
 
 <style scoped>
 	@import "../../../../common/css/icon-font.css"
-
-	.section {
+	
+	.content {
 		background: #FFFFFF;
 	}
+	
+	.tc-section {
+		background-color: #FFFFFF;
+	}
 
-	.section-title {
+	.tc-section-title {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -92,15 +100,11 @@
 	}
 
 	.module-grid {
-		margin-top: 20px;
+		width: 100%;
 	}
 
 	.separator {
 		height: 10px;
-		opacity: 0;
-	}
-
-	.content {
-		background: #f6f6f6;
+		background-color: #F6F6F6;
 	}
 </style>
