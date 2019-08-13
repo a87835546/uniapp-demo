@@ -116,30 +116,36 @@
 		{
 			"path": "pages/project/index/index",
 			"style": {
-				"navigationBarTitleText": "投策hybird"
+				"navigationBarTitleText": "项目模板"
 			}
 		},
 		{
-			"path": "pages/project/competive-product/competive-product",
+			"path": "pages/project/touce/index/index",
+			"style": {
+				"navigationBarTitleText": "投策神器"
+			}
+		},
+		{
+			"path": "pages/project/touce/competive-product/competive-product",
 			"style": {
 				"navigationBarTitleText":"竞品清单",
 				"enablePullDownRefresh":true
 			}
 		},
 		{
-			"path":"pages/project/invest-institution/invest-institution",
+			"path":"pages/project/touce/invest-institution/invest-institution",
 			"style": {
 				"navigationBarTitleText":"投资制度"
 			}
 		},
 		{
-			"path":"pages/project/message-center/message-center",
+			"path":"pages/project/touce/message-center/message-center",
 			"style": {
 				"navigationBarTitleText": "消息通知"
 			}
 		},
 		{
-		    "path" : "pages/project/land/land-detail",
+		    "path" : "pages/project/touce/land/land-detail",
 		    "style" : {
 				"navigationBarTitleText": "地块详情"
 			}
@@ -170,8 +176,8 @@
 			},
 			{
 				"pagePath": "pages/project/index/index",
-				"iconPath": "static/tab_mine@2x.png",
-				"selectedIconPath": "static/tab_mine_select@2x.png",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
 				"text": "项目模板"
 			}
 		]

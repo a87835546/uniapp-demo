@@ -11,7 +11,7 @@
 </template>
 
 <script>
-	import TopTabBar from "../../../components/top-tab-bar/top-tab-bar.vue"
+	import TopTabBar from "../../../../components/top-tab-bar/top-tab-bar.vue"
 	import LandBasicInfo from "./land-basic-info.vue"
 	
 	export default {

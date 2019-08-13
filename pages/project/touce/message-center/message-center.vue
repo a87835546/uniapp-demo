@@ -14,7 +14,7 @@
 </template>
 
 <script>
-	import TopTabBar from "../../../components/top-tab-bar/top-tab-bar.vue"
+	import TopTabBar from "../../../../components/top-tab-bar/top-tab-bar.vue"
 	import messageData from "./message-data.js"
 	import MessageList from "./message-list.vue"
 	
@@ -39,7 +39,7 @@
 			onCardClick(index) {
 				console.log("card click");
 				uni.navigateTo({
-					url:"/pages/project/land/land-detail"
+					url:"/pages/project/touce/land/land-detail"
 				})
 			}
 		}
