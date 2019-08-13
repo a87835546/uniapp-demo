@@ -15,8 +15,7 @@
 </template>
 
 <script>
-	import UniGrid from "../../../components/uni-grid/uni-grid.vue"
-	import UniGridItem from "../../../components/uni-grid-item/uni-grid-item.vue"
+	import {UniGrid,UniGridItem} from '@dcloudio/uni-ui'
 	import landData from "./land-data.js"
 	import LandTrend from "./land-trend.vue"
 	
@@ -30,12 +29,15 @@
 			return {
 				modules: landData.landModules
 			}
+		},
+		onLoad() {
+			console.log("test for ignore");
 		}
 	}
 </script>
 
 <style scoped>
-	@import "../../../common/css/icon-font.css";
+	@import "../../../../common/css/icon-font.css"
 	
 	.module-grid {
 		background-color: #FFFFFF;
