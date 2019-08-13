@@ -81,7 +81,7 @@
 </script>
 
 <style scoped>
-	@import "../../../../common/css/icon-font.css"
+	@import "../../../../common/css/icon-font.css";
 	
 	.content {
 		background: #FFFFFF;
