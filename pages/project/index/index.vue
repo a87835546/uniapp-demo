@@ -3,8 +3,9 @@
 		<uni-list>
 			<uni-list-item 
 			v-for="(item,index) in projects"
-			title="item.name"
-			:showArrow="ture"
+			:key="index"
+			:title="item.name"
+			:showArrow="true"
 			@click="onItemClick(item)"></uni-list-item>
 		</uni-list>
 	</view>
@@ -29,8 +30,10 @@
 			}
 		},
 		methods: {
-			onItemClick() {
-				console.log("on item cilck");
+			onItemClick(item) {
+				uni.navigateTo({
+					url: item.url
+				})
 			}
 		}
 	}

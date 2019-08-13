@@ -54,11 +54,11 @@
 				if (title === '投资制度') {
 					console.log("forward!");
 					uni.navigateTo({
-						url: '/pages/project/invest-institution/invest-institution'
+						url: '/pages/project/touce/invest-institution/invest-institution'
 					});
 				} else if (title === '消息通知') {
 					uni.navigateTo({
-						url: '/pages/project/message-center/message-center'
+						url: '/pages/project/touce/message-center/message-center'
 					});
 				}
 			},
@@ -68,7 +68,7 @@
 				if (this.$data.moreModules[index].title === '竞品清单') {
 					console.log("forward!");
 					uni.navigateTo({
-						url: '/pages/project/competive-product/competive-product'
+						url: '/pages/project/touce/competive-product/competive-product'
 					});
 				}
 			}

@@ -39,7 +39,7 @@
 			onCardClick(index) {
 				console.log("card click");
 				uni.navigateTo({
-					url:"/pages/project/land/land-detail"
+					url:"/pages/project/touce/land/land-detail"
 				})
 			}
 		}
