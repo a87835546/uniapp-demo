@@ -73,6 +73,11 @@
 					{
 						title:'promise 的网络请求',
 						url:'./request/request'
+					},
+					{
+						title:'选项条和列表',
+						subtitle:'选项条，动画，watch和computed用法',
+						url:'./switchbar/switchBarAndList/switchBarAndList'
 					}
 					
 					],

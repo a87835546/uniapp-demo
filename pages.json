@@ -163,7 +163,13 @@
 				"navigationBarTitleText": "签到"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/index/switchbar/switchBarAndList/switchBarAndList",
+            "style" : {
+				"navigationBarTitleText": "选项条和列表"
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
