@@ -1,0 +1,57 @@
+@font-face {
+	font-family: iconfont;
+	src: url(../../../static/IconFont.ttf);
+}
+	
+.iconfont {
+	font-family: iconfont;
+	font-size: 30px;
+}
+
+.icon-message:before {
+	content: '\e632';
+}
+
+.icon-process:before {
+	content: '\e61b';
+}
+	
+.icon-meeting:before {
+	content: '\e61e';
+}
+
+.icon-invest:before {
+	content: '\e620';
+}
+
+.icon-template:before {
+	content: '\e61c';
+}
+
+.icon-research:before {
+	content: '\e626';
+}
+
+.icon-wiki:before {
+	content: '\e630';
+}
+
+.icon-report:before {
+	content: '\e617';
+}
+
+.icon-land:before {
+	content: '\e612';
+}
+
+.icon-competition:before {
+	content: '\e614';
+}
+
+.icon-foot-point:before {
+	content: '\e613';
+}
+
+.icon-pay:before {
+	content: '\e619';
+}
