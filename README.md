@@ -30,5 +30,6 @@ CSS BEM规范（非必需）
 	3. uni-ui 的 uni-list/uni-list-item 列表控件是不支持v-for指令。所以在使用非固定的列表时需要使用自定义控件
 	4. scroll-view
 	5. 组件的css定义会被页面的同名css定义覆盖，推荐使用BEM命名规范
+	6. 在组件里引用组件，文件名里要用@开头
 
 ## ![](/static/1.jpeg)
