@@ -25,6 +25,10 @@
 					{
 						name: "投策神器",
 						url: "/pages/project/touce/index/index"
+					},
+					{
+						name: "登录",
+						url: "/pages/project/login/login"
 					}
 				]
 			}

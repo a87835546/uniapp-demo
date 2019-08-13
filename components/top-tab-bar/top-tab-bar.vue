@@ -4,6 +4,7 @@
 			<view 
 			 class="tab-item"
 			 v-for="(item,index) in tabNames"
+			 :key="index"
 			 :style="{width: (100/tabNames.length) + '%'}"
 			 @click="onTabClick(index)">
 				<text 
