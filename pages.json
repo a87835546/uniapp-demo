@@ -4,77 +4,77 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app",
-				"enablePullDownRefresh":true
+				"enablePullDownRefresh": true
 			}
 		},
 		{
 			"path": "pages/mine/mine",
 			"style": {
 				"navigationBarTitleText": "个人中心",
-				"enablePullDownRefresh":true
-				
+				"enablePullDownRefresh": true
+
 			}
 		},
 		{
 			"path": "pages/mine/message/msg",
 			"style": {
 				"navigationBarTitleText": "消息",
-				"enablePullDownRefresh":true
+				"enablePullDownRefresh": true
 			}
 		},
 		{
-			
+
 			"path": "pages/index/collapse/collapse",
 			"style": {
 				"navigationBarTitleText": "折叠控件的使用",
-				"enablePullDownRefresh":false
+				"enablePullDownRefresh": false
 			}
 		},
 		{
-			
+
 			"path": "pages/index/scrollView/scrollView",
 			"style": {
 				"navigationBarTitleText": "滑动视图的使用",
-				"enablePullDownRefresh":false
+				"enablePullDownRefresh": false
 			}
 		},
 		{
-			
+
 			"path": "pages/index/swiper/swiper",
 			"style": {
 				"navigationBarTitleText": "swiper-view 制作banner效果",
-				"enablePullDownRefresh":false
+				"enablePullDownRefresh": false
 			}
 		},
 		{
-			
+
 			"path": "pages/index/media/media",
 			"style": {
 				"navigationBarTitleText": "常用的多媒体应用",
-				"enablePullDownRefresh":false
+				"enablePullDownRefresh": false
 			}
 		},
 		{
 			"path": "pages/index/map/map",
 			"style": {
 				"navigationBarTitleText": "地图",
-				"enablePullDownRefresh":false
+				"enablePullDownRefresh": false
 			}
 		},
 		{
 			"path": "pages/index/webview/webview",
 			"style": {
 				"navigationBarTitleText": "webview使用",
-				"enablePullDownRefresh":false
+				"enablePullDownRefresh": false
 			}
 		},
 		{
 			"path": "pages/index/refresh/refresh",
 			"style": {
 				"navigationBarTitleText": "下拉刷新的使用（使用自定义组件）",
-				"enablePullDownRefresh":false,
-				"app-plus" : {
-				"bounce" : "none" 
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
 				}
 			}
 		},
@@ -82,35 +82,66 @@
 			"path": "pages/index/collectionView/collectionView",
 			"style": {
 				"navigationBarTitleText": "九宫格",
-				"enablePullDownRefresh":false,
-				"app-plus":{
-					"pullToRefresh":{
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"pullToRefresh": {
 						"support": true,
-                        "color": "#ff3333",
-                        "style": "default",
-                        "contentdown": {
-                            "caption": "下拉可刷新自定义文本"
-                        },
-                        "contentover": {
-                            "caption": "释放可刷新自定义文本"
-                        },
-                        "contentrefresh": {
-                            "caption": "正在刷新自定义文本"
-                        }
+						"color": "#ff3333",
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉可刷新自定义文本"
+						},
+						"contentover": {
+							"caption": "释放可刷新自定义文本"
+						},
+						"contentrefresh": {
+							"caption": "正在刷新自定义文本"
+						}
 					}
 				}
 			}
 		},
 		{
-			"path":"pages/index/sharePopup/popup",
-			"style":{
-				"navigationBarTitleText":"常用的弹窗使用"
+			"path": "pages/index/sharePopup/popup",
+			"style": {
+				"navigationBarTitleText": "常用的弹窗使用"
 			}
 		},
 		{
-			"path":"pages/index/request/request",
-			"style":{
-				"navigationBarTitleText":"promise的网络请求封装"
+			"path": "pages/index/request/request",
+			"style": {
+				"navigationBarTitleText": "promise的网络请求封装"
+			}
+		},
+		{
+			"path": "pages/project/index/index",
+			"style": {
+				"navigationBarTitleText": "投策hybird"
+			}
+		},
+		{
+			"path": "pages/project/competive-product/competive-product",
+			"style": {
+				"navigationBarTitleText":"竞品清单",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path":"pages/project/invest-institution/invest-institution",
+			"style": {
+				"navigationBarTitleText":"投资制度"
+			}
+		},
+		{
+			"path":"pages/project/message-center/message-center",
+			"style": {
+				"navigationBarTitleText": "消息通知"
+			}
+		},
+		{
+		    "path" : "pages/project/land/land-detail",
+		    "style" : {
+				"navigationBarTitleText": "地块详情"
 			}
 		}
 	],
@@ -120,25 +151,29 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"tabBar":{
-	"color": "#000000",
-	"selectedColor": "#2F85FC",
-	"backgroundColor": "#FFFFFF",
-	"borderStyle": "black",
-	"list":
-	[
-		{
-			"pagePath": "pages/index/index",
-			"iconPath": "static/tab_project@2x.png",
-			"selectedIconPath": "static/tab_project_select@2x.png",
-			"text": "首页"
-		},
-		{
-			"pagePath": "pages/mine/mine",
-			"iconPath": "static/tab_mine@2x.png",
-			"selectedIconPath": "static/tab_mine_select@2x.png",
-			"text": "我的"
-		}
-	]
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#2F85FC",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab_project@2x.png",
+				"selectedIconPath": "static/tab_project_select@2x.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tab_mine@2x.png",
+				"selectedIconPath": "static/tab_mine_select@2x.png",
+				"text": "我的"
+			},
+			{
+				"pagePath": "pages/project/index/index",
+				"iconPath": "static/tab_mine@2x.png",
+				"selectedIconPath": "static/tab_mine_select@2x.png",
+				"text": "项目模板"
+			}
+		]
 	}
 }
