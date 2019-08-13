@@ -4,24 +4,24 @@
  
 ## 基础知识链接
     
-    快速上手
-	[Uni-app快速上手](https://uniapp.dcloud.io/quickstart)  
-    [学习手记](https://segmentfault.com/a/1190000017020710)
+快速上手  
+[Uni-app快速上手](https://uniapp.dcloud.io/quickstart)  
+[学习手记](https://segmentfault.com/a/1190000017020710)
 	
-    代码风格
-    [vue风格指南](https://cn.vuejs.org/v2/style-guide/index.html)
+代码风格  
+[vue风格指南](https://cn.vuejs.org/v2/style-guide/index.html)  
+
+flex布局教程（某些属性在uni-app上没效，稍改一下就行）  
+[flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)  
+[flex布局实战](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
     
-    flex布局教程（某些属性在uni-app上没效，稍改一下就行）
-    [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
-    [flex布局实战](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
-    
-    学会JS的this，类似objc_msgSend（非必需，原生思维写js容易在this上踩坑）
-    [学会JS的this](http://www.imooc.com/article/1758)
-    
-    CSS BEM规范（非必需）
-    [BEM规范入门](https://www.jianshu.com/p/5e018c7f0bc6)
-    [编写模块化CSS：BEM](https://www.w3cplus.com/css/css-architecture-1.html)
-    [编写模块化的CSS:命名空间](https://www.w3cplus.com/css/css-architecture-2.html)
+学会JS的this，类似objc_msgSend（非必需，原生思维写js容易在this上踩坑）  
+[学会JS的this](http://www.imooc.com/article/1758)
+
+CSS BEM规范（非必需）  
+[BEM规范入门](https://www.jianshu.com/p/5e018c7f0bc6)  
+[编写模块化CSS：BEM](https://www.w3cplus.com/css/css-architecture-1.html)  
+[编写模块化的CSS:命名空间](https://www.w3cplus.com/css/css-architecture-2.html)  
 
 	
 ## 常见需要注意的事项
