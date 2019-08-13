@@ -4,12 +4,9 @@
 			<view class="top-left">
 				<text>项目动态</text>
 			</view>
-			<uni-notice-bar
-			class="notice-bar"
-			:scrollable="true"
-			:text="notice"
-			:backgroundColor="backgroundColor">
-			</uni-notice-bar>
+			<view class="notice-bar">
+				<text>{{notice}}</text>
+			</view>
 			<text class="time">{{time}}</text>
 		</view>
 		<view class="map">
@@ -22,10 +19,10 @@
 </template>
 
 <script>
-	import uniNoticeBar from "@dcloudio/uni-ui"
+	// import uniNoticeBar from "@dcloudio/uni-ui"
 	export default {
 		components: {
-			uniNoticeBar
+			// uniNoticeBar
 		},
 		data() {
 			return {
@@ -63,6 +60,7 @@
 	.notice-bar {
 		margin-left: 8px;
 		width: 55%;
+		font-size: 14px;
 	}
 	
 	.time {
