@@ -37,7 +37,7 @@
 </script>
 
 <style scoped>
-	@import "../../../common/css/icon-font.css";
+	@import "../../../../common/css/icon-font.css";
 	
 	.module-grid {
 		background-color: #FFFFFF;
