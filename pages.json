@@ -149,6 +149,13 @@
 		    "style" : {
 				"navigationBarTitleText": "地块详情"
 			}
+		},
+		{
+		    "path" : "pages/project/login/login",
+		    "style" : {
+				// 不需要导航栏
+				"navigationStyle":"custom"  
+			}
 		}
 	],
 	"globalStyle": {
