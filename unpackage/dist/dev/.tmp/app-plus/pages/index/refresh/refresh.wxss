@@ -1,0 +1,8 @@
+view.data-v-1aba9248 {
+  height: 300px;
+  width: 100vw;
+}
+view .page.data-v-1aba9248 {
+  height: 100vw;
+}
+

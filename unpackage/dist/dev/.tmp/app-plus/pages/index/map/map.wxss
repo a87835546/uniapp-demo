@@ -1,0 +1,12 @@
+
+map {
+	width: 750rpx;
+	height: 750rpx;
+}
+button {
+	z-index: 9999;
+}
+image {
+	width: 100%;
+}
+
