@@ -47,7 +47,7 @@
 					});	
 				}
 			},
-			getLocation(checkin) {
+			getLocation(checkin,failHandler) {
 				// 获取位置信息
 				let self = this;
 				uni.getLocation({
@@ -70,6 +70,7 @@
 					},
 					fail: function(message) {
 						console.log("get location fail" + message);
+						failHandler(message);
 					}  
 				});
 			}
