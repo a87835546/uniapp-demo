@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var MescrollUni = function MescrollUni() {return __webpack_require__.e(/*! import() | node-modules/mescroll-uni/mescroll-uni */ "node-modules/mescroll-uni/mescroll-uni").then(__webpack_require__.bind(null, /*! mescroll-uni */ 238));};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var MescrollUni = function MescrollUni() {return Promise.all(/*! import() | node-modules/mescroll-uni/mescroll-uni */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/mescroll-uni/mescroll-uni")]).then(__webpack_require__.bind(null, /*! mescroll-uni */ 238));};var _default =
 
 
 

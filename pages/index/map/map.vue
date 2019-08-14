@@ -14,10 +14,12 @@
 			@tap="tap"
 			@regionchange="change"></map>
 		<!-- <map :latitude="latitude" :longitude="longitude"></map> -->
-		
+		<!-- #ifdef APP-PLUS -->
 		<button type="primary" @click="getPOI">获取周边的POI数据</button>
 		 * 静态图展示
 		<image :src="src" mode="center"></image>
+		<!-- #endif -->
+		
 	</view>
 </template>
 
@@ -41,27 +43,24 @@
 		 * */
 		computed:{
 			
-			// marks(){
-			// 	set:(value)=>{
-			// 		this.point = value;
-			// 	};
-			// 	get:function(){
-			// 	return [
-			// 	{
-			// 		latitude:23.120471,
-			// 		longitude:113.330714,
-			// 		iconPath:'/static/location'
-			// 	},
-			// 	{
-			// 		latitude:this.latitude,
-			// 		longitude:this.longitude,
-			// 		iconPath:'/static/location',
-			// 		title:'当前位置',
-			// 		anchor:true
-			// 	},
-			// 	]
-			// 	}
-			// },
+			marks(){
+
+				return [
+				{
+					latitude:23.120471,
+					longitude:113.330714,
+					iconPath:'/static/location'
+				},
+				{
+					latitude:this.latitude,
+					longitude:this.longitude,
+					iconPath:'/static/location',
+					title:'当前位置',
+					anchor:true
+				},
+				]
+				
+			},
 			circles(){
 				return
 					[{//在地图上显示圆
@@ -106,7 +105,7 @@
 			let amapPlugin = new amap.AMapWX({
 				key:"3dab3b1cab661b7d908049adf9c54f0b"
 			});
-			wx.getSystemInfo({
+			uni.getSystemInfo({
 				success:result=>{
 					var width = result.windowWidth
 					var height = result.windowHeight
@@ -130,7 +129,7 @@
 			uni.getLocation({
 				type: 'wgs84',
 				success: res => {
-					console.log(res.address)
+					console.log(res.latitude)
 					this.latitude = res.latitude
 					this.longitude = res.longitude
 					
