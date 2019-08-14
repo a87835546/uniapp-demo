@@ -1,1 +1,1 @@
-<view class="content">{{''+id+''}}<button type="primary" data-event-opts="{{[['tap',[['test']]]]}}" bindtap="__e">测试</button></view>
+<view class="content">{{'上一个页面传过来的ID值:'+id+''}}<button type="primary" data-event-opts="{{[['tap',[['test']]]]}}" bindtap="__e">输出接收到的ID值</button></view>

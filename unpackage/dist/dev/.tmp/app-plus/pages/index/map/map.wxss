@@ -6,4 +6,7 @@ map {
 button {
 	z-index: 9999;
 }
+image {
+	width: 100%;
+}
 

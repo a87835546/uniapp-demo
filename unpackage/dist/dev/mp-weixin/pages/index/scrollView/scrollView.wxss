@@ -1,13 +1,15 @@
-
-scroll-view {
-	height: 300rpx;
-	width: 100vw;
-	background-clip: red;
+scroll-view.data-v-34dc3e10 {
+  height: 300rpx;
+  width: 100vw;
+  background-clip: red;
 }
-.item {
-	height: 200rpx;
+.content.data-v-34dc3e10 {
+  height: 400rpx;
 }
-button {
-	width: 60vw;
+view.data-v-34dc3e10 {
+  height: 300rpx;
+}
+button.data-v-34dc3e10 {
+  width: 60vw;
 }
 

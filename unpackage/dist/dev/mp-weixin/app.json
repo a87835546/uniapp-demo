@@ -12,7 +12,16 @@
     "pages/index/refresh/refresh",
     "pages/index/collectionView/collectionView",
     "pages/index/sharePopup/popup",
-    "pages/index/request/request"
+    "pages/index/request/request",
+    "pages/project/index/index",
+    "pages/project/touce/index/index",
+    "pages/project/touce/competive-product/competive-product",
+    "pages/project/touce/invest-institution/invest-institution",
+    "pages/project/touce/message-center/message-center",
+    "pages/project/touce/land/land-detail",
+    "pages/project/login/login",
+    "pages/project/checkin/checkin",
+    "pages/index/switchbar/switchBarAndList/switchBarAndList"
   ],
   "subPackages": [],
   "window": {
@@ -38,6 +47,12 @@
         "iconPath": "static/tab_mine@2x.png",
         "selectedIconPath": "static/tab_mine_select@2x.png",
         "text": "我的"
+      },
+      {
+        "pagePath": "pages/project/index/index",
+        "iconPath": "static/template.png",
+        "selectedIconPath": "static/templateHL.png",
+        "text": "项目模板"
       }
     ]
   },
