@@ -35,8 +35,8 @@
 						url: "/pages/project/checkin/checkin"
 					},
 					{
-						name: "日历",
-						url: "/pages/project/calendar/calendar"
+						name: "搜索",
+						url: "/pages/project/search/search"
 					}
 				]
 			}
