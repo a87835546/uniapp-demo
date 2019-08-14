@@ -64,6 +64,12 @@
 					uni.navigateTo({
 						url: '/pages/project/touce/message-center/message-center'
 					});
+				} else {
+					uni.showModal({
+						showCancel:false,
+						title:"暂未实现",
+						content:"暂未实现"
+					})
 				}
 			},
 			onMoreModuleClick(event) {
@@ -74,6 +80,12 @@
 					uni.navigateTo({
 						url: '/pages/project/touce/competive-product/competive-product'
 					});
+				} else {
+					uni.showModal({
+						showCancel:false,
+						title:"暂未实现",
+						content:""
+					})
 				}
 			}
 		}

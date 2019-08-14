@@ -12,7 +12,6 @@
 			"style": {
 				"navigationBarTitleText": "个人中心",
 				"enablePullDownRefresh": true
-
 			}
 		},
 		{
@@ -156,20 +155,26 @@
 				// 不需要导航栏
 				"navigationStyle":"custom"  
 			}
+		}
+	    ,{
+            "path" : "pages/index/SegmentedBar/SegmentedBar",
+            "style" : {
+				"navigationBarTitleText": "选项条和列表"
+            }
 		},
 		{
 			"path":"pages/project/checkin/checkin",
 			"style" : {
 				"navigationBarTitleText": "签到"
 			}
-		}
-	    ,{
-            "path" : "pages/index/switchbar/switchBarAndList/switchBarAndList",
-            "style" : {
-				"navigationBarTitleText": "选项条和列表"
+		},
+		{
+			"path":"pages/project/calendar/calendar",
+			"style" : {
+				"navigationBarTitleText": "日历"
 			}
-        }
-    ],
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

@@ -7,6 +7,7 @@
     "less-loader": "^5.0.0",
     "mescroll-uni": "^1.1.5",
     "mescroll.js": "^1.4.1",
+    "v-calendar": "^1.0.0-beta.16",
     "vue": "^2.6.10"
   },
   "devDependencies": {},

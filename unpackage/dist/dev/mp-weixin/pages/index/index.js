@@ -193,7 +193,7 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
       {
         title: '选项条和列表',
         subtitle: '选项条，动画，watch和computed用法',
-        url: './switchbar/switchBarAndList/switchBarAndList' }] };
+        url: './SegmentedBar/SegmentedBar' }] };
 
 
 
