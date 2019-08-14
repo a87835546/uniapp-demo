@@ -129,7 +129,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var _amapWx = _interopRequireDefault(__webpack_require__(/*! ../../../common/amap-wx.js */ 71));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
 //
 //
 //
@@ -155,33 +159,28 @@ var _amapWx = _interopRequireDefault(__webpack_require__(/*! ../../../common/ama
 var _default = { data: function data() {return { latitude: 23.120471, longitude: 113.330714, targetLatitude: 0, targetLontitude: 0, point: null, src: null };}, /**
                                                                                                                                                                  *  @description  计算属性，不能在data中定义相同的属性，计算属性可以使用data中的属性，
                                                                                                                                                                  * 使用的时候和在data中一样的方式。和watch差不多类似。watch 里面就是oc中的kvo，观察某一个属性
-                                                                                                                                                                 * */computed: { // marks(){
-    // 	set:(value)=>{
-    // 		this.point = value;
-    // 	};
-    // 	get:function(){
-    // 	return [
-    // 	{
-    // 		latitude:23.120471,
-    // 		longitude:113.330714,
-    // 		iconPath:'/static/location'
-    // 	},
-    // 	{
-    // 		latitude:this.latitude,
-    // 		longitude:this.longitude,
-    // 		iconPath:'/static/location',
-    // 		title:'当前位置',
-    // 		anchor:true
-    // 	},
-    // 	]
-    // 	}
-    // },
-    circles: function circles() {return;[{ //在地图上显示圆
-        latitude: this.latitude, longitude: this.longitude, fillColor: "#FFC41F", //填充颜色
+                                                                                                                                                                 * */computed: { marks: function marks() {return [{ latitude: 23.120471, longitude: 113.330714, iconPath: '/static/location' }, { latitude: this.latitude,
+        longitude: this.longitude,
+        iconPath: '/static/location',
+        title: '当前位置',
+        anchor: true }];
+
+
+
+    },
+    circles: function circles() {
+      return;
+      [{ //在地图上显示圆
+        latitude: this.latitude,
+        longitude: this.longitude,
+        fillColor: "#FFC41F", //填充颜色
         color: "#12A1DD", //描边的颜色
         radius: 25, //半径
         strokeWidth: 2 //描边的宽度
-      }];} },
+      }];
+    } },
+
+
   methods: {
     click: function click(e) {
       console.log(e);
@@ -213,7 +212,7 @@ var _default = { data: function data() {return { latitude: 23.120471, longitude:
     var amapPlugin = new _amapWx.default.AMapWX({
       key: "3dab3b1cab661b7d908049adf9c54f0b" });
 
-    wx.getSystemInfo({
+    uni.getSystemInfo({
       success: function success(result) {
         var width = result.windowWidth;
         var height = result.windowHeight;
@@ -237,7 +236,7 @@ var _default = { data: function data() {return { latitude: 23.120471, longitude:
     uni.getLocation({
       type: 'wgs84',
       success: function success(res) {
-        console.log(res.address);
+        console.log(res.latitude);
         _this2.latitude = res.latitude;
         _this2.longitude = res.longitude;
 
