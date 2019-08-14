@@ -20,8 +20,9 @@
     "pages/project/touce/message-center/message-center",
     "pages/project/touce/land/land-detail",
     "pages/project/login/login",
+    "pages/index/SegmentedBar/SegmentedBar",
     "pages/project/checkin/checkin",
-    "pages/index/switchbar/switchBarAndList/switchBarAndList"
+    "pages/project/calendar/calendar"
   ],
   "window": {
     "navigationBarTextStyle": "black",
