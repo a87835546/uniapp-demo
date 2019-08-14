@@ -1,11 +1,11 @@
 <template>
-	<view class="switch-bar">
-		<view class="switch-bar__nav">
-			<view v-for="(tab, i) in tabs" :key="i" class="switch-bar__nav__item" :class="{'switch-bar__nav__item--active':curIndex===i}"
+	<view class="segmented-bar">
+		<view class="segmented-bar__nav">
+			<view v-for="(tab, i) in tabs" :key="i" class="segmented-bar__item" :class="{'segmented-bar__item--active':curIndex===i}"
 			 @click="changeTab(i)">{{tab}}</view>
 		</view>
-		<view class="switch-bar__active-bar" :style="{width:activeBarWidth}" :animation="animationData"></view>
-		<view class="switch-bar__bottom-line"></view>
+		<view class="segmented-bar__active-bar" :style="{width:activeBarWidth}" :animation="animationData"></view>
+		<view class="segmented-bar__bottom-line"></view>
 	</view>
 </template>
 
@@ -109,7 +109,7 @@
 </script>
 
 <style scoped>
-	.switch-bar {
+	.segmented-bar {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -119,7 +119,7 @@
 		height: 80upx;
 	}
 
-	.switch-bar__nav {
+	.segmented-bar__nav {
 		flex: 1;
 		display: flex;
 		flex-direction: row;
@@ -129,23 +129,23 @@
 		width: 100%;
 	}
 
-	.switch-bar__nav__item {
+	.segmented-bar__item {
 		flex: 1;
 		font-size: 28upx;
 		color: #666666;
 	}
 
-	.switch-bar__nav__item--active {
+	.segmented-bar__item--active {
 		font-size: 30upx;
 		color: #333333;
 	}
 
-	.switch-bar__active-bar {
+	.segmented-bar__active-bar {
 		flex: 0 0 5upx;
 		background: #18B4FE;
 	}
 
-	.switch-bar__bottom-line {
+	.segmented-bar__bottom-line {
 		flex: 0 0 1upx;
 		width: 100%;
 		background: #DDDDDD;

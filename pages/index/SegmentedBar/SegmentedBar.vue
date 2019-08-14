@@ -1,7 +1,7 @@
 <template>
 	<scroll-view class="index-scroll-view" :style="{height:windowHeight + 'px'}" scroll-y="true">
 		<view class="index-content">
-			<index-switch-bar :tabs="tabs" :index="curIndex" @selectIndexChanged="selectIndexChanged"></index-switch-bar>
+			<segmented-bar :tabs="tabs" :index="curIndex" @selectIndexChanged="selectIndexChanged"></segmented-bar>
 			<swiper class="index-content__swiper" :current="curIndex" @change="swiperChange">
 				<swiper-item v-for="(item, index) in tabs" :key="index">
 					<view class="index-content__list" :style="{background:backgrounds[index]}">{{item}}</view>
@@ -15,11 +15,11 @@
 	/**
 	 * 引入选项卡组件
 	 */
-	import IndexSwitchBar from "../../../../components/index-switch-bar.vue"
+	import SegmentedBar from "../../../components/segmented-bar.vue"
 
 	export default {
 		components: {
-			IndexSwitchBar,
+			SegmentedBar,
 		},
 		data() {
 			return {
@@ -43,9 +43,17 @@
 			});
 		},
 		methods: {
+			/**
+			 * 选择的选项卡变化
+			 * @param {Number} index 索引
+			 */
 			selectIndexChanged(index) {
 				this.curIndex = index
 			},
+			/**
+			 * 控件滑动变化后回调
+			 * @param {Object} e 事件对象
+			 */
 			swiperChange(e) {
 				this.curIndex = e.detail.current
 				console.log("index:", e.detail.current)

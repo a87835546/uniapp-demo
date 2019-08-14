@@ -158,7 +158,7 @@
 			}
 		}
 	    ,{
-            "path" : "pages/index/switchbar/switchBarAndList/switchBarAndList",
+            "path" : "pages/index/SegmentedBar/SegmentedBar",
             "style" : {
 				"navigationBarTitleText": "选项条和列表"
 			}
