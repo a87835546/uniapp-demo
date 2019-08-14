@@ -29,6 +29,14 @@
 					{
 						name: "登录",
 						url: "/pages/project/login/login"
+					},
+					{
+						name: "签到",
+						url: "/pages/project/checkin/checkin"
+					},
+					{
+						name: "日历",
+						url: "/pages/project/calendar/calendar"
 					}
 				]
 			}
