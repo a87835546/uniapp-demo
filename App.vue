@@ -20,4 +20,17 @@
 		left: 20px;
 		background-color: aqua
 	}
+	
+	.bg-red {
+		background-color: red;
+	}
+	.bg-yellow {
+		background-color: yellow;
+	}
+	.bg-blue {
+		background-color: blue;
+	}
+	.bg-green {
+		background-color: green;
+	}
 </style>

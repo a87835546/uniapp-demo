@@ -105,7 +105,31 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _amapWx = _interopRequireDefault(__webpack_require__(/*! ../../../common/amap-wx.js */ 71));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
 //
@@ -114,50 +138,108 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-var _default =
-{
-  data: function data() {
-    return {
-      latitude: 23.120471,
-      longitude: 113.330714,
-      circles: [{ //在地图上显示圆
-        latitude: 39.90,
-        longitude: 116.39,
-        fillColor: "#FFC41F", //填充颜色
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { latitude: 23.120471, longitude: 113.330714, targetLatitude: 0, targetLontitude: 0, point: null, src: null };}, /**
+                                                                                                                                                                 *  @description  计算属性，不能在data中定义相同的属性，计算属性可以使用data中的属性，
+                                                                                                                                                                 * 使用的时候和在data中一样的方式。和watch差不多类似。watch 里面就是oc中的kvo，观察某一个属性
+                                                                                                                                                                 * */computed: { // marks(){
+    // 	set:(value)=>{
+    // 		this.point = value;
+    // 	};
+    // 	get:function(){
+    // 	return [
+    // 	{
+    // 		latitude:23.120471,
+    // 		longitude:113.330714,
+    // 		iconPath:'/static/location'
+    // 	},
+    // 	{
+    // 		latitude:this.latitude,
+    // 		longitude:this.longitude,
+    // 		iconPath:'/static/location',
+    // 		title:'当前位置',
+    // 		anchor:true
+    // 	},
+    // 	]
+    // 	}
+    // },
+    circles: function circles() {return;[{ //在地图上显示圆
+        latitude: this.latitude, longitude: this.longitude, fillColor: "#FFC41F", //填充颜色
         color: "#12A1DD", //描边的颜色
-        radius: 500, //半径
+        radius: 25, //半径
         strokeWidth: 2 //描边的宽度
-      }],
-      marks: [
-      {
-        latitude: 23.120471,
-        longitude: 113.330714,
-        iconPath: '../../static/tab_mine' },
-
-      {
-        latitude: 23.120471,
-        longitude: 113.330714,
-        iconPath: '../../static/tab_mine' }] };
-
-
-
-
-  },
+      }];} },
   methods: {
-    click: function click() {
-      console.log('点击');
+    click: function click(e) {
+      console.log(e);
     },
     clickMap: function clickMap() {
       console.log('asda');
+    },
+    tap: function tap(e) {
+      console.log(e);
+    },
+    change: function change(e) {
+    },
+    getPOI: function getPOI() {var _this = this;
+      var amapPlugin = new _amapWx.default.AMapWX({
+        key: "3dab3b1cab661b7d908049adf9c54f0b" });
+
+      amapPlugin.getPoiAround({
+        success: function success(result) {
+          console.log(result);
+          _this.point = result.markers;
+        },
+        fail: function fail(err) {
+          console.log(err);
+        } });
+
     } },
 
-  onLoad: function onLoad(e) {var _this = this;
+  onLoad: function onLoad(e) {var _this2 = this;
+    var amapPlugin = new _amapWx.default.AMapWX({
+      key: "3dab3b1cab661b7d908049adf9c54f0b" });
+
+    wx.getSystemInfo({
+      success: function success(result) {
+        var width = result.windowWidth;
+        var height = result.windowHeight;
+        var size = width + "*" + height;
+        amapPlugin.getStaticmap({
+          zoom: 8,
+          size: size,
+          scale: 2,
+          success: function success(data) {
+            console.log(data);
+            _this2.src = data.url;
+          },
+          fail: function fail(err) {
+            console.log(err);
+          } });
+
+      },
+      fail: function fail(err) {
+      } });
+
     uni.getLocation({
       type: 'wgs84',
       success: function success(res) {
         console.log(res.address);
-        _this.latitude = res.latitude;
-        _this.longitude = res.longitude;
+        _this2.latitude = res.latitude;
+        _this2.longitude = res.longitude;
 
       },
       // success:function(res){

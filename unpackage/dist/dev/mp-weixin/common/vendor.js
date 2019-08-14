@@ -9825,6 +9825,17 @@ createPage(_map.default);
 
 /***/ }),
 
+/***/ 71:
+/*!*****************************************************!*\
+  !*** /Users/yancheng/uniapp-demo/common/amap-wx.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js):\nError: ENOENT: no such file or directory, open '/Users/yancheng/uniapp-demo/common/amap-wx.js'");
+
+/***/ }),
+
 /***/ 74:
 /*!****************************************************************************************!*\
   !*** /Users/yancheng/uniapp-demo/main.js?{"page":"pages%2Findex%2Fwebview%2Fwebview"} ***!

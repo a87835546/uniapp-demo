@@ -167,7 +167,7 @@ var _httpRequest = __webpack_require__(/*! ../utils/httpRequest.js */ 12);var _u
 
 
       {
-        title: '地图的使用',
+        title: '地图的使用,高德地图和系统地图',
         url: './map/map' },
 
 
