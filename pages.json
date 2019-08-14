@@ -169,9 +169,9 @@
 			}
 		},
 		{
-			"path":"pages/project/calendar/calendar",
+			"path":"pages/project/search/search",
 			"style" : {
-				"navigationBarTitleText": "日历"
+				"navigationBarTitleText": "搜索"
 			}
 		}
 	],
