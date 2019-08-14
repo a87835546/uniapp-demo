@@ -1,6 +1,7 @@
 <template>
 	<view class="page">
 		<web-view src="https://www.baidu.com"></web-view>
+		<!-- 测试 -->
 	</view>
 </template>
 

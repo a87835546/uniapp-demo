@@ -51,7 +51,7 @@
 					}
 					,
 					{
-						title:'地图的使用',
+						title:'地图的使用,高德地图和系统地图',
 						url:'./map/map'
 					}
 					,
@@ -73,6 +73,11 @@
 					{
 						title:'promise 的网络请求',
 						url:'./request/request'
+					},
+					{
+						title:'选项条和列表',
+						subtitle:'选项条，动画，watch和computed用法',
+						url:'./SegmentedBar/SegmentedBar'
 					}
 					
 					],

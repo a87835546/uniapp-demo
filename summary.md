@@ -8,3 +8,7 @@
 8. div 的position如果不是static，那么其宽度的默认值不是100%
 9. $ref在app中是不起作用的。 具体原因待探究，猜测因为app没有dom节点？需要验证
 10. app内打开无法使用safari 开发工具做调试。
+11. css 文件里面的路径实际上是引用的地方的路径，而不是当前文件的路径！要把该文件放到引入点来考虑！
+12. uni.getlocation 有不同的测绘标准，可能导致位置偏差。一般使用国测据的，加上参数type: gcj02
+13. 已经在版本管理中的文件，即使在gitignore中添加了忽略，也不会起作用。需要先删除掉这些文件(https://stackoverflow.com/questions/3833561/why-doesnt-git-ignore-my-specified-file/3833675)
+14. 由于升级hbuider导致遇到手机上显示调试器版本和编译器不一致时，先删除本地调试器。如果还不行，删除本地的unpackage文件。这是由于可能切分支导致的缓存认为编译器的版本还是旧的。尤其当合作的几个同事的hbuider版本不一致时容易发生

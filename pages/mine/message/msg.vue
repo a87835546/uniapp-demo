@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
-		{{id}}
-		<button type="primary" @click="test()">测试</button>
+		上一个页面传过来的ID值:{{id}}
+		<button type="primary" @click="test()">输出接收到的ID值</button>
 	</view>
 </template>
 
@@ -21,12 +21,12 @@
 		},
 		methods:{
 			test(){
-				console.log(this.id);
+				console.log('接收到的ID:',this.id);
 			}
 		},
 		onLoad:function(params){
 			this.id = params.id
-			console.log( params);
+			console.log('页面参数', params);
 			uni.setNavigationBarTitle({
 				title:params.title?params.title:''
 			})

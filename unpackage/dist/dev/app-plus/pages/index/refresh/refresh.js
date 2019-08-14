@@ -1,2 +1,0 @@
-setCssToHead(["wx-view.",[1],"data-v-17cb8a4a { height: 300px; width: 100vw; }\nwx-view .",[1],"page.",[1],"data-v-17cb8a4a { height: 100vw; }\n",],undefined,{path:"./pages/index/refresh/refresh.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/refresh/refresh.wxml') } }));

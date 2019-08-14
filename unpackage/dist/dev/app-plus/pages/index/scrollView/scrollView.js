@@ -1,2 +1,0 @@
-setCssToHead(["wx-scroll-view { height: ",[0,300],"; width: 100vw; background-clip: red; }\n.",[1],"item { height: ",[0,200],"; }\nwx-button { width: 60vw; }\n",],undefined,{path:"./pages/index/scrollView/scrollView.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/scrollView/scrollView.wxml') } }));
