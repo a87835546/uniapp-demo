@@ -2667,10 +2667,10 @@ function getDistance(lat1, lng1, lat2, lng2) {
 
 /***/ }),
 
-/***/ 174:
-/*!**********************************************************************************************************************!*\
-  !*** /Users/yancheng/uniapp-demo/main.js?{"page":"pages%2Findex%2Fswitchbar%2FswitchBarAndList%2FswitchBarAndList"} ***!
-  \**********************************************************************************************************************/
+/***/ 175:
+/*!**************************************************************************************************!*\
+  !*** /Users/yancheng/uniapp-demo/main.js?{"page":"pages%2Findex%2FSegmentedBar%2FSegmentedBar"} ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2678,8 +2678,25 @@ function getDistance(lat1, lng1, lat2, lng2) {
 /* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _switchBarAndList = _interopRequireDefault(__webpack_require__(/*! ./pages/index/switchbar/switchBarAndList/switchBarAndList.vue */ 175));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_switchBarAndList.default);
+var _SegmentedBar = _interopRequireDefault(__webpack_require__(/*! ./pages/index/SegmentedBar/SegmentedBar.vue */ 174));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_SegmentedBar.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
+
+/***/ 181:
+/*!********************************************************************************************!*\
+  !*** /Users/yancheng/uniapp-demo/main.js?{"page":"pages%2Fproject%2Fcalendar%2Fcalendar"} ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _calendar = _interopRequireDefault(__webpack_require__(/*! ./pages/project/calendar/calendar.vue */ 183));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_calendar.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
