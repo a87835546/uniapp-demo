@@ -1,2 +1,0 @@
-setCssToHead(["wx-scroll-view.",[1],"data-v-34dc3e10 { height: ",[0,300],"; width: 100vw; background-clip: red; }\n.",[1],"content.",[1],"data-v-34dc3e10 { height: ",[0,400],"; }\nwx-view.",[1],"data-v-34dc3e10 { height: ",[0,300],"; }\nwx-button.",[1],"data-v-34dc3e10 { width: 60vw; }\n",],undefined,{path:"./pages/index/scrollView/scrollView.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/scrollView/scrollView.wxml') } }));

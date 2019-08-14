@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "下拉刷新的使用（使用自定义组件）",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "mescroll-uni": "/node-modules/mescroll-uni/mescroll-uni"
-  }
-}
