@@ -10,7 +10,6 @@
 		</view>
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
-			<!-- <test></test> -->
 		</view>
 	</view>
 </template>
@@ -75,17 +74,21 @@
 						url:'./request/request'
 					},
 					{
+						title:'vuex 简单的使用介绍',
+						url:'./use-vuex/vuex-demo'
+					},
+					{
 						title:'选项条和列表',
 						subtitle:'选项条，动画，watch和computed用法',
-						url:'./SegmentedBar/SegmentedBar'
+						url:'./switchbar/switchBarAndList/switchBarAndList'
 					}
 					
 					],
 			}
 		},
 		onLoad:function(e){
-			console.log('111');
-			// 接受自带的空间点击事件回传
+		
+			// 接受自带的控件点击事件回传
 			this.$on('collapse-item-click',function(valuue){
 				console.log(valuue);
 			})
@@ -111,6 +114,7 @@
 			},
 			test(){
 				console.log('test');
+				console.log(this.$store.changeNumAsync);
 				get('https://www.baidu.com').then(result=>{
 					console.log(result);
 				}).catch(e=>{
@@ -124,7 +128,6 @@
 				uni.stopPullDownRefresh()
 			}, 1000);
 		},
-		
 	}
 </script>
 
