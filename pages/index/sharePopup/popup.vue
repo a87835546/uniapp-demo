@@ -91,6 +91,10 @@
 						provider:'weixin',
 						scene:"WXSceneSession",
 						type:0,//0 图文	 1 纯文字	2 纯图片	
+						title: 'uni-app demo',
+						summary: 'uni-app demo summary',
+						imageUrl: '/static/logo.png',
+						href: 'https://uniapp.dcloud.io',
 						success:(res)=>{
 							console.log("success:" + JSON.stringify(res));
 						},
