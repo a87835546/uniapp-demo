@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import App from './App'
+import store from './store/index.js'
 import {post,get} from './pages/utils/httpRequest.js'
 // #ifndef APP-PLUS
 import VCalendar from 'v-calendar'
@@ -18,6 +19,7 @@ Vue.use(VCalendar, {
 Vue.config.productionTip = false
 Vue.prototype.post = post
 Vue.prototype.get = get
+Vue.prototype.$store = store;
 App.mpType = 'app'
 
 

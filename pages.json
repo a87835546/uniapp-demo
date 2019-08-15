@@ -113,6 +113,12 @@
 			}
 		},
 		{
+			"path": "pages/index/use-vuex/vuex-demo",
+			"style": {
+				"navigationBarTitleText": "vuex 简单的使用介绍"
+			}
+		},
+		{
 			"path": "pages/project/index/index",
 			"style": {
 				"navigationBarTitleText": "项目模板"
