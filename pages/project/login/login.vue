@@ -12,6 +12,8 @@
 </template>
 
 <script>
+	import {mapMutations} from 'vuex'
+
 export default {
 	data() {
 		return {
@@ -23,6 +25,13 @@ export default {
     methods: {
 		onLoginButtonClick() {
 			console.log("on login button click");
+			console.log(`http://120.77.85.169:8082/login?userName=${this.account}&pwd=${this.password}`);
+			this.post(`http://120.77.85.169:8082/login`,{'userPhone':this.account,'pwd':this.password})
+			.then(result=>{
+				console.log(result);
+			}).catch(err=>{
+				console.log(err);
+			})
 			uni.showLoading({
 				title: '登录中...'
 			});
@@ -31,8 +40,12 @@ export default {
 			}, 3000)
 		},
 		checkButtonEnable() {
-			return this.$data.account.length > 4 && this.$data.password.length > 6;
-		}
+			return this.$data.account.length > 4 && this.$data.password.length >= 6;
+		},
+		...mapMutations([
+				'login',
+				'logout'
+		])
 	},
 	watch: {
 		account: function(newValue) {

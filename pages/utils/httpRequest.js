@@ -11,7 +11,7 @@ export function httpRequest(path,params, method, headers) {
 		uni.request({
 			url:url,
 			method:method,
-			header:headers,
+			header: {'Access-Control-Allow-Origin':'*','userId':'111'},
 			data:params,
 			success:function(result){
 				resovle(result)
