@@ -56,7 +56,7 @@
 <style scoped>
 	.content {
 		width: 100vw;
-		height: 90rpx;
+		height: 120upx;
 	}
 	.item_content {
 		flex-direction: column;

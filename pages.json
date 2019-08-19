@@ -119,6 +119,16 @@
 			}
 		},
 		{
+			"path": "pages/index/scroll-list/scroll-list",
+			"style": {
+				"navigationBarTitleText": "左右滑动的list 导航 下拉刷新",
+				"app-plus":{
+					"bounce":"none"
+				}
+				
+			}
+		},
+		{
 			"path": "pages/project/index/index",
 			"style": {
 				"navigationBarTitleText": "项目模板"

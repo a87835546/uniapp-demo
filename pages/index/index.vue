@@ -81,6 +81,12 @@
 						title:'选项条和列表',
 						subtitle:'选项条，动画，watch和computed用法',
 						url:'./switchbar/switchBarAndList/switchBarAndList'
+					},
+					{
+						title:'左右滑动的list',
+						subtitle:'导航可以也可以 左右滑动 和下拉刷新当前页面',
+						url: "./scroll-list/scroll-list",
+						
 					}
 					
 					],
