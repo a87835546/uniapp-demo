@@ -11,6 +11,9 @@
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
 		</view>
+		<ad-popup :show="showAdPopup" @hidePopup="hidePopup">
+			
+		</ad-popup>
 	</view>
 </template>
 
@@ -19,10 +22,12 @@
 	import test from './test.vue'
 	import {post,get} from '../utils/httpRequest.js'
 	import {uniBadge,uniCollapse,uniCollapseItem,uniList,uniListItem } from '@dcloudio/uni-ui'
+	import AdPopup from '../../components/ad-popup'
 	export default {
 		data() {
 			return {
 				title: 'Hello',
+				showAdPopup: true,
 				dataList:[
 					{
 						title:"下拉刷新的使用（自定义和系统组件）",
@@ -80,13 +85,12 @@
 					{
 						title:'选项条和列表',
 						subtitle:'选项条，动画，watch和computed用法',
-						url:'./switchbar/switchBarAndList/switchBarAndList'
+						url:'./SegmentedBar/SegmentedBar'
 					},
 					{
 						title:'左右滑动的list',
 						subtitle:'导航可以也可以 左右滑动 和下拉刷新当前页面',
 						url: "./scroll-list/scroll-list",
-						
 					}
 					
 					],
@@ -110,6 +114,7 @@
 			uniCollapseItem,
 			uniBadge,
 			test,
+			AdPopup,
 		},
 		methods: {
 			clickItem(url){
@@ -127,6 +132,13 @@
 					console.log(e);
 				})
 			},
+			hidePopup() {
+				this.showAdPopup = false;
+				// let that = this
+				// setTimeout(function() {
+				// 	that.showAdPopup = true
+				// }, 5000);
+			}
 		},
 		onPullDownRefresh:function(){
 			console.log('refresh');
