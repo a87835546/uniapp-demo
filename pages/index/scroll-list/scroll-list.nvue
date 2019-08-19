@@ -1,18 +1,94 @@
 <template>
-	<div class="page">
-		<view class="tab">
-			<text v-for="(item,index) in naviList" :key='index'>
-				{{item}}
-			</text>
-		</view>
+	<div>
+		<div class="tabs">
+			<div class="tab">
+				<text v-for="(tab, index) in naviList" :key="index" 
+					@click="clickItem(index,$event)" 
+					class="tab-text" 
+					:class="[index == selectIndex ? 'tab-text-on' : '']"
+				>{{ tab }}</text>
+			</div>
+			<div class="border" :style="{ transform: 'translateX(' + offsetLeft + 'px)' }"></div>
+		</div>
+		<slider 
+		:indicator-dots="false" 
+		:autoplay="false" 
+		:interval="3000" 
+		:duration="0" 
+		:index = 'selectIndex' 
+		@change="change"
+		@scroll = "change"
+		class="list_content"
+		>
+			 <div ref="mescroll" class="mescroll" v-for="(item,index) in naviList" :key="index">
+				<list v-for="(item,index) in naviList" :key = 'index'>
+					<cell v-for="(item,index) in list" :key = 'index'>
+					</cell>
+				</list>
+				<!-- <view >
+					{{item}}
+				</view> -->
+			</div>
+			
+		</slider>
 	</div>
 </template>
 
 <script>
-	export default {
+		import MeScroll from 'mescroll.js'
+		import 'mescroll.js/mescroll.min.css'	
+		export default {
 		data(){
 			return{
 				naviList:['全部','列表1','列表2','列表3','列表4','列表5'],
+				offsetLeft:0,
+				selectIndex:0,
+				list:['123','111','2222','3333','444'],
+				mescroll: null,
+				widthHeigt:0
+			}
+		},
+		mounted: function(e) {
+			uni.getSystemInfo({
+				success: (e) => {
+					// console.log(e);
+					this.widthHeigt = e.screenHeight;
+				}
+			})
+			let that = this
+			this.mescroll = new MeScroll(that.$refs.mescroll,{
+				up:{
+					callback: that.upCallback,
+				},
+				
+			})
+		},
+		components:{
+			
+		},
+		methods:{
+			clickItem(index,e){
+				console.log(index);
+				this.selectIndex = index;
+				this.offsetLeft =  e.position.x ;
+				console.log(e.position.x);
+				
+			},
+			downCallback(mescroll){
+				console.log('下拉刷新');
+				this.mescroll = mescroll;
+				setTimeout(()=>{mescroll.endDownScroll()},1000)
+				
+			},
+			upCallback(mescroll){
+				console.log('上拉刷新');
+				mescroll.showNoMore()
+				
+				
+			},
+			change(e){
+				console.log(e.index);
+				e.index ?  this.offsetLeft = e.index * 95 + 'px' : ''
 				
 			}
 		}
@@ -20,24 +96,53 @@
 </script>
 
 <style>
-	.page {
-		background-color: #f1f1f1;
-		height: calc(100vh - 44px);
-	}
-	.tab{
-		display: flex;
+	.tabs {
+		width: 750px;
 		flex-direction: row;
+		flex-wrap: wrap;
+		height: 80px;
+		align-items: center;
+		background-color: #f8f8f8;
+		align-items: center;
+		
+	}
+	
+	.tab {
+		width: 750px;
+		height: 76px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.tab-text {
+		flex: 1;
+		height: 76px;
+		line-height: 76px;
 		text-align: center;
-		background-color: rgb(246, 246, 246);
-		height: 62rpx;
-		line-height: 60rpx;
-		text {
-			flex: 1;
-			color: #1a1a1a;
-			font-size: 14px;
-		}
-		.tab_select {
-			color: red;
-		}
+		font-size: 16px;
+		color: #444;
+	}
+	.tab-text-on {
+		color: red;
+	}
+	.border {
+		height: 2px;
+		width: 70px;
+		margin-left: 15px;
+		background-color: red;
+		transition-property: transform;
+		transition-duration: 0.3s;
+		transition-delay: 0s;
+		transition-timing-function: ease;
+	}
+	.mescroll {
+		/* height: 100%; */
+		top: 80px;
+	}
+	.list_content {
+		background-color: #00FFFF;
+		height: 1000px;
+		flex-direction: row;
+		width: 750px;
 	}
 </style>
