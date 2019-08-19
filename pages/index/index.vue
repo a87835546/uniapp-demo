@@ -27,7 +27,7 @@
 		data() {
 			return {
 				title: 'Hello',
-				showAdPopup: true,
+				showAdPopup: false,
 				dataList:[
 					{
 						title:"下拉刷新的使用（自定义和系统组件）",

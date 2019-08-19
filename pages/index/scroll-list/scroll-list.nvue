@@ -1,0 +1,43 @@
+<template>
+	<div class="page">
+		<view class="tab">
+			<text v-for="(item,index) in naviList" :key='index'>
+				{{item}}
+			</text>
+		</view>
+	</div>
+</template>
+
+<script>
+	export default {
+		data(){
+			return{
+				naviList:['全部','列表1','列表2','列表3','列表4','列表5'],
+				
+			}
+		}
+	}
+</script>
+
+<style>
+	.page {
+		background-color: #f1f1f1;
+		height: calc(100vh - 44px);
+	}
+	.tab{
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		background-color: rgb(246, 246, 246);
+		height: 62rpx;
+		line-height: 60rpx;
+		text {
+			flex: 1;
+			color: #1a1a1a;
+			font-size: 14px;
+		}
+		.tab_select {
+			color: red;
+		}
+	}
+</style>
