@@ -91,7 +91,8 @@
 						title:'左右滑动的list',
 						subtitle:'导航可以也可以 左右滑动 和下拉刷新当前页面',
 						url: "./scroll-list/scroll-list",
-					}
+					},
+				
 					
 					],
 			}

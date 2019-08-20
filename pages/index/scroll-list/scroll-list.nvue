@@ -11,56 +11,61 @@
 			<div class="border" :style="{ transform: 'translateX(' + offsetLeft + 'px)' }"></div>
 		</div>
 		<slider 
-		:indicator-dots="false" 
-		:autoplay="false" 
-		:interval="3000" 
-		:duration="0" 
-		:index = 'selectIndex' 
+		indicator-dots="false" 
+		autoplay="false" 
+		interval="3000" 
+		duration="0" 
+		index = 'selectIndex' 
 		@change="change"
-		@scroll = "change"
+		@scroll = "scroll"
 		class="list_content"
 		>
-			 <div ref="mescroll" class="mescroll" v-for="(item,index) in naviList" :key="index">
-				<list v-for="(item,index) in naviList" :key = 'index'>
-					<cell v-for="(item,index) in list" :key = 'index'>
+				<list class="list_item" v-for="(item,index) in naviList" 
+				:key = 'index' 
+				@scroll="scroll"
+				ref = "item"
+				>
+				<refresh 
+					@refresh="onrefresh"
+					@pullingdown="onpulldown"
+					:display="showRefresh ? 'show' : 'hide'"
+					class="refresh"
+				>
+					<text class="indicator_text">刷新中...</text>
+					<loading-indicator class="indicator"></loading-indicator>
+				</refresh>
+					<cell class="list_item_cell" v-for="(item,index) in list[index]" :key = 'index'>
+						<text class="cell_text">{{item}}</text>
 					</cell>
-				</list>
-				<!-- <view >
-					{{item}}
-				</view> -->
-			</div>
-			
+				</list>			
 		</slider>
 	</div>
 </template>
 
 <script>
-		import MeScroll from 'mescroll.js'
-		import 'mescroll.js/mescroll.min.css'	
+		var modal = weex.requireModule("modal");
+		const dom = weex.requireModule('dom')
+
 		export default {
 		data(){
 			return{
 				naviList:['全部','列表1','列表2','列表3','列表4','列表5'],
-				offsetLeft:0,
+				offsetLeft:10,
 				selectIndex:0,
-				list:['123','111','2222','3333','444'],
-				mescroll: null,
-				widthHeigt:0
+				list:[['123','111','2222','3333','444'],['abc','sss'],['321'],['ddd','fff'],[],['eeee']],
+				windowHeigt:0,
+				windowWidth : 0,
+				showRefresh : false
 			}
 		},
 		mounted: function(e) {
 			uni.getSystemInfo({
 				success: (e) => {
-					// console.log(e);
-					this.widthHeigt = e.screenHeight;
+					console.log(e);
+					this.windowHeigt = e.screenHeight;
+					this.windowWidth = e.screenWidth
+					console.log(this.windowHeigt);
 				}
-			})
-			let that = this
-			this.mescroll = new MeScroll(that.$refs.mescroll,{
-				up:{
-					callback: that.upCallback,
-				},
-				
 			})
 		},
 		components:{
@@ -70,26 +75,38 @@
 			clickItem(index,e){
 				console.log(index);
 				this.selectIndex = index;
-				this.offsetLeft =  e.position.x ;
-				console.log(e.position.x);
-				
+				this.offsetLeft =  e.position.x + 10;
+				console.log(this.selectIndex);
 			},
-			downCallback(mescroll){
-				console.log('下拉刷新');
-				this.mescroll = mescroll;
-				setTimeout(()=>{mescroll.endDownScroll()},1000)
-				
-			},
-			upCallback(mescroll){
-				console.log('上拉刷新');
-				mescroll.showNoMore()
-				
-				
-			},
+		
 			change(e){
 				console.log(e.index);
-				e.index ?  this.offsetLeft = e.index * 95 + 'px' : ''
+				if (e.index){
+					this.offsetLeft = e.index * 750/this.naviList.length + 10 + 'px'
+					this.selectIndex = e.index
+				}else if(e.index === 0){
+					this.offsetLeft = 10
+					this.selectIndex = 0
+				}
+				console.log(this.offsetLeft);
+			},
+			scroll(e){
+				setTimeout(function(){
+					// console.log(this.selectIndex)
+				},200)
 				
+			},
+			onrefresh(e){
+				this.showRefresh = true
+				let that = this
+				setTimeout(function(){
+					that.showRefresh = false
+				},2000)
+				modal.toast({
+					message:'下拉刷新弹窗测试',
+					duration:1,
+							
+				})
 			}
 		}
 	}
@@ -124,6 +141,7 @@
 	}
 	.tab-text-on {
 		color: red;
+		font-size: 20px;
 	}
 	.border {
 		height: 2px;
@@ -135,14 +153,37 @@
 		transition-delay: 0s;
 		transition-timing-function: ease;
 	}
-	.mescroll {
-		/* height: 100%; */
-		top: 80px;
+	.refresh {
+		width: 750;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.indicator_text {
+		text-align: center;
+	}
+	.indicator {
+		height: 20px;
+		width: 20px;
+		color: #C0C0C0;
 	}
 	.list_content {
-		background-color: #00FFFF;
 		height: 1000px;
 		flex-direction: row;
 		width: 750px;
+	}
+	.list_item {
+		width: 750px;
+	}
+	.list_item_cell {
+		margin: 10px;
+		width: 730px;
+		background-color: #00FFFF;
+		border-radius: 5px;
+		height: 300px;
+	}
+	.cell_text {
+		color: #333333;
 	}
 </style>
