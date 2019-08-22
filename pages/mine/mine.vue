@@ -1,7 +1,28 @@
 <template>
-	<page>
+	<view>
 		<view class="content">
-			<view>页面传参演示</view>
+			<!-- #ifndef APP-PLUS -->
+			<view class="header">
+				<text class="icon">&#xe615;</text>
+			</view>
+			<!-- #endif -->
+			<view class="user">
+				<!-- 头像 -->
+				<view class="left">
+					<image src="/static/img_login_logo.png" @tap="toSetting"></image>
+				</view>
+				<!-- 昵称,个性签名 -->
+				<view class="right">
+					<view class="username" @tap="toLogin">123</view>
+					<view class="signature" @tap="toSetting">321</view>
+				</view>
+				<!-- 二维码按钮 -->
+				<view class="erweima" @tap="toMyQR">
+					<view class="icon qr"></view>
+				</view>
+			</view>
+			<view class="tool_title">页面传参演示</view>
+			<view class="tool_row"></view>
 			<view class="mine_item" v-for="(item,index) in dataList" :key="index">
 				<view class="mine_item_content"  @click="clickItem(index)">
 					<image class="item_image" src="../../static/logo.png" mode="center"></image>
@@ -12,8 +33,7 @@
 			
 			<view class="tool">
 				<text class="tool_title">工具与服务</text>
-				<view class="tool_row">
-				</view>
+				<view class="tool_row"></view>
 				<view class="tool_content">
 					<view class="list" v-for="(item,index) in tools" :key='index'>
 						<view class="list_item" @click="clickTool(index)">
@@ -23,8 +43,34 @@
 					</view>
 				</view>
 			</view>
-		</view>	
-	</page>
+			<view class="navi">
+				<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
+					<swiper-item>
+						<view class="tool_content">
+							<view class="list" v-for="(item,index) in tools" :key='index'>
+								<view class="list_item" @click="clickTool(index)">
+									<image :src="item.imageUrl" mode="scaleToFill"></image>
+									<text>{{item.title}}</text>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="tool_content">
+							<view class="list" v-for="(item,index) in tools" :key='index'>
+								<view class="list_item" @click="clickTool(index)">
+									<image :src="item.imageUrl" mode="scaleToFill"></image>
+									<text>{{item.title}}</text>
+								</view>
+							</view>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+		</view>
+	
+	</view>
+		
 </template>
 
 <script>
@@ -97,6 +143,8 @@
 				]
 			}
 		},
+		components:{
+		},
 		methods:{
 			clickItem(index){
 				console.log('传过去的值:', index);
@@ -111,6 +159,18 @@
 			},
 			clickTool(index){
 				console.log(index);
+			},
+			toSetting(){
+				uni.showModal({
+					title:'点击头像',
+					content:'123',
+					showCancel:false,
+					confirmText:"确定",
+					complete:function(e){
+						console.log('111');
+					}
+					
+				})
 			}
 		},
 		onPullDownRefresh: () => {
@@ -125,6 +185,20 @@
 </script>
 
 <style lang="less">
+@font-face {
+  font-family: 'iconfont';  /* project id 1363236 */
+  src: url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.eot');
+  src: url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.svg#iconfont') format('svg');
+}
+	.icon {
+		font-family: 'iconfont' !important;
+		font-size: 40px;
+		color: #00FFFF;
+	}
 	template {
 		background-color: yellow
 	}
@@ -134,6 +208,55 @@
 	}
 	page {
 		background-color: #f1f1f1;
+	}
+	.user{
+		width: 92%;
+		padding: 0 4%;
+		display: flex;
+		align-items: center;
+		background-color: #00FFFF;
+		padding-bottom: 120upx;
+		.left{
+			width: 20vw;
+			height: 20vw;
+			flex-shrink: 0;
+			margin-right: 20upx;
+			border: solid 1upx #fff;
+			border-radius: 100%;
+			image{
+				width: 20vw;
+				height: 20vw;
+				border-radius: 100%;
+			}
+			
+		}
+		.right{
+			width: 100%;
+			.username{
+				font-size: 36upx;
+				color: #fff;
+			}
+			.signature{
+				color: #eee;
+				font-size: 28upx;
+			}
+		}
+		.erweima{
+			flex-shrink: 0;
+			width: 10vw;
+			height: 10vw;
+			margin-left: 5vw;
+			border-radius: 100%;
+		
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(to left, #fbbb37 0%,#fcf0d0 105%);
+			.icon{
+				color: #7b6335;
+				font-size: 42upx;
+			}
+		}
 	}
 	.mine_item {
 		flex-direction: column;
@@ -175,6 +298,7 @@
 		line-height: 30px;
 		font-weight: 400;
 		padding-left: 10px;
+		background-color: white;
 	}
 	.tool_row {
 		height: 1rpx;
@@ -202,6 +326,9 @@
 			font-weight: 100;
 			line-height: 30px;
 		}
+	}
+	.navi {
+		background-color: white;
 	}
 
 </style>

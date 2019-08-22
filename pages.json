@@ -10,8 +10,24 @@
 		{
 			"path": "pages/mine/mine",
 			"style": {
+				"onReachBottomDistance":50,
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "个人中心",
-				"enablePullDownRefresh": true
+				"enablePullDownRefresh": true,
+				"navigationStyle":"custom",
+				"navigationBarBackgroundColor":"#00FFFF",
+				"backgroundColor":"#00FFFF",
+				"backgroundColorTop":"#00FFFF",
+				"app-plus":{
+					"titleNView":false,
+					"softinputNavBar":"none",
+					"subNVues":[{
+						"id":"mineNavi",
+						"path":"pages/mine/mineNavi",
+						"type":"navigationBar"
+						
+					}]
+				}
 			}
 		},
 		{

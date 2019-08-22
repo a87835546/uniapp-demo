@@ -1,0 +1,125 @@
+<template>
+	<div>
+		<!-- #ifdef APP-PLUS -->
+		<view class="navi_view">
+			<view class="status_bar" :style="{height: statusBarHeight + 'wx',width:windowWidth + 'wx'}">    
+			</view> 
+			<view class="top_view" :style="{width:windowWidth + 'wx'}">
+				<view class="left">
+					<button @click="leftBtn">左侧</button>
+				</view>
+				<view class="input-view">
+					<input class="input" type="text" value="" placeholder="输入搜索内容" @change="change"/>
+					<!-- <text class="icon">&#xe7c9;</text> -->
+				</view>
+				<view class="right">
+					<text class="icon" @click="set">&#xe600;</text>
+				</view>
+				
+			</view>
+		</view>
+		<!-- #endif -->
+	</div>
+</template>
+
+<script>
+	export default {
+		data(){
+			return {
+				statusBarHeight : 22,
+				windowWidth:0,
+			}
+		},
+		beforeCreate:function(e){
+			const domModule = weex.requireModule('dom');
+			domModule.addRule('fontFace', {
+				fontFamily: 'iconfont',
+				src: "url('https://at.alicdn.com/t/font_1363236_jpvgdaqpqd.ttf')"
+			});
+		},
+		components:{
+			
+		},
+		methods:{
+			leftBtn(){
+				console.log('123');
+			},
+			set(){
+				console.log('设置');
+				uni.showModal({
+					title:'点击更多',
+					content:'123',
+					showCancel:false,
+					
+				})
+			},
+			msg(){
+				console.log('消息');
+			},
+			change(val){
+				console.log(val);
+			}
+		},
+		created: function(e)  {
+			let that = this
+			uni.getSystemInfo({
+				success: function (res) {
+					that.statusBarHeight = res.statusBarHeight	
+					that.windowWidth = res.windowWidth
+					console.log(that.statusBarHeight);
+				}
+			})
+		}
+	}
+</script>
+
+<style lang="less">
+	
+.icon {
+	font-family: iconfont;
+	font-size: 42px;
+	color: #1a1a1a;
+	text-align: center;
+}
+.navi_view {
+	background-color: #00FFFF;
+}
+.status_bar {  
+    // background-color: #F8F8F8;  
+	// background-color: greenyellow;
+	display: flex;
+}  
+.top_view {  
+	height: 44wx;
+    // background-color: #F8F8F8; 
+    top: 0;  
+    z-index: 999;  
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+}  
+.left {
+	flex: 0;
+	padding-left: 10wx;
+	width: 60wx;
+}
+	.input-view {
+		flex: 1;
+	}
+	.input {
+		height: 26wx;
+		background-color: white;
+		border-radius: 13wx;
+		font-size: 14wx;
+		color: #999999;
+	}
+	.right {
+		flex: 0;
+		padding-right: 10wx;
+		width: 60wx;
+
+	}
+</style>
