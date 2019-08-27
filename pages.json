@@ -21,6 +21,7 @@
 				"app-plus":{
 					"titleNView":false,
 					"softinputNavBar":"none",
+					"softinputMode": "adjustResize",
 					"subNVues":[{
 						"id":"mineNavi",
 						"path":"pages/mine/mineNavi",

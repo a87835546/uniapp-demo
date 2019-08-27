@@ -6,11 +6,16 @@
 			</view> 
 			<view class="top_view" :style="{width:windowWidth + 'wx'}">
 				<view class="left">
-					<button @click="leftBtn">左侧</button>
+					<!-- <button @click="leftBtn"></button> -->
+					<text class="icon" @click="leftBtn">&#xe648;</text>
 				</view>
 				<view class="input-view">
-					<input class="input" type="text" value="" placeholder="输入搜索内容" @change="change"/>
-					<!-- <text class="icon">&#xe7c9;</text> -->
+					<text class="input_search">&#xe7c9;</text>
+					<input class="input" type="text" ref="input" placeholder="输入搜索内容" 
+					@input="input"
+					@change = "change"
+					/>
+					<text class="icon input_clear"  v-if="showClear" @click="clearInput">&#xeb6a;</text>
 				</view>
 				<view class="right">
 					<text class="icon" @click="set">&#xe600;</text>
@@ -28,13 +33,15 @@
 			return {
 				statusBarHeight : 22,
 				windowWidth:0,
+				showClear:false,
+				inputValue:''
 			}
 		},
 		beforeCreate:function(e){
 			const domModule = weex.requireModule('dom');
 			domModule.addRule('fontFace', {
 				fontFamily: 'iconfont',
-				src: "url('https://at.alicdn.com/t/font_1363236_jpvgdaqpqd.ttf')"
+				src: "url('https://at.alicdn.com/t/font_1363236_0k4kdzv6z0mb.ttf')"
 			});
 		},
 		components:{
@@ -43,6 +50,12 @@
 		methods:{
 			leftBtn(){
 				console.log('123');
+				uni.showModal({
+					title:'点击目录',
+					content:'menu',
+					showCancel:false,
+					
+				})
 			},
 			set(){
 				console.log('设置');
@@ -57,8 +70,21 @@
 				console.log('消息');
 			},
 			change(val){
-				console.log(val);
-			}
+				console.log(val.value);
+				uni.$emit('MineInputValueChange',val.value)
+			},
+			input(v){
+				console.log(v.value);
+				if(v.value.length >0){
+					this.showClear = true;
+				}
+				this.inputValue =  v.value;
+			},
+			clearInput(){
+				console.log(this.inputValue);
+				
+				this.$refs.input.value = ''
+			},
 		},
 		created: function(e)  {
 			let that = this
@@ -85,8 +111,6 @@
 	background-color: #00FFFF;
 }
 .status_bar {  
-    // background-color: #F8F8F8;  
-	// background-color: greenyellow;
 	display: flex;
 }  
 .top_view {  
@@ -108,13 +132,34 @@
 }
 	.input-view {
 		flex: 1;
-	}
-	.input {
 		height: 26wx;
 		background-color: white;
 		border-radius: 13wx;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+	}
+	.input_search {
+		flex: 0;
+		width: 30wx;
+		padding-left: 5wx;
+		font-size: 14wx;
+		color: #666;
+		font-family: iconfont;
+		text-align: center;
+	}
+	.input_clear {
+		color: #666;
+		font-size: 14wx;
+		padding-right: 10wx;
+	}
+	.input {
+		height: 26wx;
 		font-size: 14wx;
 		color: #999999;
+		padding-left: 0;
+		flex: 1;
 	}
 	.right {
 		flex: 0;

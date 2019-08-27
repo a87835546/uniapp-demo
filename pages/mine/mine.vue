@@ -50,7 +50,7 @@
 				</view>
 			</view>
 			<view class="navi">
-				<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
+				<swiper :indicator-dots="true" :autoplay="false" :interval="3000" :duration="1000">
 					<swiper-item>
 						<view class="tool_content">
 							<view class="list" v-for="(item,index) in tools" :key='index'>
@@ -80,6 +80,7 @@
 </template>
 
 <script>
+	
 	export default {
 		data(){
 			return {
@@ -179,6 +180,19 @@
 				})
 			}
 		},
+		onLoad:function(){
+			uni.$on('MineInputValueChange',function(v){
+				console.log(v);
+				uni.showModal({
+					content:v,
+					title:'接受子组件的传值',
+					confirmText:'确定'
+				})
+			})
+		},
+		onUnload:function(){
+			uni.$off('MineInputValueChange')
+		},
 		onPullDownRefresh: () => {
 			uni.showToast({
 				icon:"loading",
@@ -187,7 +201,7 @@
 			uni.stopPullDownRefresh()
 		},
 		onPageScroll:(e)=>{
-			console.log(e.scrollTop);
+			// console.log(e.scrollTop);
 		}
 	}
 </script>
@@ -217,6 +231,32 @@
 	page {
 		background-color: #f1f1f1;
 	}
+	.header {
+		height: var(--status-bar-height);
+		/* #ifdef H5 */
+		height: 30px;
+		/* #endif */
+		/* #ifdef MP-WEIXIN */
+		padding-top: 30px;
+		/* #endif */
+		background-color: #00FFFF;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		text {
+			font-size: 24px;
+			color: white;
+			
+		}
+		.header_noti {
+			// flex: 0;
+			width: 30px;
+		}
+		.header_setting {
+			// flex: 0;
+			width: 30px;
+		}
+	}
 	.user{
 		width: 92%;
 		padding: 0 4%;
@@ -224,6 +264,7 @@
 		align-items: center;
 		background-color: #00FFFF;
 		padding-bottom: 120upx;
+		padding-top: 20upx;
 		.left{
 			width: 20vw;
 			height: 20vw;
