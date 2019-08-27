@@ -396,6 +396,42 @@
 			path = ../../SDK/Bundles;
 			sourceTree = "<group>";
 		};
+		37371B6C23150CA3000C43FB /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				37371B62230D4357000C43FB /* PluginTest.h */,
+				37371B64230D4357000C43FB /* PluginTest.m */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		37371B6D23150D08000C43FB /* H5PlusWebView */ = {
+			isa = PBXGroup;
+			children = (
+				37371B65230D4357000C43FB /* WebViewController.h */,
+				37371B63230D4357000C43FB /* WebViewController.m */,
+			);
+			path = H5PlusWebView;
+			sourceTree = "<group>";
+		};
+		37371B6E23150D2B000C43FB /* UniApp */ = {
+			isa = PBXGroup;
+			children = (
+				8EED62B3198A1D14000A4449 /* ViewController.h */,
+				8EED62B4198A1D14000A4449 /* ViewController.m */,
+			);
+			path = UniApp;
+			sourceTree = "<group>";
+		};
+		37371B6F23150D44000C43FB /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				379A592F23057B7F002A066D /* HomeViewController.h */,
+				379A593023057B7F002A066D /* HomeViewController.m */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
 		3748C87C230A44C600700D6F /* weexHeader */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,16 +587,12 @@
 		8EED62A1198A1D13000A4449 /* HBuilder-Hello */ = {
 			isa = PBXGroup;
 			children = (
-				37371B62230D4357000C43FB /* PluginTest.h */,
-				37371B64230D4357000C43FB /* PluginTest.m */,
-				37371B65230D4357000C43FB /* WebViewController.h */,
-				37371B63230D4357000C43FB /* WebViewController.m */,
+				37371B6F23150D44000C43FB /* Native */,
+				37371B6E23150D2B000C43FB /* UniApp */,
+				37371B6D23150D08000C43FB /* H5PlusWebView */,
+				37371B6C23150CA3000C43FB /* Plugins */,
 				8EED62AA198A1D13000A4449 /* AppDelegate.h */,
 				8EED62AB198A1D13000A4449 /* AppDelegate.m */,
-				8EED62B3198A1D14000A4449 /* ViewController.h */,
-				8EED62B4198A1D14000A4449 /* ViewController.m */,
-				379A592F23057B7F002A066D /* HomeViewController.h */,
-				379A593023057B7F002A066D /* HomeViewController.m */,
 				2F0BA3FA215B4A4100F67004 /* inc */,
 				8EED658F198A3DF7000A4449 /* Pandora */,
 				8EED62EE198A2166000A4449 /* splash */,
@@ -627,7 +659,6 @@
 				0364E6CE62D53D86B2D53775 /* Pods-HBuilder.debug.xcconfig */,
 				307550E6EA08A5FDDBBBD353 /* Pods-HBuilder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
