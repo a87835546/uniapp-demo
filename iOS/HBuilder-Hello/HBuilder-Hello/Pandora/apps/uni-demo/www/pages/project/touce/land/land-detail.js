@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"container.",[1],"data-v-42b587aa { background-color: #F6F6F6; }\n.",[1],"tabbar.",[1],"data-v-42b587aa { background-color: #FFFFFF; margin-bottom: 8px; }\n",],undefined,{path:"./pages/project/touce/land/land-detail.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/project/touce/land/land-detail.wxml') } }));
