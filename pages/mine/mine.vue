@@ -1,9 +1,15 @@
 <template>
-	<view>
-		<view class="content">
+	<view >
+		<view class="content" >
 			<!-- #ifndef APP-PLUS -->
 			<view class="header">
-				<text class="icon">&#xe615;</text>
+				<view class="header_noti">
+					<text class="icon">&#xe615;</text>
+				</view>
+				<view class="header_setting">
+					<text class="icon">&#xeb8d;</text>
+				</view>
+				
 			</view>
 			<!-- #endif -->
 			<view class="user">
@@ -180,20 +186,22 @@
 			})
 			uni.stopPullDownRefresh()
 		},
-		
+		onPageScroll:(e)=>{
+			console.log(e.scrollTop);
+		}
 	}
 </script>
 
 <style lang="less">
-@font-face {
-  font-family: 'iconfont';  /* project id 1363236 */
-  src: url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.eot');
-  src: url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.svg#iconfont') format('svg');
-}
+	@font-face {
+	  font-family: 'iconfont';  /* project id 1363236 */
+	  src: url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.eot');
+	  src: url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.eot?#iefix') format('embedded-opentype'),
+	  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.woff2') format('woff2'),
+	  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.woff') format('woff'),
+	  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.ttf') format('truetype'),
+	  url('//at.alicdn.com/t/font_1363236_jpvgdaqpqd.svg#iconfont') format('svg');
+	}
 	.icon {
 		font-family: 'iconfont' !important;
 		font-size: 40px;
