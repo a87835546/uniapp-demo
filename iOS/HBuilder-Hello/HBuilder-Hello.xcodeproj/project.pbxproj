@@ -93,6 +93,7 @@
 		67B7CAD621DE1F160083E96A /* bds_easr_wakeup_words.dat in Resources */ = {isa = PBXBuildFile; fileRef = 67B7CACE21DE1F150083E96A /* bds_easr_wakeup_words.dat */; };
 		67B7CAD721DE1F160083E96A /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 67B7CACF21DE1F150083E96A /* bds_easr_dnn_wakeup_model.dat */; };
 		67E9CDCF22968D2E0076E0FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67E9CDCD22968D2E0076E0FB /* Localizable.strings */; };
+		686255E86BDD559C3DBFEE00 /* Pods_HBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192700F1B30AE5F918E93C5F /* Pods_HBuilder.framework */; };
 		8EED62A6198A1D13000A4449 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EED62A4198A1D13000A4449 /* InfoPlist.strings */; };
 		8EED62A8198A1D13000A4449 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EED62A7198A1D13000A4449 /* main.m */; };
 		8EED62AC198A1D13000A4449 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EED62AB198A1D13000A4449 /* AppDelegate.m */; };
@@ -114,6 +115,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0364E6CE62D53D86B2D53775 /* Pods-HBuilder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBuilder.debug.xcconfig"; path = "Target Support Files/Pods-HBuilder/Pods-HBuilder.debug.xcconfig"; sourceTree = "<group>"; };
+		192700F1B30AE5F918E93C5F /* Pods_HBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0BA3F8215B48A700F67004 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../HBuilder/Images.xcassets; sourceTree = "<group>"; };
 		2F0BA3FB215B4A4100F67004 /* DCADManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCADManager.h; sourceTree = "<group>"; };
 		2F0BA3FC215B4A4100F67004 /* H5WEEngineExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5WEEngineExport.h; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		2F0BA40C215B4A4100F67004 /* PGPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPlugin.h; sourceTree = "<group>"; };
 		2F0BA40D215B6E6800F67004 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2F0BA4DB215BA12300F67004 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		307550E6EA08A5FDDBBBD353 /* Pods-HBuilder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBuilder.release.xcconfig"; path = "Target Support Files/Pods-HBuilder/Pods-HBuilder.release.xcconfig"; sourceTree = "<group>"; };
 		37371B17230D1C8A000C43FB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		37371B19230D1C92000C43FB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		37371B1B230D1C9B000C43FB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -344,6 +348,7 @@
 				37371B1C230D1C9B000C43FB /* WebKit.framework in Frameworks */,
 				37371B1A230D1C92000C43FB /* CoreText.framework in Frameworks */,
 				37371B18230D1C8A000C43FB /* JavaScriptCore.framework in Frameworks */,
+				686255E86BDD559C3DBFEE00 /* Pods_HBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +491,7 @@
 				8EED62A1198A1D13000A4449 /* HBuilder-Hello */,
 				8EED629A198A1D13000A4449 /* Frameworks */,
 				8EED6299198A1D13000A4449 /* Products */,
+				BE3772505456929CBD8203ED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -537,6 +543,7 @@
 				37371B1B230D1C9B000C43FB /* WebKit.framework */,
 				37371B19230D1C92000C43FB /* CoreText.framework */,
 				37371B17230D1C8A000C43FB /* JavaScriptCore.framework */,
+				192700F1B30AE5F918E93C5F /* Pods_HBuilder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -614,6 +621,16 @@
 			path = splash;
 			sourceTree = "<group>";
 		};
+		BE3772505456929CBD8203ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0364E6CE62D53D86B2D53775 /* Pods-HBuilder.debug.xcconfig */,
+				307550E6EA08A5FDDBBBD353 /* Pods-HBuilder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -621,10 +638,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EED62CD198A1D14000A4449 /* Build configuration list for PBXNativeTarget "HBuilder" */;
 			buildPhases = (
+				70CC06911BECA9A8D459CF08 /* [CP] Check Pods Manifest.lock */,
 				8EED6294198A1D13000A4449 /* Sources */,
 				8EED6295198A1D13000A4449 /* Frameworks */,
 				8EED6296198A1D13000A4449 /* Resources */,
 				7A4980F42126ADAD00D20880 /* Embed Frameworks */,
+				A38813F3494BC01BDA87C92C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -726,6 +745,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70CC06911BECA9A8D459CF08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HBuilder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38813F3494BC01BDA87C92C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HBuilder/Pods-HBuilder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HBuilder/Pods-HBuilder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EED6294198A1D13000A4449 /* Sources */ = {
@@ -868,6 +934,7 @@
 		};
 		8EED62CE198A1D14000A4449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0364E6CE62D53D86B2D53775 /* Pods-HBuilder.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -913,6 +980,7 @@
 		};
 		8EED62CF198A1D14000A4449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307550E6EA08A5FDDBBBD353 /* Pods-HBuilder.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
