@@ -29,7 +29,7 @@
     if (pCoreHandle != nil)
     {
         
-        NSString* pFilePath = [NSString stringWithFormat:@"file://%@/%@", [NSBundle mainBundle].bundlePath, @"Pandora/apps/uni-demo/www/plugin.html"];
+        NSString* pFilePath = [NSString stringWithFormat:@"file://%@/%@", [NSBundle mainBundle].bundlePath, @"Pandora/h5plus/plugin.html"];
         [pCoreHandle start];
         // 如果路径中包含中文，或Xcode工程的targets名为中文则需要对路径进行编码
         //NSString* pFilePath =  (NSString *)CFURLCreateStringByAddingPercentEscapes( kCFAllocatorDefault, (CFStringRef)pTempString, NULL, NULL,  kCFStringEncodingUTF8 );
