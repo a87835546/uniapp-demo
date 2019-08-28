@@ -41,6 +41,10 @@
 					{
 						name: "传输列表",
 						url: "/pages/project/file-transfer/file-transfer"
+					},
+					{
+						name: "列表筛选",
+						url: "/pages/project/list-filter/schedules"
 					}
 				]
 			}

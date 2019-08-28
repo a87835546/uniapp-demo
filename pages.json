@@ -213,6 +213,29 @@
 			"style" : {
 				"navigationBarTitleText": "传输列表"
 			}
+		},
+		{
+			"path":"pages/project/list-filter/schedules",
+			"style" : {
+				"navigationBarTitleText": "列表筛选",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "筛选",
+							"fontSize": "17px",
+							"color": "#999999",
+							"width": "40px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/project/list-filter/schedule-filter",
+			"style" : {
+				"navigationBarTitleText": "筛选条件"
+			}
 		}
 	],
 	"globalStyle": {
