@@ -206,6 +206,12 @@
 			"style" : {
 				"navigationBarTitleText": "搜索"
 			}
+		},
+		{
+			"path":"pages/project/file-transfer/file-transfer",
+			"style" : {
+				"navigationBarTitleText": "传输列表"
+			}
 		}
 	],
 	"globalStyle": {
