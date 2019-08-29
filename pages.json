@@ -234,7 +234,18 @@
 		{
 			"path":"pages/project/list-filter/schedule-filter",
 			"style" : {
-				"navigationBarTitleText": "筛选条件"
+				"navigationBarTitleText": "筛选条件",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "应用",
+							"fontSize": "17px",
+							"color": "#999999",
+							"width": "40px"
+						}]
+					}
+				}
 			}
 		}
 	],
