@@ -4,7 +4,7 @@
 		<!-- #ifndef APP-PLUS -->
 			<mescroll-uni @down="refresh"  @up="loadingMore">
 		<!-- #endif -->
-		<uni-grid :data="dataList" :column='3' @touchstart="start" @touchend="end">
+		<uni-grid :data="list" :column='3' @touchstart="start" @touchend="end">
 			<uni-grid-item text="测试">
 				ss111
 			</uni-grid-item>
@@ -45,7 +45,7 @@
 	export default {
 		data (){
 			return {
-				dataList:[]
+				list:[]
 			}
 		},
 		components:{

@@ -3,7 +3,9 @@
 	<view class="page">
 		<button @click="openPopup">打开弹出层</button>
 		<button type="primary" @click="openBottom">打开底部弹窗</button>
+		<!-- #ifdef APP-PLUS -->
 		<button type="primary" @click="openBottonPopup">打开分享弹窗</button>
+		<!-- #endif -->
 		<uni-popup ref="popup" type="center">
 			弹出层示例
 			<button @click="closePopup">关闭弹出层</button>
@@ -75,7 +77,6 @@
 				];
 				this.shareObj=share(shareInfo,shareList,function(index){
 					console.log("点击按钮的序号: " + index);
-		
 					let shareObj={
 						href:shareInfo.href||"",
 						title:shareInfo.title||"",
@@ -91,6 +92,10 @@
 						provider:'weixin',
 						scene:"WXSceneSession",
 						type:0,//0 图文	 1 纯文字	2 纯图片	
+						title: 'uni-app demo',
+						summary: 'uni-app demo summary',
+						imageUrl: '/static/logo.png',
+						href: 'https://uniapp.dcloud.io',
 						success:(res)=>{
 							console.log("success:" + JSON.stringify(res));
 						},
@@ -114,5 +119,9 @@
 		background-color: #4CD964;
 		width: 100vw;
 		height: 100vw;
+	}
+	button {
+		margin-top: 20px;
+		width: 80%;
 	}
 </style>

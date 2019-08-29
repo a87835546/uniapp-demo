@@ -2,8 +2,12 @@
 	<view class="content">
 		 <!-- scroll-top 这个值是不带单位  内容视图距离scrollview 头部的距离-->
 			<scroll-view scroll-y='true' @scroll="scroll" :scroll-top="top" scroll-with-animation="true">
-				<view class="bg-blue">A</view>
-				<view class="bg-yellow">B</view>
+				<view class="bg-blue">
+					<image src="http://img2.imgtn.bdimg.com/it/u=183631055,2504247705&fm=26&gp=0.jpg" mode="scaleToFill"></image>
+				</view>
+				<view class="bg-yellow">
+					<image src="http://image.biaobaiju.com/uploads/20180801/00/1533054790-DkKVbYgeHy.jpg" mode="center"></image>
+				</view>
 				<view class="bg-red">C</view>
 				<view class="bg-green">D</view>
 			</scroll-view>

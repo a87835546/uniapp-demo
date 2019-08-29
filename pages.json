@@ -10,8 +10,25 @@
 		{
 			"path": "pages/mine/mine",
 			"style": {
+				"onReachBottomDistance":50,
+				"navigationBarTextStyle":"black",
 				"navigationBarTitleText": "个人中心",
-				"enablePullDownRefresh": true
+				"enablePullDownRefresh": true,
+				"navigationStyle":"custom",
+				"navigationBarBackgroundColor":"#00FFFF",
+				"backgroundColor":"#00FFFF",
+				"backgroundColorTop":"#00FFFF",
+				"app-plus":{
+					"titleNView":false,
+					"softinputNavBar":"none",
+					"softinputMode": "adjustResize",
+					"subNVues":[{
+						"id":"mineNavi",
+						"path":"pages/mine/mineNavi",
+						"type":"navigationBar"
+						
+					}]
+				}
 			}
 		},
 		{
@@ -113,6 +130,23 @@
 			}
 		},
 		{
+			"path": "pages/index/use-vuex/vuex-demo",
+			"style": {
+				"navigationBarTitleText": "vuex 简单的使用介绍"
+			}
+		},
+		{
+			"path": "pages/index/scroll-list/scroll-list",
+			"style": {
+				"navigationBarTitleText": "左右滑动的list 导航 下拉刷新",
+				"app-plus":{
+					"bounce":"none"
+				}
+				
+			}
+		},
+		
+		{
 			"path": "pages/project/index/index",
 			"style": {
 				"navigationBarTitleText": "项目模板"
@@ -172,6 +206,35 @@
 			"path":"pages/project/search/search",
 			"style" : {
 				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path":"pages/project/file-transfer/file-transfer",
+			"style" : {
+				"navigationBarTitleText": "传输列表"
+			}
+		},
+		{
+			"path":"pages/project/list-filter/schedules",
+			"style" : {
+				"navigationBarTitleText": "列表筛选",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "筛选",
+							"fontSize": "17px",
+							"color": "#999999",
+							"width": "40px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path":"pages/project/list-filter/schedule-filter",
+			"style" : {
+				"navigationBarTitleText": "筛选条件"
 			}
 		}
 	],

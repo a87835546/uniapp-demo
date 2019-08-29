@@ -10,8 +10,10 @@
 		</view>
 		<!-- <input type="text" value="123" placeholder="测试一下" focus="true" /> -->
 		<view class="test">
-			<!-- <test></test> -->
 		</view>
+		<ad-popup :show="showAdPopup" @hidePopup="hidePopup">
+			
+		</ad-popup>
 	</view>
 </template>
 
@@ -20,10 +22,12 @@
 	import test from './test.vue'
 	import {post,get} from '../utils/httpRequest.js'
 	import {uniBadge,uniCollapse,uniCollapseItem,uniList,uniListItem } from '@dcloudio/uni-ui'
+	import AdPopup from '../../components/ad-popup'
 	export default {
 		data() {
 			return {
 				title: 'Hello',
+				showAdPopup: false,
 				dataList:[
 					{
 						title:"下拉刷新的使用（自定义和系统组件）",
@@ -75,17 +79,27 @@
 						url:'./request/request'
 					},
 					{
+						title:'vuex 简单的使用介绍',
+						url:'./use-vuex/vuex-demo'
+					},
+					{
 						title:'选项条和列表',
 						subtitle:'选项条，动画，watch和computed用法',
 						url:'./SegmentedBar/SegmentedBar'
-					}
+					},
+					{
+						title:'左右滑动的list',
+						subtitle:'导航可以也可以 左右滑动 和下拉刷新当前页面',
+						url: "./scroll-list/scroll-list",
+					},
+				
 					
 					],
 			}
 		},
 		onLoad:function(e){
-			console.log('111');
-			// 接受自带的空间点击事件回传
+		
+			// 接受自带的控件点击事件回传
 			this.$on('collapse-item-click',function(valuue){
 				console.log(valuue);
 			})
@@ -101,6 +115,7 @@
 			uniCollapseItem,
 			uniBadge,
 			test,
+			AdPopup,
 		},
 		methods: {
 			clickItem(url){
@@ -111,12 +126,20 @@
 			},
 			test(){
 				console.log('test');
+				console.log(this.$store.changeNumAsync);
 				get('https://www.baidu.com').then(result=>{
 					console.log(result);
 				}).catch(e=>{
 					console.log(e);
 				})
 			},
+			hidePopup() {
+				this.showAdPopup = false;
+				// let that = this
+				// setTimeout(function() {
+				// 	that.showAdPopup = true
+				// }, 5000);
+			}
 		},
 		onPullDownRefresh:function(){
 			console.log('refresh');
@@ -124,7 +147,6 @@
 				uni.stopPullDownRefresh()
 			}, 1000);
 		},
-		
 	}
 </script>
 

@@ -1,14 +1,14 @@
 <template>
-	<scroll-view class="index-scroll-view" :style="{height:windowHeight + 'px'}" scroll-y="true">
-		<view class="index-content">
-			<segmented-bar :tabs="tabs" :index="curIndex" @selectIndexChanged="selectIndexChanged"></segmented-bar>
-			<swiper class="index-content__swiper" :current="curIndex" @change="swiperChange">
-				<swiper-item v-for="(item, index) in tabs" :key="index">
-					<view class="index-content__list" :style="{background:backgrounds[index]}">{{item}}</view>
-				</swiper-item>
-			</swiper>
-		</view>
-	</scroll-view>
+	<!-- <scroll-view class="index-scroll-view" :style="{height:windowHeight + 'px'}" scroll-y="true"> -->
+	<view class="index-content">
+		<segmented-bar :tabs="tabs" :index="curIndex" @selectIndexChanged="selectIndexChanged"></segmented-bar>
+		<swiper class="index-content__swiper" :style="{height:swiperHeight + 'px'}" :current="curIndex" @change="swiperChange">
+			<swiper-item v-for="(item, index) in tabs" :key="index">
+				<view class="index-content__list" :style="{background:backgrounds[index], height:swiperHeight + 'px'}">{{item}}</view>
+			</swiper-item>
+		</swiper>
+	</view>
+	<!-- </scroll-view> -->
 </template>
 
 <script>
@@ -58,6 +58,13 @@
 				this.curIndex = e.detail.current
 				console.log("index:", e.detail.current)
 			}
+		},
+		computed: {
+			swiperHeight() {
+				let height = this.windowHeight - uni.upx2px(80);
+				console.log('swiperHeight:', height)
+				return height
+			}
 		}
 	}
 </script>
@@ -72,14 +79,12 @@
 		flex-direction: column;
 		width: 100%;
 	}
+
 	.index-content__swiper {
 		width: 100%;
-		height: 1000upx;
 	}
-	
+
 	.index-content__list {
 		width: 100%;
-		height: 1000upx;
 	}
-	
 </style>

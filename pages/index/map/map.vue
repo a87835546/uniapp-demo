@@ -1,5 +1,6 @@
 <template>
 	<view class="page">
+		<uni-nav-bar left-icon="back" left-text="返回" right-text="菜单" title="测试导航"></uni-nav-bar>
 		<!-- map 只是在app端才可以用 -->
 		<!-- 详细的使用 -->
 		<!-- https://blog.csdn.net/weixin_43968043/article/details/86642657  -->
@@ -25,6 +26,7 @@
 
 <script>
 	import amap  from '../../../common/amap-wx.js'
+	import {uniNavBar} from '@dcloudio/uni-ui'
 	export default {
 		data(){
 			return {
@@ -36,6 +38,9 @@
 				src:null
 			}
 	
+		},
+		components:{
+			uniNavBar
 		},
 		/**
 		 *  @description  计算属性，不能在data中定义相同的属性，计算属性可以使用data中的属性，

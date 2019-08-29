@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HBuilder debug="true" version="1.0.0">
+	<apps>
+		<app appid="uni-demo" appver="1.0.0"/>
+	</apps>
+</HBuilder>
