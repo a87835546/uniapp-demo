@@ -236,6 +236,12 @@
 			"style" : {
 				"navigationBarTitleText": "筛选条件"
 			}
+		},
+		{
+			"path":"pages/mine/login/login",
+			"style":{
+				"navigationBarTitleText":"登录"
+			}
 		}
 	],
 	"globalStyle": {

@@ -168,16 +168,20 @@
 				console.log(index);
 			},
 			toSetting(){
-				uni.showModal({
-					title:'点击头像',
-					content:'123',
-					showCancel:false,
-					confirmText:"确定",
-					complete:function(e){
-						console.log('111');
-					}
+				uni.navigateTo({
+					url:'login/login',
 					
 				})
+				// uni.showModal({
+				// 	title:'点击头像',
+				// 	content:'123',
+				// 	showCancel:false,
+				// 	confirmText:"确定",
+				// 	complete:function(e){
+				// 		console.log('111');
+				// 	}
+				// 	
+				// })
 			}
 		},
 		onLoad:function(){
