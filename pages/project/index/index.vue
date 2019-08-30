@@ -45,6 +45,10 @@
 					{
 						name: "列表筛选",
 						url: "/pages/project/list-filter/schedules"
+					},
+					{
+						name: "仿银行首页",
+						url: "/pages/project/bank/home"
 					}
 				]
 			}

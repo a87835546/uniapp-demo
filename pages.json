@@ -247,6 +247,12 @@
 					}
 				}
 			}
+		},
+		{
+			"path":"pages/project/bank/home",
+			"style" : {
+				"navigationBarTitleText": "筛选条件"
+			}
 		}
 	],
 	"globalStyle": {

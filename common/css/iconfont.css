@@ -1,0 +1,81 @@
+@font-face {
+	font-family: "iconfont";
+	src: url(../../../static/aliicon.ttf) /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconfontsaoyisao:before {
+  content: "\e601";
+}
+
+.icon-shezhi:before {
+  content: "\e64b";
+}
+
+.icon-licai:before {
+  content: "\e67a";
+}
+
+.icon-zhuanzhang:before {
+  content: "\e69e";
+}
+
+.icon-yuyue:before {
+  content: "\e60b";
+}
+
+.icon-shouzhiliushui:before {
+  content: "\e621";
+}
+
+.icon-Community:before {
+  content: "\e639";
+}
+
+.icon-wode:before {
+  content: "\e632";
+}
+
+.icon-xinyongqia:before {
+  content: "\e640";
+}
+
+.icon-huodong:before {
+  content: "\e655";
+}
+
+.icon-zhuanru:before {
+  content: "\e642";
+}
+
+.icon-lipin:before {
+  content: "\e633";
+}
+
+.icon-shujuzonglan:before {
+  content: "\e691";
+}
+
+.icon-jieqian:before {
+  content: "\e611";
+}
+
+.icon-daikuan:before {
+  content: "\e69c";
+}
+
+.icon-quanbu:before {
+  content: "\e713";
+}
+
+.icon-chengshi:before {
+  content: "\e665";
+}
+
