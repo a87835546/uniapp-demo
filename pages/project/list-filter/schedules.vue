@@ -29,13 +29,42 @@
 		},
 		data() {
 			return {
-				schedules: scheduleData.schedules
+				schedules: scheduleData.schedules,
 			} 
 		},
+		methods: {
+			getFilterCondition() {
+				return {
+					carrier: "OOCL",
+					minTransition: 10,
+					maxTransition: 50,
+					showDirectOnly: true,
+				}
+			}
+		},
 		onNavigationBarButtonTap(e) {
+			// 通过全局变量传值
+			getApp().globalData.scheduleFilterCondition = this.getFilterCondition();
+			getApp().globalData.availableCarriers = ["OOCL","COSCO","LGD"];
 			uni.navigateTo({
 				url: "/pages/project/list-filter/schedule-filter"
 			})
+		},
+		onShow() {
+			console.log("schedules on show");
+			// 通过全局变量取值
+			let condition = getApp().globalData.scheduleFilterCondition;
+			if (condition !== undefined) {
+				console.log("list receive condition: " + JSON.stringify(condition));
+				// 这里根据回传的筛选条件对数据源做筛选
+				let matchSchedule = scheduleData.schedules.filter(function(item,index,array) {
+					let carrierMatch = (item.carrierScac === condition.carrier);
+					let transitionMatch = (item.transitTime <= condition.maxTransition && item.transitTime >= condition.minTransition);
+					return carrierMatch && transitionMatch;
+				});
+				this.$data.schedules = matchSchedule;
+				getApp().globalData.scheduleFilterCondition = this.getFilterCondition();
+			}
 		}
 	}
 </script>

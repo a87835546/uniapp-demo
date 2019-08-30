@@ -2,7 +2,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"OOCL",
     "por":{  
       "location":{  
         "locationID":"P189",
@@ -89,7 +89,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"COSCO",
     "por":{  
       "location":{  
         "locationID":"P189",
@@ -176,7 +176,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"COSCO",
     "por":{  
       "location":{  
         "locationID":"P189",
@@ -263,7 +263,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"LGD",
     "por":{  
       "location":{  
         "locationID":"P189",
@@ -350,7 +350,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"OOCL",
     "por":{  
       "location":{  
         "locationID":"P189",
@@ -437,7 +437,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"LGD",
     "por":{  
       "location":{  
         "locationID":"P189",
@@ -524,7 +524,7 @@ const schedules = [
   {  
     "csRouteID":0,
     "csPointPairID":0,
-    "carrierScac":"OOLU",
+    "carrierScac":"OOCL",
     "por":{  
       "location":{  
         "locationID":"P189",

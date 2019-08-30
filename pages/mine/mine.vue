@@ -43,7 +43,7 @@
 				<view class="tool_content">
 					<view class="list" v-for="(item,index) in tools" :key='index'>
 						<view class="list_item" @click="clickTool(index)">
-							<image :src="item.imageUrl" mode="scaleToFill"></image>
+							<image :src="item.imageUrl" :mode="mode"></image>
 							<text>{{item.title}}</text>
 						</view>
 					</view>
@@ -84,6 +84,7 @@
 	export default {
 		data(){
 			return {
+				mode: "scaleToFill",
 				dataList :[
 					{
 						title:'消息中心',

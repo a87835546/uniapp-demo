@@ -38,6 +38,7 @@
 			title="只显示直航"
 			:showArrow="false"
 			:showSwitch="true"
+			:switch-checked="showDirectOnly"
 			@switchChange="switchChange">
 			</uni-list-item>
 		</uni-list>
@@ -51,16 +52,23 @@
 			return {
 				carrier: "OOLU",
 				minTransition: 0,
-				maxTransition: 100
+				maxTransition: 100,
+				showDirectOnly: false,
+				availableCarriers: []
 			}
+		},
+		props: {
+			originCondition: Object
 		},
 		methods: {
 			selectCarrier() {
 				console.log("select carrier");
+				let self = this;
+				let carriers = self.$data.availableCarriers;
 				uni.showActionSheet({
-				    itemList: ['OOLU', 'COSCO', 'SEME'],
+				    itemList: carriers,
 				    success: function (res) {
-				        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');
+						self.carrier = carriers[res.tapIndex];
 				    },
 				    fail: function (res) {
 				        console.log(res.errMsg);
@@ -75,11 +83,36 @@
 			},
 			switchChange() {
 				console.log("switch");
+			},
+			applyOriginConditions(conditions) {
+				// 深拷贝
+				let currentCondition = JSON.parse(JSON.stringify(conditions));
+				this.$data.carrier = currentCondition.carrier;
+				this.$data.minTransition = currentCondition.minTransition;
+				this.$data.maxTransition = currentCondition.maxTransition;
+				this.$data.showDirectOnly = currentCondition.showDirectOnly;
 			}
 		},
 		components: {
 			uniList,
 			uniListItem
+		},
+		onShow() {
+			console.log("filter page on show");
+			let filterCondition = getApp().globalData.scheduleFilterCondition;
+			this.applyOriginConditions(filterCondition);
+			this.availableCarriers = getApp().globalData.availableCarriers;
+		},
+		onNavigationBarButtonTap(e) {
+			let condition = {
+				carrier: this.$data.carrier,
+				minTransition: this.$data.minTransition,
+				maxTransition: this.$data.maxTransition,
+				showDirectOnly: this.$data.showDirectOnly
+			}
+			// 通过全局变量传值
+			getApp().globalData.scheduleFilterCondition = condition;
+			uni.navigateBack();
 		}
 	}
 </script>

@@ -8,6 +8,8 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
+		},
+		globalData: {
 		}
 	}
 </script>
