@@ -191,7 +191,7 @@
 	}
 	
 	.header {
-		background-color: #C579AD;
+		background: linear-gradient(#A883C3, #C579AD);
 		display: flex;
 		justify-content: space-around;
 		height: 100px;
