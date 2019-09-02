@@ -8,6 +8,7 @@ export function httpRequest(path,params, method, headers) {
 		uni.showToast({
 			icon:'loading',
 			title:'加载中...',
+			duration:1000
 		})
 		uni.request({
 			url:url,
@@ -15,13 +16,23 @@ export function httpRequest(path,params, method, headers) {
 			header: {'Access-Control-Allow-Origin':'*','userId':'111'},
 			data:params,
 			success:function(result){
-				resovle(result)
+				if(result.data.code === 200){
+					resovle(result.data)
+				}else{
+					uni.showToast({
+						icon:"none",
+						title:result.data.msg
+					})
+					console.log(result.data.msg);
+					reject(result.data)
+				}
 			},
 			fail:function(err){
+				console.log(err);
 				reject(err)
 			},
 			complete:function(){
-				uni.hideToast()
+				// uni.hideToast()
 			}
 		})
 	})
