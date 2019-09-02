@@ -8,6 +8,11 @@
 			<view class="input">
 				<input type="text" v-model="phone" @input="inputChanegValue" placeholder="手机注册"/>
 			</view>
+			
+		</view>
+		<view class="getCode">
+			<input type="text" class="code_input" placeholder="请输入手机验证码" v-model="code"/>
+			<button class="code_btn" @click="getCode">获取验证码</button>
 		</view>
 		<view class="next">
 			<button type="warn" 
@@ -28,7 +33,8 @@
 			return {
 				nextBtnShow : true,
 				phone:'',
-				test:''
+				test:'',
+				code:''
 			}
 		},
 		methods:{
@@ -56,6 +62,9 @@
 			},
 			didChange(v){
 				console.log(v);
+			},
+			getCode(){
+				
 			}
 		}
 	}
@@ -89,5 +98,19 @@
 	}
 	.next {
 		padding: 20px 0;
+	}
+	.getCode {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 40px;
+		margin: 10px 0;
+	}
+	.code_btn {
+		height: 30px;
+		border-radius: 15px;
+		border: red 1rpx solid;
+		font-size: 14px;
+		color: #000;
 	}
 </style>
