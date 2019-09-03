@@ -119,6 +119,7 @@
 		background-color: #EDEDED;
 		position: sticky;
 		top: 0;
+		z-index: 99;
 	}
 	
 	.menu {
