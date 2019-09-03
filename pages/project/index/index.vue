@@ -49,6 +49,10 @@
 					{
 						name: "仿银行首页",
 						url: "/pages/project/bank/home"
+					},
+					{
+						name: "选择城市",
+						url: "/pages/project/city-select/city-select"
 					}
 				]
 			}
