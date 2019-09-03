@@ -255,9 +255,18 @@
 			}
 		},
 		{
+			"path":"pages/project/city-select/city-select",
+			"style" : {
+				"navigationBarTitleText": "选择城市"
+			}
+		},
+		{
 			"path":"pages/mine/login/login",
 			"style":{
-				"navigationBarTitleText":"登录"
+				"navigationBarTitleText":"登录",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
 			}
 		},
 		{
