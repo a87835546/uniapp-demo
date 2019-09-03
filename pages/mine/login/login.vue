@@ -40,6 +40,7 @@
 </template>
 
 <script>
+	import {mapState,mapActions} from 'vuex'
 	export default {
 		data (){
 			return {
@@ -49,6 +50,14 @@
 				pwd:'',
 				loginBtnDisable:true
 			}
+		},
+		computed:{
+			...mapActions({
+				token : state => state.userInfo.token,
+				id : state => state.userInfo.userInfo.id,
+				nickname : state => state.userInfo.userInfo.nickname,
+				show : state => state.a.show
+			})
 		},
 		methods:{
 			user_clear(){
@@ -82,8 +91,9 @@
 				}
 			},
 			login(){
-				this.get('http://120.77.85.169:8082/login',{'userName':this.user,'pwd':this.pwd}).then(result=>{
-					console.log(result);
+				this.post('http://120.77.85.169:8082/login',{'userName':this.user,'pwd':this.pwd}).then(result=>{
+					this.$store.commit('login',result.userInfo)
+					console.log(this.state.userInfo.token);
 				}).catch(e=>{
 					console.log(e);
 				})
@@ -93,7 +103,8 @@
 					url:'../register/register'
 				})
 			}
-		}
+		},
+		
 		
 	}
 </script>

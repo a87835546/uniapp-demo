@@ -6,20 +6,27 @@
 				<text class="iconfont">&#xe617;</text>
 			</view>
 			<view class="input">
-				<input type="text" v-model="phone" @input="inputChanegValue" placeholder="手机注册"/>
+				<input type="text" style="{height: 100%;}" v-model="phone" @input="inputChanegValue" placeholder="手机注册"/>
 			</view>
 			
 		</view>
 		<view class="getCode">
-			<input type="text" class="code_input" placeholder="请输入手机验证码" v-model="code"/>
-			<button class="code_btn" @click="getCode">获取验证码</button>
+			<Input  class="code_input" placeholder="请输入手机验证码(默认值1234)" v-model="code"></Input>
+			<view class="btn_view">
+				<button class="code_btn"  @click="showCodeBtn ? getCode($event) : null">{{btnTitle}}</button>
+			</view>
 		</view>
 		<view class="next">
 			<button type="warn" 
 			:disabled="nextBtnShow"
 			@click="next">下一步</button>
 		</view>
-		<Input placeholder="测试" v-model="test" @inputDidChange="didChange">123</Input>
+		
+		<!-- 测试自定义组件 使用v-model绑定获取子组件的值的改变 -->
+		<!-- <Input placeholder="测试1" v-model="test1">123</Input>
+		<Input placeholder="测试2" v-model="test2"></Input>
+		
+		<button type="primary" @click="testFunc">测试</button> -->
 	</view>
 </template>
 
@@ -33,8 +40,11 @@
 			return {
 				nextBtnShow : true,
 				phone:'',
-				test:'',
-				code:''
+				test1:'',
+				test2:'',
+				code:'',
+				btnTitle:'获取验证码',
+				showCodeBtn:true
 			}
 		},
 		methods:{
@@ -42,6 +52,12 @@
 				uni.showToast({
 					title:"获取短信成功",
 					icon:"none"
+				}),
+				this.post('http://120.77.85.169:8082/register',{'phone':this.phone})
+				.then(result=>{
+					console.log(result);
+				}).catch(err=>{
+					console.log(err);
 				})
 			},
 			changeArea(){
@@ -53,18 +69,42 @@
 			},
 			inputChanegValue(v){
 				console.log(v.detail.value);
-				// this.phone = v.detail.value;
-				if(v.detail.value.length === 11){
+				if(v.detail.value.length === 11 && this.isPoneAvailable(v.detail.value)){
 					this.nextBtnShow = false;
 				}else{
 					this.nextBtnShow = true;
 				}
 			},
 			didChange(v){
-				console.log(v);
+				console.log('val',v);
 			},
-			getCode(){
-				
+			getCode(v){
+				console.log(v.target);
+				this.showCodeBtn = false
+				let i = 60;
+				var interval = setInterval(()=>{
+					i--;
+					this.btnTitle = `${i}秒后重试`
+					console.log('定时器');
+					if(i == 0){
+						clearInterval(interval);
+						this.btnTitle = '获取验证'
+						this.showCodeBtn = true
+					}
+				},1000)
+			},
+			testFunc(){
+				console.log(`test1:${this.test1}`);
+				console.log(`test2:${this.test2}`);
+			},
+			//判断是否是正确的手机号码的正则
+			isPoneAvailable(v) {
+				var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
+				if (!myreg.test(v)) {
+					return false;
+				} else {
+					return true;
+				}
 			}
 		}
 	}
@@ -92,6 +132,7 @@
 	.input {
 		flex: 1;
 		text-align: left;
+		height: 50px;
 	}
 	.area_text {
 		width: 100px;
@@ -103,14 +144,29 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		height: 40px;
+		height: 50px;
 		margin: 10px 0;
+	}
+	.btn_view {
+		flex: 0;
+		width: 100px;
+		padding: 0 5px;
 	}
 	.code_btn {
 		height: 30px;
 		border-radius: 15px;
 		border: red 1rpx solid;
 		font-size: 14px;
-		color: #000;
+		color: #e2231a;
+		background-color: rgba(226,35,30,.2);
+		width: 95px;
 	}
+
+	.code_input {
+		margin-right: 10px;
+		line-height: 50px;
+		height: 50px;
+		flex: 1;
+	}
+
 </style>

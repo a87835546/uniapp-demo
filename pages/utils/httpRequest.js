@@ -19,13 +19,13 @@ export function httpRequest(path,params, method, headers) {
 				if(result.data.code === 200){
 					resovle(result.data)
 				}else{
-					uni.showToast({
-						icon:"none",
-						title:result.data.msg
-					})
 					console.log(result.data.msg);
 					reject(result.data)
 				}
+				uni.showToast({
+					icon:"none",
+					title:result.data.msg
+				})
 			},
 			fail:function(err){
 				console.log(err);
