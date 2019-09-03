@@ -268,6 +268,12 @@
 					"scrollIndicator": "none"
 				}
 			}
+		},
+		{
+			"path":"pages/mine/register/register",
+			"style":{
+				"navigationBarTitleText":"手机注册"
+			}
 		}
 	],
 	"globalStyle": {

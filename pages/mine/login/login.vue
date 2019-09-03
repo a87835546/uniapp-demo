@@ -29,7 +29,7 @@
 				<button type="warn" class="shortcut_btn">一键登录</button>
 				<view class="login_forget">
 					<view>短信验证码登录</view>
-					<view class="phone_shortcut">手机快速注册</view>
+					<view class="phone_shortcut" @click="register">手机快速注册</view>
 				</view>
 			</view>
 			<view class="quick_login">
@@ -82,10 +82,15 @@
 				}
 			},
 			login(){
-				this.post('http://120.77.85.169:8082/home',{'userName':this.user,'pwd':this.pwd}).then(result=>{
+				this.get('http://120.77.85.169:8082/login',{'userName':this.user,'pwd':this.pwd}).then(result=>{
 					console.log(result);
 				}).catch(e=>{
 					console.log(e);
+				})
+			},
+			register(){
+				uni.navigateTo({
+					url:'../register/register'
 				})
 			}
 		}
