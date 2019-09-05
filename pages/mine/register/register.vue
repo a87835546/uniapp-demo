@@ -6,12 +6,15 @@
 				<text class="iconfont">&#xe617;</text>
 			</view>
 			<view class="input">
-				<input type="text" style="{height: 100%;}" v-model="phone" @input="inputChanegValue" placeholder="手机注册"/>
+				<v-input type="text" 
+				class="phone_input" 
+				v-model="phone" 
+				placeholder="手机注册">
+				</v-input>
 			</view>
-			
 		</view>
 		<view class="getCode">
-			<Input  class="code_input" placeholder="请输入手机验证码(默认值1234)" v-model="code"></Input>
+			<v-input  class="code_input" placeholder="请输入手机验证码(默认值1234)" v-model="code"></v-input>
 			<view class="btn_view">
 				<button class="code_btn"  @click="showCodeBtn ? getCode($event) : null">{{btnTitle}}</button>
 			</view>
@@ -31,10 +34,10 @@
 </template>
 
 <script>
-	import Input from '../../../components/input.vue'
+	import vInput from '../../../components/input.vue'
 	export default {
 		components:{
-			Input
+			vInput
 		},
 		data(){
 			return {
@@ -47,13 +50,18 @@
 				showCodeBtn:true
 			}
 		},
+		watch:{
+			phone:(v)=>{
+				console.log(v);
+			}
+		},
 		methods:{
 			next(){
 				uni.showToast({
 					title:"获取短信成功",
 					icon:"none"
 				}),
-				this.post('http://120.77.85.169:8082/register',{'phone':this.phone})
+				this.post('http://120.77.85.169:8082/register',{'phone':this.phone,'code':this.code})
 				.then(result=>{
 					console.log(result);
 				}).catch(err=>{
@@ -123,7 +131,7 @@
 		height: 60px;
 		margin: 10px 0;
 		text-align: center;
-		border-bottom: #eee 1rpx solid;
+		// border-bottom: #eee 1rpx solid;
 	}
 	.area {
 		flex: 0;
@@ -132,6 +140,9 @@
 	.input {
 		flex: 1;
 		text-align: left;
+		height: 50px;
+	}
+	.phone_input {
 		height: 50px;
 	}
 	.area_text {
