@@ -274,6 +274,12 @@
 			"style":{
 				"navigationBarTitleText":"手机注册"
 			}
+		},
+		{
+			"path":"pages/index/carousel/carousel",
+			"style":{
+				"navigationBarTitleText":"上下轮播的广告"
+			}
 		}
 	],
 	"globalStyle": {

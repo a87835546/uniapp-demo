@@ -92,7 +92,11 @@
 						subtitle:'导航可以也可以 左右滑动 和下拉刷新当前页面',
 						url: "./scroll-list/scroll-list",
 					},
-				
+					{
+						'title':'轮播广告',
+						subtitle:'广告的上下轮播demo',
+						url:'./carousel/carousel'
+					}
 					
 					],
 			}
