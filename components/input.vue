@@ -5,9 +5,16 @@
 		v-model="user"
 		placeholder-style = "font-size:14px"
 		@input="input"
-		@blur="endDidInput"
+		
+		@mouseenter="enter()" 
+		@mouseleave="leave()"
 		/>
-		<text class="iconfont user_clear" v-if="show" @click="user_clear">&#xeb6a;</text>
+		<text class="iconfont user_clear" 
+		v-if="show" 
+		@click="user_clear"
+		@mouseenter="enterBtn()" 
+		@mouseleave="leaveBtn()"
+		>&#xeb6a;</text>
 	</view>
 </template>
 
@@ -65,8 +72,7 @@
 				this.user = ''
 			},
 			input(v){
-				console.log(v.detail.value);
-				this.user = v.detail.value
+				console.log(this.user);
 				this.show = true;
 				if(this.user.length > 0){
 					this.show = true;
@@ -81,12 +87,34 @@
 			},
 			endDidInput(){
 				this.show = false
+				console.log('编辑完成')
+			},
+			enter(){
+				
+				console.log('enter');
+			},
+			leave(){
+				this.show = false
+				console.log('leave');
+			},
+			enterBtn(){
+				console.log('11');
+				this.user_clear()
+			},
+			leaveBtn(){
+				console.log('23');
 			}
 		}
 	}
 </script>
 
 <style scoped>
+	.show {
+		opacity: 1;
+	}
+	.hidden{
+		opacity: 0;
+	}
 	.input {
 		display: flex;
 		flex-direction: row;
@@ -95,10 +123,15 @@
 		border-bottom: #E0E0E0 1rpx solid;
 		align-items: center;
 		justify-content: center;
+		
 	}
 	.user_input {
 		flex: 1 0 auto;
 		font-size: 14px;
+		/* #ifndef APP-PLUS */
+		height: 80%;
+		outline: none;
+		/* #endif */
 	}
 	.user_clear {
 		width: 30px;
@@ -107,6 +140,6 @@
 		height: 100%;
 		flex: 0 0 auto;
 		display: flex;
-		background-color: red;
+
 	}
 </style>
