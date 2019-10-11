@@ -14,7 +14,9 @@
 		<button type="primary" @click="getAlbum">调用相册</button>
 		<img :src="cameraSrc" mode="center" @error="err"></img>
 		<image :src="cameraSrc" mode="center" @error="err"></image>
-
+		<view class="animation">
+			
+		</view>
 	</view>
 </template>
 
@@ -72,7 +74,7 @@
 	}
 </script>
 
-<style>
+<style scoped lang="less">
 	camera {
 		width: 100vw;
 		height: 300px;
@@ -80,4 +82,5 @@
 	image {
 		width: 100vw;
 	}
+
 </style>

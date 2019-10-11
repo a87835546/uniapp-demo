@@ -21,6 +21,7 @@
 			<view class="quick_login">
 				<text>其他登录</text>
 			</view>
+
 		</view>
 	</view>
 </template>
@@ -33,7 +34,7 @@
 			return {
 				user:'',
 				pwd:'',
-				loginBtnDisable:true
+				// loginBtnDisable:true
 			}
 		},
 		components:{
@@ -44,7 +45,17 @@
 				'token',
 				'userInfo',
 				'nickname'
-			])
+			]),
+		},
+		computed:{
+			loginBtnDisable(newValue,value){
+				return !(this.user.length > 1 && this.pwd.length >= 1);
+			}
+		},
+		watch: {
+			user(newValue) {
+				console.log(newValue);
+			}
 		},
 		methods:{
 

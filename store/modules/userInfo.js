@@ -9,7 +9,6 @@ export default {
 	mutations :{
 		login(state,result){
 			let info = result.userInfo
-			debugger
 			console.log(info);
 			state.hasLogin = true
 			state.userInfo.nickname = info.name

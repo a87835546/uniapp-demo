@@ -145,6 +145,7 @@
 				
 			}
 		},
+	
 		
 		{
 			"path": "pages/project/index/index",
@@ -280,8 +281,18 @@
 			"style":{
 				"navigationBarTitleText":"上下轮播的广告"
 			}
+		},
+		{
+			"path":"pages/index/gif/gif",
+			"style":{
+				"navigationBarTitleText":"gif图片播放",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
 		}
-	],
+	    
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

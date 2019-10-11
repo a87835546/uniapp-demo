@@ -90,7 +90,7 @@
 				console.log('编辑完成')
 			},
 			enter(){
-				
+				if(this.user.length > 0) this.show = true
 				console.log('enter');
 			},
 			leave(){

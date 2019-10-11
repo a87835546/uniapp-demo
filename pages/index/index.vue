@@ -96,8 +96,12 @@
 						'title':'轮播广告',
 						subtitle:'广告的上下轮播demo',
 						url:'./carousel/carousel'
+					},
+					{
+						'title':'gif图片播放',
+						'subtitle':'',
+						'url':'./gif/gif'
 					}
-					
 					],
 			}
 		},
