@@ -290,6 +290,21 @@
 					"bounce":"none"
 				}
 			}
+		},
+		{
+			"path":"pages/index/list/project_list",
+			"style":{
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/index/upload/upload",
+			"style":{
+				"navigationBarTitleText":"上传文件",
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
 		}
 	    
     ],

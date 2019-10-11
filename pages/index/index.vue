@@ -101,6 +101,16 @@
 						'title':'gif图片播放',
 						'subtitle':'',
 						'url':'./gif/gif'
+					},
+					{
+						'title':'项目列表',
+						'subtitle':'常用的列表',
+						'url':'./list/project_list'
+					},
+					{
+						'title':'上传文件',
+						'subtitle':'',
+						'url':'./upload/upload'
 					}
 					],
 			}
