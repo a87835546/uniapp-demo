@@ -29,7 +29,8 @@
 				uni.chooseImage({
 					success: (res) => {
 						const tempFilePaths = res.tempFilePaths;
-						console.log(tempFilePaths);
+						console.log(res);
+						console.log(tempFilePaths[0]);
 						uni.uploadFile({
 							url:'',
 							filePath:tempFilePaths[0],
@@ -41,6 +42,9 @@
 								console.log(err);
 							}
 						})
+					},
+					fail: (err) => {
+						console.log(err);
 					}
 				})
 				
