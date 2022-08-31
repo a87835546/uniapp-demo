@@ -5,7 +5,7 @@
 ## 基础知识链接
     
 快速上手  
-[Uni-app快速上手](https://uniapp.dcloud.io/quickstart)  
+[Uni-app快速上手](https://uniapp.dcloud.net.cn/quickstart.html)  
 [学习手记](https://segmentfault.com/a/1190000017020710)
 	
 代码风格  
